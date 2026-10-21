@@ -1,0 +1,268 @@
+{
+  "example": "dab-10kw",
+  "units": "SI (m, m^3, kg); file paths relative to this directory",
+  "params_dir": "params",
+  "components": {
+    "transformer": {
+      "status": "ok",
+      "params": "params\\transformer.json",
+      "files": {
+        "fcstd": "dab_transformer.FCStd",
+        "step": "dab_transformer.step",
+        "step_keepouts": "dab_transformer.keepouts.step",
+        "checks": "dab_transformer.checks.json",
+        "render_png": "renders/dab_transformer.png",
+        "metadata": "dab_transformer.metadata.json"
+      },
+      "duration_s": 4.99,
+      "totals": {
+        "bbox_m": [
+          -0.0446,
+          -0.0313,
+          -0.0354,
+          0.0446,
+          0.0313,
+          0.0337
+        ],
+        "size_m": [
+          0.0892,
+          0.0626,
+          0.0691
+        ],
+        "volume_m3": 0.00015902104695847367,
+        "mass_kg": 0.7085570075981155,
+        "surface_area_m2": 0.11108229042055703,
+        "body_count": 18,
+        "mass_by_material_kg": {
+          "ferrite_n87": 0.42213305839999976,
+          "bobbin_pet_gf": 0.020088370791459646,
+          "copper": 0.199189661366714,
+          "kapton": 0.01977842268261316,
+          "brass": 0.0007209955139988579,
+          "stainless_steel": 0.03379199999999986,
+          "aluminium_6063": 0.01285449884332996
+        }
+      },
+      "check_summary": {
+        "status": "review",
+        "interference_count": 0,
+        "allowed_overlap_count": 0,
+        "contact_count": 31,
+        "keepout_violation_count": 0,
+        "envelope_intrusion_count": 0,
+        "fit_failures": 0,
+        "clearance_pairs": {
+          "pass": 2,
+          "fail": 0,
+          "review": 1,
+          "no_bodies": 0
+        },
+        "unassigned_conductor_count": 0,
+        "bodies_checked": 18,
+        "note": "required clearance/creepage values are caller inputs; no standard compliance is asserted"
+      },
+      "warnings": []
+    },
+    "heatsink": {
+      "status": "ok",
+      "params": "params\\heatsink.json",
+      "files": {
+        "fcstd": "dab_heatsink.FCStd",
+        "step": "dab_heatsink.step",
+        "step_keepouts": "dab_heatsink.keepouts.step",
+        "checks": "dab_heatsink.checks.json",
+        "render_png": "renders/dab_heatsink.png",
+        "metadata": "dab_heatsink.metadata.json"
+      },
+      "duration_s": 2.82,
+      "totals": {
+        "bbox_m": [
+          -0.04,
+          -0.04,
+          -0.035,
+          0.043335,
+          0.04,
+          0.024460000000000003
+        ],
+        "size_m": [
+          0.083335,
+          0.08,
+          0.05946
+        ],
+        "volume_m3": 9.274120236145047e-05,
+        "mass_kg": 0.25455883074004093,
+        "surface_area_m2": 0.073987631799819,
+        "body_count": 19,
+        "mass_by_material_kg": {
+          "aluminium_6063": 0.23857843235857407,
+          "epoxy_mold_compound": 0.005687950188162195,
+          "copper": 0.006772201577665654,
+          "alumina": 0.0007764978448083342,
+          "nylon_pa66": 0.00010764379445071994,
+          "steel": 0.0026361049763798674
+        }
+      },
+      "check_summary": {
+        "status": "review",
+        "interference_count": 0,
+        "allowed_overlap_count": 0,
+        "contact_count": 26,
+        "keepout_violation_count": 0,
+        "envelope_intrusion_count": 0,
+        "fit_failures": 0,
+        "clearance_pairs": {
+          "pass": 0,
+          "fail": 0,
+          "review": 1,
+          "no_bodies": 0
+        },
+        "unassigned_conductor_count": 0,
+        "bodies_checked": 19,
+        "note": "required clearance/creepage values are caller inputs; no standard compliance is asserted"
+      },
+      "warnings": [
+        "device Q1: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+        "device Q2: plastic body overhangs the plate edge (allowed; tab stays on the plate)"
+      ]
+    },
+    "coldplate": {
+      "status": "ok",
+      "params": "params\\coldplate.json",
+      "files": {
+        "fcstd": "dab_coldplate.FCStd",
+        "step": "dab_coldplate.step",
+        "step_keepouts": "dab_coldplate.keepouts.step",
+        "checks": "dab_coldplate.checks.json",
+        "render_png": "renders/dab_coldplate.png",
+        "metadata": "dab_coldplate.metadata.json"
+      },
+      "duration_s": 21.52,
+      "totals": {
+        "bbox_m": [
+          -0.13999999999999996,
+          -0.06,
+          -0.003,
+          0.12,
+          0.06,
+          0.02846
+        ],
+        "size_m": [
+          0.26,
+          0.12,
+          0.03146
+        ],
+        "volume_m3": 0.0004510423981615055,
+        "mass_kg": 1.1839552769396395,
+        "surface_area_m2": 0.1908515442811523,
+        "body_count": 77,
+        "mass_by_material_kg": {
+          "aluminium_6063": 1.0483131543392652,
+          "water_glycol_50": 0.0451040218664686,
+          "brass": 0.028839820559954255,
+          "epoxy_mold_compound": 0.02275180075264878,
+          "copper": 0.027088806310662607,
+          "alumina": 0.0031059913792333377,
+          "nylon_pa66": 0.0004305751778028807,
+          "steel": 0.008321106553601222
+        }
+      },
+      "check_summary": {
+        "status": "review",
+        "interference_count": 0,
+        "allowed_overlap_count": 0,
+        "contact_count": 121,
+        "keepout_violation_count": 0,
+        "envelope_intrusion_count": 0,
+        "fit_failures": 0,
+        "clearance_pairs": {
+          "pass": 1,
+          "fail": 0,
+          "review": 2,
+          "no_bodies": 0
+        },
+        "unassigned_conductor_count": 0,
+        "bodies_checked": 77,
+        "note": "required clearance/creepage values are caller inputs; no standard compliance is asserted"
+      },
+      "warnings": []
+    },
+    "assembly": {
+      "status": "ok",
+      "params": "params\\assembly.json",
+      "files": {
+        "fcstd": "dab_10kw_assembly.FCStd",
+        "step": "dab_10kw_assembly.step",
+        "step_keepouts": "dab_10kw_assembly.keepouts.step",
+        "checks": "dab_10kw_assembly.checks.json",
+        "render_png": "renders/dab_10kw_assembly.png",
+        "metadata": "dab_10kw_assembly.metadata.json"
+      },
+      "duration_s": 67.73,
+      "totals": {
+        "bbox_m": [
+          -0.22,
+          -0.12,
+          -0.035,
+          0.22,
+          0.12,
+          0.08159999999999999
+        ],
+        "size_m": [
+          0.44,
+          0.24,
+          0.1166
+        ],
+        "volume_m3": 0.0009674595709025398,
+        "mass_kg": 2.7888092640327753,
+        "surface_area_m2": 0.8932571264864584,
+        "body_count": 119,
+        "mass_by_material_kg": {
+          "aluminium_6063": 1.6977186008194225,
+          "epoxy_mold_compound": 0.02275180075264878,
+          "copper": 0.2658173521373167,
+          "alumina": 0.0031059913792333377,
+          "nylon_pa66": 0.048168326240652024,
+          "steel": 0.010544419905519468,
+          "ferrite_n87": 0.4221330583999998,
+          "bobbin_pet_gf": 0.02008837079145963,
+          "kapton": 0.01977842268261316,
+          "brass": 0.0276381613699562,
+          "stainless_steel": 0.03379199999999974,
+          "fr4": 0.21727275955394976
+        }
+      },
+      "check_summary": {
+        "status": "review",
+        "interference_count": 0,
+        "allowed_overlap_count": 0,
+        "contact_count": 177,
+        "keepout_violation_count": 0,
+        "envelope_intrusion_count": 0,
+        "fit_failures": 0,
+        "clearance_pairs": {
+          "pass": 2,
+          "fail": 0,
+          "review": 3,
+          "no_bodies": 0
+        },
+        "unassigned_conductor_count": 0,
+        "bodies_checked": 119,
+        "note": "required clearance/creepage values are caller inputs; no standard compliance is asserted"
+      },
+      "warnings": [
+        "hs_pri_a: device Q1: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+        "hs_pri_a: device Q2: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+        "hs_pri_b: device Q1: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+        "hs_pri_b: device Q2: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+        "hs_sec_a: device Q1: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+        "hs_sec_a: device Q2: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+        "hs_sec_b: device Q1: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+        "hs_sec_b: device Q2: plastic body overhangs the plate edge (allowed; tab stays on the plate)"
+      ]
+    }
+  },
+  "freecad": {
+    "executable": "C:\\Users\\Zhongnan Qian\\AppData\\Local\\Programs\\FreeCAD 1.1\\bin\\freecadcmd.exe",
+    "version": "FreeCAD 1.1.4 Revision: 20260928 (Git shallow)"
+  }
+}

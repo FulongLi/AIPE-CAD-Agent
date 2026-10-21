@@ -1,0 +1,1006 @@
+{
+  "units": "SI (m, m^3)",
+  "config": {
+    "interference": {
+      "enabled": true,
+      "min_overlap_volume": 1e-12
+    },
+    "clearance_pairs": [
+      {
+        "net_a": "primary",
+        "net_b": "secondary",
+        "required_clearance": 0.0055,
+        "required_creepage": 0.008,
+        "note": "illustrative caller-supplied values for the 800 V primary to 400 V secondary isolation; not a standard assertion"
+      },
+      {
+        "net_a": "primary",
+        "net_b": "pe",
+        "required_clearance": 0.002,
+        "required_creepage": 0.004,
+        "note": "illustrative functional-insulation value to earthed core/mounting parts"
+      },
+      {
+        "net_a": "secondary",
+        "net_b": "pe",
+        "required_clearance": 0.002,
+        "required_creepage": 0.004
+      }
+    ],
+    "fit_pairs": [
+      {
+        "a": "bobbin",
+        "b": "core_lower",
+        "expected_gap": 0.0003,
+        "tolerance": 1e-06,
+        "note": "bobbin tube to centre leg / flange to outer leg clearance"
+      },
+      {
+        "a": "bobbin",
+        "b": "core_upper",
+        "expected_gap": 0.0003,
+        "tolerance": 1e-06
+      },
+      {
+        "a": "outer_wrap",
+        "b": "core_lower",
+        "expected_gap": 0.0011500000000000013,
+        "tolerance": 1e-06,
+        "note": "outermost winding/wrap to the outer legs"
+      }
+    ]
+  },
+  "interference": [],
+  "contacts": [
+    {
+      "a": "core_lower",
+      "b": "core_upper"
+    },
+    {
+      "a": "core_lower",
+      "b": "clip_neg_y"
+    },
+    {
+      "a": "core_lower",
+      "b": "clip_pos_y"
+    },
+    {
+      "a": "core_upper",
+      "b": "clip_neg_y"
+    },
+    {
+      "a": "core_upper",
+      "b": "clip_pos_y"
+    },
+    {
+      "a": "bobbin",
+      "b": "primary"
+    },
+    {
+      "a": "bobbin",
+      "b": "barrier_primary_secondary"
+    },
+    {
+      "a": "bobbin",
+      "b": "outer_wrap"
+    },
+    {
+      "a": "bobbin",
+      "b": "margin_primary_lower"
+    },
+    {
+      "a": "bobbin",
+      "b": "margin_primary_upper"
+    },
+    {
+      "a": "bobbin",
+      "b": "margin_secondary_lower"
+    },
+    {
+      "a": "bobbin",
+      "b": "margin_secondary_upper"
+    },
+    {
+      "a": "bobbin",
+      "b": "pin_primary_1"
+    },
+    {
+      "a": "bobbin",
+      "b": "pin_primary_2"
+    },
+    {
+      "a": "bobbin",
+      "b": "pin_secondary_1"
+    },
+    {
+      "a": "bobbin",
+      "b": "pin_secondary_2"
+    },
+    {
+      "a": "primary",
+      "b": "barrier_primary_secondary"
+    },
+    {
+      "a": "primary",
+      "b": "margin_primary_lower"
+    },
+    {
+      "a": "primary",
+      "b": "margin_primary_upper"
+    },
+    {
+      "a": "secondary",
+      "b": "barrier_primary_secondary"
+    },
+    {
+      "a": "secondary",
+      "b": "outer_wrap"
+    },
+    {
+      "a": "secondary",
+      "b": "margin_secondary_lower"
+    },
+    {
+      "a": "secondary",
+      "b": "margin_secondary_upper"
+    },
+    {
+      "a": "barrier_primary_secondary",
+      "b": "margin_primary_lower"
+    },
+    {
+      "a": "barrier_primary_secondary",
+      "b": "margin_primary_upper"
+    },
+    {
+      "a": "barrier_primary_secondary",
+      "b": "margin_secondary_lower"
+    },
+    {
+      "a": "barrier_primary_secondary",
+      "b": "margin_secondary_upper"
+    },
+    {
+      "a": "outer_wrap",
+      "b": "margin_secondary_lower"
+    },
+    {
+      "a": "outer_wrap",
+      "b": "margin_secondary_upper"
+    },
+    {
+      "a": "clip_neg_y",
+      "b": "base_plate"
+    },
+    {
+      "a": "clip_pos_y",
+      "b": "base_plate"
+    }
+  ],
+  "keepout_violations": [],
+  "envelope_intrusions": [],
+  "fit": [
+    {
+      "a": "bobbin",
+      "b": "core_lower",
+      "distance_m": 0.00029999999999999894,
+      "expected_gap_m": 0.0003,
+      "tolerance_m": 1e-06,
+      "min_gap_m": null,
+      "max_gap_m": null,
+      "points_m": [
+        [
+          0.01,
+          -0.014,
+          0.0
+        ],
+        [
+          0.01,
+          -0.0137,
+          0.0
+        ]
+      ],
+      "status": "pass",
+      "note": "bobbin tube to centre leg / flange to outer leg clearance"
+    },
+    {
+      "a": "bobbin",
+      "b": "core_upper",
+      "distance_m": 0.00029999999999999894,
+      "expected_gap_m": 0.0003,
+      "tolerance_m": 1e-06,
+      "min_gap_m": null,
+      "max_gap_m": null,
+      "points_m": [
+        [
+          0.01,
+          -0.014,
+          0.0
+        ],
+        [
+          0.01,
+          -0.0137,
+          0.0
+        ]
+      ],
+      "status": "pass",
+      "note": null
+    },
+    {
+      "a": "outer_wrap",
+      "b": "core_lower",
+      "distance_m": 0.0011499999999999987,
+      "expected_gap_m": 0.0011500000000000013,
+      "tolerance_m": 1e-06,
+      "min_gap_m": null,
+      "max_gap_m": null,
+      "points_m": [
+        [
+          -0.020950000000000003,
+          -0.0137,
+          0.0
+        ],
+        [
+          -0.0221,
+          -0.0137,
+          0.0
+        ]
+      ],
+      "status": "pass",
+      "note": "outermost winding/wrap to the outer legs"
+    }
+  ],
+  "clearance": [
+    {
+      "net_a": "primary",
+      "net_b": "secondary",
+      "required_clearance_m": 0.0055,
+      "required_creepage_m": 0.008,
+      "note": "illustrative caller-supplied values for the 800 V primary to 400 V secondary isolation; not a standard assertion",
+      "bodies_a": 3,
+      "bodies_b": 3,
+      "status": "review",
+      "message": "1 conductor pair(s) are separated only by solid insulation thinner than the requirement and no one-bend air path was found; thinnest: 0.500 mm between primary and secondary through barrier_primary_secondary. The air/creepage path along the insulation surfaces is not traced - review manually. Shortest evaluated air path: 55.100 mm (pin_primary_1 - pin_secondary_1)",
+      "min_air_clearance_m": 0.0551,
+      "governing_path": {
+        "a": "pin_primary_1",
+        "b": "pin_secondary_1",
+        "distance_m": 0.0551,
+        "points_m": [
+          [
+            -0.0025,
+            -0.02755,
+            0.0337
+          ],
+          [
+            -0.0025,
+            0.02755,
+            0.0337
+          ]
+        ],
+        "path": "straight",
+        "length_m": 0.0551
+      },
+      "min_direct_distance": {
+        "a": "primary",
+        "b": "secondary",
+        "distance_m": 0.000499999999999997,
+        "points_m": [
+          [
+            -0.01765,
+            -0.014500000000000004,
+            0.0162
+          ],
+          [
+            -0.01815,
+            -0.014500000000000004,
+            0.0162
+          ]
+        ]
+      },
+      "min_through_insulation_m": 0.006363175307973213,
+      "air_paths": [
+        {
+          "a": "pin_primary_1",
+          "b": "pin_secondary_1",
+          "distance_m": 0.0551,
+          "points_m": [
+            [
+              -0.0025,
+              -0.02755,
+              0.0337
+            ],
+            [
+              -0.0025,
+              0.02755,
+              0.0337
+            ]
+          ],
+          "path": "straight",
+          "length_m": 0.0551
+        },
+        {
+          "a": "pin_primary_2",
+          "b": "pin_secondary_2",
+          "distance_m": 0.0551,
+          "points_m": [
+            [
+              0.0025,
+              -0.02755,
+              0.0337
+            ],
+            [
+              0.0025,
+              0.02755,
+              0.0337
+            ]
+          ],
+          "path": "straight",
+          "length_m": 0.0551
+        },
+        {
+          "a": "pin_primary_1",
+          "b": "pin_secondary_2",
+          "distance_m": 0.05532041886505237,
+          "points_m": [
+            [
+              -0.0024340025984513386,
+              -0.02755290941446915,
+              0.0337
+            ],
+            [
+              0.0024340025984513386,
+              0.02755290941446915,
+              0.0337
+            ]
+          ],
+          "path": "straight",
+          "length_m": 0.05532041886505237
+        },
+        {
+          "a": "pin_primary_2",
+          "b": "pin_secondary_1",
+          "distance_m": 0.05532041886505237,
+          "points_m": [
+            [
+              0.0024340025984513386,
+              -0.02755290941446915,
+              0.0337
+            ],
+            [
+              -0.0024340025984513386,
+              0.02755290941446915,
+              0.0337
+            ]
+          ],
+          "path": "straight",
+          "length_m": 0.05532041886505237
+        }
+      ],
+      "through_insulation_ge_required": [
+        {
+          "a": "pin_primary_1",
+          "b": "secondary",
+          "distance_m": 0.006363175307973213,
+          "points_m": [
+            [
+              -0.0025,
+              -0.02755,
+              0.0217
+            ],
+            [
+              -0.0025,
+              -0.02435,
+              0.0162
+            ]
+          ],
+          "insulators": [
+            "bobbin"
+          ]
+        },
+        {
+          "a": "pin_primary_2",
+          "b": "secondary",
+          "distance_m": 0.006363175307973213,
+          "points_m": [
+            [
+              0.0025,
+              -0.02755,
+              0.0217
+            ],
+            [
+              0.0025,
+              -0.02435,
+              0.0162
+            ]
+          ],
+          "insulators": [
+            "bobbin"
+          ]
+        },
+        {
+          "a": "primary",
+          "b": "pin_secondary_1",
+          "distance_m": 0.008287943049997387,
+          "points_m": [
+            [
+              -0.0025,
+              0.02135,
+              0.0162
+            ],
+            [
+              -0.0025,
+              0.02755,
+              0.0217
+            ]
+          ],
+          "insulators": [
+            "margin_secondary_upper",
+            "outer_wrap",
+            "bobbin"
+          ]
+        },
+        {
+          "a": "primary",
+          "b": "pin_secondary_2",
+          "distance_m": 0.008287943049997387,
+          "points_m": [
+            [
+              0.0025,
+              0.02135,
+              0.0162
+            ],
+            [
+              0.0025,
+              0.02755,
+              0.0217
+            ]
+          ],
+          "insulators": [
+            "margin_secondary_upper",
+            "outer_wrap",
+            "bobbin"
+          ]
+        }
+      ],
+      "solid_insulation_only": [
+        {
+          "a": "primary",
+          "b": "secondary",
+          "distance_m": 0.000499999999999997,
+          "points_m": [
+            [
+              -0.01765,
+              -0.014500000000000004,
+              0.0162
+            ],
+            [
+              -0.01815,
+              -0.014500000000000004,
+              0.0162
+            ]
+          ],
+          "insulators": [
+            "barrier_primary_secondary"
+          ]
+        }
+      ],
+      "contacts": [],
+      "body_pairs_evaluated": 9,
+      "creepage_status": "not_evaluated",
+      "creepage_note": "creepage is only compared against the evaluated air path; surface paths along insulators are not traced"
+    },
+    {
+      "net_a": "primary",
+      "net_b": "pe",
+      "required_clearance_m": 0.002,
+      "required_creepage_m": 0.004,
+      "note": "illustrative functional-insulation value to earthed core/mounting parts",
+      "bodies_a": 3,
+      "bodies_b": 3,
+      "status": "pass",
+      "message": "minimum air clearance 15.850 mm between pin_primary_1 and clip_neg_y",
+      "min_air_clearance_m": 0.015850000000000003,
+      "governing_path": {
+        "a": "pin_primary_1",
+        "b": "clip_neg_y",
+        "distance_m": 0.015850000000000003,
+        "points_m": [
+          [
+            -0.0025,
+            -0.02755,
+            0.0326
+          ],
+          [
+            -0.0025,
+            -0.011699999999999999,
+            0.0326
+          ]
+        ],
+        "path": "straight",
+        "length_m": 0.015850000000000003
+      },
+      "min_direct_distance": {
+        "a": "primary",
+        "b": "clip_neg_y",
+        "distance_m": 0.014949999999999996,
+        "points_m": [
+          [
+            -0.01765,
+            -0.011699999999999999,
+            0.0162
+          ],
+          [
+            -0.0326,
+            -0.011699999999999999,
+            0.016199999999999996
+          ]
+        ]
+      },
+      "min_through_insulation_m": 0.014949999999999996,
+      "air_paths": [
+        {
+          "a": "pin_primary_1",
+          "b": "clip_neg_y",
+          "distance_m": 0.015850000000000003,
+          "points_m": [
+            [
+              -0.0025,
+              -0.02755,
+              0.0326
+            ],
+            [
+              -0.0025,
+              -0.011699999999999999,
+              0.0326
+            ]
+          ],
+          "path": "straight",
+          "length_m": 0.015850000000000003
+        },
+        {
+          "a": "pin_primary_2",
+          "b": "clip_neg_y",
+          "distance_m": 0.015850000000000003,
+          "points_m": [
+            [
+              0.0025,
+              -0.02755,
+              0.0326
+            ],
+            [
+              0.0025,
+              -0.011699999999999999,
+              0.0326
+            ]
+          ],
+          "path": "straight",
+          "length_m": 0.015850000000000003
+        }
+      ],
+      "through_insulation_ge_required": [
+        {
+          "a": "primary",
+          "b": "clip_neg_y",
+          "distance_m": 0.014949999999999996,
+          "points_m": [
+            [
+              -0.01765,
+              -0.011699999999999999,
+              0.0162
+            ],
+            [
+              -0.0326,
+              -0.011699999999999999,
+              0.016199999999999996
+            ]
+          ],
+          "insulators": [
+            "secondary",
+            "margin_secondary_upper",
+            "core_upper"
+          ]
+        },
+        {
+          "a": "primary",
+          "b": "clip_pos_y",
+          "distance_m": 0.014949999999999996,
+          "points_m": [
+            [
+              -0.01765,
+              0.0016999999999999993,
+              0.0162
+            ],
+            [
+              -0.0326,
+              0.0017000000000000001,
+              0.016199999999999996
+            ]
+          ],
+          "insulators": [
+            "secondary",
+            "margin_secondary_upper",
+            "core_upper"
+          ]
+        },
+        {
+          "a": "primary",
+          "b": "base_plate",
+          "distance_m": 0.0172,
+          "points_m": [
+            [
+              0.011799999999999998,
+              -0.0137,
+              -0.0162
+            ],
+            [
+              0.011799999999999998,
+              -0.0137,
+              -0.0334
+            ]
+          ],
+          "insulators": [
+            "bobbin",
+            "margin_primary_lower"
+          ]
+        },
+        {
+          "a": "pin_primary_1",
+          "b": "clip_pos_y",
+          "distance_m": 0.02925,
+          "points_m": [
+            [
+              -0.0025,
+              -0.02755,
+              0.0326
+            ],
+            [
+              -0.0025,
+              0.0017000000000000001,
+              0.0326
+            ]
+          ],
+          "insulators": [
+            "core_upper",
+            "clip_neg_y"
+          ]
+        },
+        {
+          "a": "pin_primary_2",
+          "b": "clip_pos_y",
+          "distance_m": 0.02925,
+          "points_m": [
+            [
+              0.0025,
+              -0.02755,
+              0.0326
+            ],
+            [
+              0.0025,
+              0.0017000000000000001,
+              0.0326
+            ]
+          ],
+          "insulators": [
+            "core_upper",
+            "clip_neg_y"
+          ]
+        },
+        {
+          "a": "pin_primary_1",
+          "b": "base_plate",
+          "distance_m": 0.056814016756430795,
+          "points_m": [
+            [
+              -0.0025,
+              -0.02755,
+              0.0217
+            ],
+            [
+              -0.0025,
+              -0.0137,
+              -0.0334
+            ]
+          ],
+          "insulators": [
+            "secondary",
+            "primary",
+            "margin_primary_lower"
+          ]
+        },
+        {
+          "a": "pin_primary_2",
+          "b": "base_plate",
+          "distance_m": 0.056814016756430795,
+          "points_m": [
+            [
+              0.0025,
+              -0.02755,
+              0.0217
+            ],
+            [
+              0.0025,
+              -0.0137,
+              -0.0334
+            ]
+          ],
+          "insulators": [
+            "secondary",
+            "primary",
+            "margin_primary_lower"
+          ]
+        }
+      ],
+      "solid_insulation_only": [],
+      "contacts": [],
+      "body_pairs_evaluated": 9,
+      "creepage_status": "satisfied_by_clearance",
+      "creepage_note": "creepage is only compared against the evaluated air path; surface paths along insulators are not traced"
+    },
+    {
+      "net_a": "secondary",
+      "net_b": "pe",
+      "required_clearance_m": 0.002,
+      "required_creepage_m": 0.004,
+      "note": null,
+      "bodies_a": 3,
+      "bodies_b": 3,
+      "status": "pass",
+      "message": "minimum air clearance 15.850 mm between pin_secondary_1 and clip_pos_y",
+      "min_air_clearance_m": 0.015850000000000003,
+      "governing_path": {
+        "a": "pin_secondary_1",
+        "b": "clip_pos_y",
+        "distance_m": 0.015850000000000003,
+        "points_m": [
+          [
+            -0.0025,
+            0.02755,
+            0.0326
+          ],
+          [
+            -0.0025,
+            0.011699999999999999,
+            0.0326
+          ]
+        ],
+        "path": "straight",
+        "length_m": 0.015850000000000003
+      },
+      "min_direct_distance": {
+        "a": "secondary",
+        "b": "clip_neg_y",
+        "distance_m": 0.011949999999999995,
+        "points_m": [
+          [
+            -0.020649999999999998,
+            -0.011699999999999999,
+            0.0162
+          ],
+          [
+            -0.0326,
+            -0.011699999999999999,
+            0.016199999999999996
+          ]
+        ]
+      },
+      "min_through_insulation_m": 0.011949999999999995,
+      "air_paths": [
+        {
+          "a": "pin_secondary_1",
+          "b": "clip_pos_y",
+          "distance_m": 0.015850000000000003,
+          "points_m": [
+            [
+              -0.0025,
+              0.02755,
+              0.0326
+            ],
+            [
+              -0.0025,
+              0.011699999999999999,
+              0.0326
+            ]
+          ],
+          "path": "straight",
+          "length_m": 0.015850000000000003
+        },
+        {
+          "a": "pin_secondary_2",
+          "b": "clip_pos_y",
+          "distance_m": 0.015850000000000003,
+          "points_m": [
+            [
+              0.0025,
+              0.02755,
+              0.0326
+            ],
+            [
+              0.0025,
+              0.011699999999999999,
+              0.0326
+            ]
+          ],
+          "path": "straight",
+          "length_m": 0.015850000000000003
+        }
+      ],
+      "through_insulation_ge_required": [
+        {
+          "a": "secondary",
+          "b": "clip_neg_y",
+          "distance_m": 0.011949999999999995,
+          "points_m": [
+            [
+              -0.020649999999999998,
+              -0.011699999999999999,
+              0.0162
+            ],
+            [
+              -0.0326,
+              -0.011699999999999999,
+              0.016199999999999996
+            ]
+          ],
+          "insulators": [
+            "core_upper"
+          ]
+        },
+        {
+          "a": "secondary",
+          "b": "clip_pos_y",
+          "distance_m": 0.011949999999999995,
+          "points_m": [
+            [
+              -0.020649999999999998,
+              0.0016999999999999993,
+              0.0162
+            ],
+            [
+              -0.0326,
+              0.0017000000000000001,
+              0.016199999999999996
+            ]
+          ],
+          "insulators": [
+            "core_upper"
+          ]
+        },
+        {
+          "a": "secondary",
+          "b": "base_plate",
+          "distance_m": 0.0172,
+          "points_m": [
+            [
+              0.01815,
+              -0.0137,
+              -0.0162
+            ],
+            [
+              0.01815,
+              -0.0137,
+              -0.0334
+            ]
+          ],
+          "insulators": [
+            "barrier_primary_secondary",
+            "margin_secondary_lower",
+            "bobbin"
+          ]
+        },
+        {
+          "a": "pin_secondary_1",
+          "b": "clip_neg_y",
+          "distance_m": 0.02925,
+          "points_m": [
+            [
+              -0.0025,
+              0.02755,
+              0.0326
+            ],
+            [
+              -0.0025,
+              -0.0016999999999999993,
+              0.0326
+            ]
+          ],
+          "insulators": [
+            "core_upper",
+            "clip_pos_y"
+          ]
+        },
+        {
+          "a": "pin_secondary_2",
+          "b": "clip_neg_y",
+          "distance_m": 0.02925,
+          "points_m": [
+            [
+              0.0025,
+              0.02755,
+              0.0326
+            ],
+            [
+              0.0025,
+              -0.0016999999999999993,
+              0.0326
+            ]
+          ],
+          "insulators": [
+            "core_upper",
+            "clip_pos_y"
+          ]
+        },
+        {
+          "a": "pin_secondary_1",
+          "b": "base_plate",
+          "distance_m": 0.056814016756430795,
+          "points_m": [
+            [
+              -0.0025,
+              0.02755,
+              0.0217
+            ],
+            [
+              -0.0025,
+              0.0137,
+              -0.0334
+            ]
+          ],
+          "insulators": [
+            "secondary",
+            "primary",
+            "margin_primary_lower"
+          ]
+        },
+        {
+          "a": "pin_secondary_2",
+          "b": "base_plate",
+          "distance_m": 0.056814016756430795,
+          "points_m": [
+            [
+              0.0025,
+              0.02755,
+              0.0217
+            ],
+            [
+              0.0025,
+              0.0137,
+              -0.0334
+            ]
+          ],
+          "insulators": [
+            "secondary",
+            "primary",
+            "margin_primary_lower"
+          ]
+        }
+      ],
+      "solid_insulation_only": [],
+      "contacts": [],
+      "body_pairs_evaluated": 9,
+      "creepage_status": "satisfied_by_clearance",
+      "creepage_note": "creepage is only compared against the evaluated air path; surface paths along insulators are not traced"
+    }
+  ],
+  "unassigned_conductors": [],
+  "summary": {
+    "status": "review",
+    "interference_count": 0,
+    "allowed_overlap_count": 0,
+    "contact_count": 31,
+    "keepout_violation_count": 0,
+    "envelope_intrusion_count": 0,
+    "fit_failures": 0,
+    "clearance_pairs": {
+      "pass": 2,
+      "fail": 0,
+      "review": 1,
+      "no_bodies": 0
+    },
+    "unassigned_conductor_count": 0,
+    "bodies_checked": 18,
+    "note": "required clearance/creepage values are caller inputs; no standard compliance is asserted"
+  },
+  "kind": "transformer",
+  "name": "dab_transformer"
+}

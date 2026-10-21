@@ -1,0 +1,98 @@
+{
+  "kind": "transformer",
+  "name": "dab_transformer",
+  "description": "10 kW DAB transformer (800 V : 400 V, 100 kHz): E65/32/27 ferrite pair, 21:10 turns, litz primary, copper-foil secondary, polyimide inter-winding barrier and margins, pin terminals, clips and base plate. Illustrative parametric model, not a manufacturable design.",
+  "core": {
+    "shape": "E",
+    "total_width": 0.0652,
+    "half_height": 0.0326,
+    "depth": 0.0274,
+    "window_height": 0.0222,
+    "inner_width": 0.0442,
+    "centre_leg_width": 0.020,
+    "air_gap": 0.0,
+    "material": "ferrite_n87",
+    "net": "pe",
+    "reference": "TDK E 65/32/27 core (B66387), data sheet https://www.tdk-electronics.tdk.com/inf/80/db/fer/e_65_32_27.pdf (Oct 2024): Sigma l/A 0.27 mm^-1, le 147 mm, Ae 535 mm^2, Amin 529 mm^2, Ve 78650 mm^3, approx. 394 g/set. Nominal outline letters A=65.2, B=32.6, C=44.2, D=22.2, E=20.0, F=27.4 mm are transcribed from the IEC 62317-8 E65/32/27 outline reproduced in that drawing and must be verified against the current revision; the model is fully parametric."
+  },
+  "bobbin": {
+    "wall_thickness": 0.0015,
+    "flange_thickness": 0.0015,
+    "core_clearance": 0.0003,
+    "window_clearance": 0.0005,
+    "pin_strip_width": 0.006,
+    "corner_radius": 0.001,
+    "material": "bobbin_pet_gf"
+  },
+  "windings": [
+    {
+      "name": "primary",
+      "turns": 21,
+      "net": "primary",
+      "margin": 0.004,
+      "terminal_count": 2,
+      "terminal_side": "-y",
+      "conductor": {
+        "type": "litz",
+        "outer_diameter": 0.0029,
+        "strand_count": 420,
+        "strand_diameter": 0.0001,
+        "insulation_thickness": 0.00005,
+        "fill_factor": 0.40
+      }
+    },
+    {
+      "name": "secondary",
+      "turns": 10,
+      "net": "secondary",
+      "margin": 0.004,
+      "terminal_count": 2,
+      "terminal_side": "+y",
+      "conductor": {
+        "type": "foil",
+        "foil_thickness": 0.0002,
+        "insulation_thickness": 0.00005
+      }
+    }
+  ],
+  "insulation": {
+    "inter_winding_barrier": 0.0005,
+    "outer_wrap": 0.0003,
+    "fill_margins": true,
+    "material": "kapton"
+  },
+  "terminals": {
+    "style": "pin",
+    "diameter": 0.0015,
+    "length": 0.012,
+    "pitch": 0.005,
+    "flange": "top",
+    "direction": "+z",
+    "material": "brass"
+  },
+  "mounting": {
+    "clips": true,
+    "clip_thickness": 0.0008,
+    "clip_width": 0.010,
+    "clip_inset": 0.002,
+    "clip_material": "stainless_steel",
+    "base_plate": true,
+    "plate_thickness": 0.002,
+    "plate_margin_x": 0.012,
+    "hole_diameter": 0.0045,
+    "hole_inset": 0.006,
+    "plate_material": "aluminium_6063",
+    "net": "pe"
+  },
+  "clearance_envelope_margin": 0.005,
+  "checks": {
+    "interference": {"enabled": true, "min_overlap_volume": 1e-12},
+    "clearance_pairs": [
+      {"net_a": "primary", "net_b": "secondary", "required_clearance": 0.0055, "required_creepage": 0.008,
+       "note": "illustrative caller-supplied values for the 800 V primary to 400 V secondary isolation; not a standard assertion"},
+      {"net_a": "primary", "net_b": "pe", "required_clearance": 0.002, "required_creepage": 0.004,
+       "note": "illustrative functional-insulation value to earthed core/mounting parts"},
+      {"net_a": "secondary", "net_b": "pe", "required_clearance": 0.002, "required_creepage": 0.004}
+    ]
+  }
+}
