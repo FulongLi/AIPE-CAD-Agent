@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aipe-cad"
+version = "0.1.0"
+description = "AIPE CAD Agent: parametric FreeCAD geometry (transformer, heat sink, cold plate, converter assembly) with interference and clearance checks for power-electronics converters"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "AIPE contributors"}]
+keywords = ["FreeCAD", "CAD", "power electronics", "transformer", "heat sink", "cold plate", "STEP"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+# The orchestration layer is deliberately light: parameter models and derived
+# rules are pure standard-library Python so that they can also be imported by
+# the Python interpreter embedded in freecadcmd.
+dependencies = [
+    "jsonschema>=4.18",
+]
+
+[project.optional-dependencies]
+cadquery = ["cadquery>=2.4"]
+dev = ["pytest>=7", "pyyaml>=6", "jsonschema[format]>=4.18"]
+
+[project.scripts]
+aipe-cad = "aipe_cad.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/FulongLi/AIPE-CAD-Agent"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+aipe_cad = ["schemas/*.json", "freecad/*.py", "data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "freecad: spawns freecadcmd (FreeCAD headless); skipped automatically when FreeCAD is not found",
+    "cadquery: requires the optional cadquery package; skipped automatically when it is not installed",
+]

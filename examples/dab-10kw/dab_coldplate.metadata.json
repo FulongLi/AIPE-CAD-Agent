@@ -1,0 +1,3721 @@
+{
+  "schema": "aipe-cad-metadata/0.1",
+  "kind": "coldplate",
+  "name": "dab_coldplate",
+  "units": {
+    "length": "m",
+    "area": "m^2",
+    "volume": "m^3",
+    "mass": "kg",
+    "note": "FreeCAD geometry is in mm; converted here"
+  },
+  "generator": {
+    "package": "aipe_cad",
+    "freecad_version": "1.1.4"
+  },
+  "files": {
+    "fcstd": "dab_coldplate.FCStd",
+    "step": "dab_coldplate.step",
+    "step_keepouts": "dab_coldplate.keepouts.step",
+    "checks": "dab_coldplate.checks.json",
+    "render_png": "renders/dab_coldplate.png",
+    "metadata": "dab_coldplate.metadata.json"
+  },
+  "totals": {
+    "bbox_m": [
+      -0.13999999999999996,
+      -0.06,
+      -0.003,
+      0.12,
+      0.06,
+      0.02846
+    ],
+    "size_m": [
+      0.26,
+      0.12,
+      0.03146
+    ],
+    "volume_m3": 0.0004510423981615055,
+    "mass_kg": 1.1839552769396395,
+    "surface_area_m2": 0.1908515442811523,
+    "body_count": 77,
+    "mass_by_material_kg": {
+      "aluminium_6063": 1.0483131543392652,
+      "water_glycol_50": 0.0451040218664686,
+      "brass": 0.028839820559954255,
+      "epoxy_mold_compound": 0.02275180075264878,
+      "copper": 0.027088806310662607,
+      "alumina": 0.0031059913792333377,
+      "nylon_pa66": 0.0004305751778028807,
+      "steel": 0.008321106553601222
+    }
+  },
+  "bodies": [
+    {
+      "name": "plate",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "aluminium_6063",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 2700.0,
+      "volume_m3": 0.00030214923077007816,
+      "surface_area_m2": 0.07800529622128964,
+      "mass_kg": 0.815802923079211,
+      "bbox_m": [
+        -0.12,
+        -0.06,
+        0.0,
+        0.12,
+        0.06,
+        0.012
+      ],
+      "centre_of_mass_m": [
+        0.00021071290135870742,
+        -5.927985067971377e-19,
+        0.0064164549932513365
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 0.00030214923077007805,
+      "analytic_relative_error": 3.588300290297722e-16,
+      "note": "cold plate with boolean-cut serpentine channel"
+    },
+    {
+      "name": "coolant",
+      "group": "dab_coldplate",
+      "role": "fluid",
+      "material": "water_glycol_50",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1070.0,
+      "volume_m3": 4.2153291463989345e-05,
+      "surface_area_m2": 0.024756105855366226,
+      "mass_kg": 0.0451040218664686,
+      "bbox_m": [
+        -0.12,
+        -0.043,
+        0.0,
+        0.105,
+        0.043,
+        0.006
+      ],
+      "centre_of_mass_m": [
+        -0.0015103622717873857,
+        1.639767499384755e-18,
+        0.003000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.215329146398934e-05,
+      "analytic_relative_error": 1.6075289361029426e-16,
+      "note": "fluid domain (channel + port bores)"
+    },
+    {
+      "name": "cover",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "aluminium_6063",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 2700.0,
+      "volume_m3": 8.611490046668675e-05,
+      "surface_area_m2": 0.059777278759594744,
+      "mass_kg": 0.23251023126005424,
+      "bbox_m": [
+        -0.12,
+        -0.06,
+        -0.003,
+        0.12,
+        0.06,
+        0.0
+      ],
+      "centre_of_mass_m": [
+        -7.6042146217172895e-19,
+        -4.2245636787318275e-19,
+        -0.0014999999999999998
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 8.611490046668673e-05,
+      "analytic_relative_error": 3.1475452175228506e-16
+    },
+    {
+      "name": "inlet_boss",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "brass",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 1.6964600329384857e-06,
+      "surface_area_m2": 0.0013006193585861727,
+      "mass_kg": 0.014419910279977128,
+      "bbox_m": [
+        -0.13999999999999996,
+        -0.0449981350920049,
+        -0.003,
+        -0.12,
+        -0.0330018649079951,
+        0.009
+      ],
+      "centre_of_mass_m": [
+        -0.12999999999999995,
+        -0.039,
+        0.0029999999999999988
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.6964600329384884e-06,
+      "analytic_relative_error": 1.6227067099294824e-15
+    },
+    {
+      "name": "outlet_boss",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "brass",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 1.6964600329384857e-06,
+      "surface_area_m2": 0.0013006193585861727,
+      "mass_kg": 0.014419910279977128,
+      "bbox_m": [
+        -0.13999999999999996,
+        0.0330018649079951,
+        -0.003,
+        -0.12,
+        0.0449981350920049,
+        0.009
+      ],
+      "centre_of_mass_m": [
+        -0.12999999999999995,
+        0.039,
+        0.0029999999999999988
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.6964600329384884e-06,
+      "analytic_relative_error": 1.6227067099294824e-15
+    },
+    {
+      "name": "Q1.body",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847881e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.0028439750940810974,
+      "bbox_m": [
+        -0.09797,
+        0.018265,
+        0.01225,
+        -0.08203,
+        0.041735,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        -0.09,
+        0.03089476136144604,
+        0.015148821048947375
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 0.0
+    },
+    {
+      "name": "Q1.tab",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.3068103446794927e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.0029629020688328256,
+      "bbox_m": [
+        -0.0968,
+        0.018265,
+        0.01225,
+        -0.0832,
+        0.035214999999999996,
+        0.01375
+      ],
+      "centre_of_mass_m": [
+        -0.09000000000000001,
+        0.026864424072705097,
+        0.013000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 3.2018503443096513e-16
+    },
+    {
+      "name": "Q1.pad",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465825e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.00038824892240416715,
+      "bbox_m": [
+        -0.0993,
+        0.015764999999999998,
+        0.012,
+        -0.08070000000000001,
+        0.037715000000000005,
+        0.01225
+      ],
+      "centre_of_mass_m": [
+        -0.09,
+        0.02680888375254988,
+        0.012124999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 1.3294581708993542e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "Q1.lead_drain",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        -0.08552,
+        0.041735,
+        0.01446,
+        -0.08431999999999999,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.08492000000000001,
+        0.04421548780487806,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q1.lead_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999936e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999943,
+      "bbox_m": [
+        -0.0906,
+        0.041735,
+        0.01446,
+        -0.0894,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.09000000000000001,
+        0.04421548780487805,
+        0.020479512195121955
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q1.lead_driver_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        -0.09314,
+        0.041735,
+        0.01446,
+        -0.09194,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.09254000000000001,
+        0.04421548780487806,
+        0.020479512195121955
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q1.lead_gate",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999969e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999973,
+      "bbox_m": [
+        -0.09567999999999999,
+        0.041735,
+        0.01446,
+        -0.09448000000000001,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.09508,
+        0.044215487804878044,
+        0.020479512195121955
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q1.bushing",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.7212190548561467e-08,
+      "surface_area_m2": 0.00020318753141916572,
+      "mass_kg": 5.3821897225360074e-05,
+      "bbox_m": [
+        -0.09349891213700286,
+        0.020515000000000002,
+        0.012,
+        -0.08650108786299714,
+        0.027515,
+        0.01827
+      ],
+      "centre_of_mass_m": [
+        -0.09,
+        0.024015,
+        0.01672109108252956
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 2.522950255509075e-15,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "Q1.screw",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.3250169671339522e-07,
+      "surface_area_m2": 0.00018571524971696058,
+      "mass_kg": 0.0010401383192001526,
+      "bbox_m": [
+        -0.09274914525050225,
+        0.021265,
+        0.0085,
+        -0.08725085474949776,
+        0.026765,
+        0.02127
+      ],
+      "centre_of_mass_m": [
+        -0.09,
+        0.024015,
+        0.0170049337191713
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.3250169671339528e-07,
+      "analytic_relative_error": 3.995387267976157e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "Q2.body",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847881e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.0028439750940810974,
+      "bbox_m": [
+        -0.03797,
+        0.018265,
+        0.01225,
+        -0.02203,
+        0.041735,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        -0.03,
+        0.03089476136144604,
+        0.015148821048947374
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 0.0
+    },
+    {
+      "name": "Q2.tab",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.3068103446794927e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.0029629020688328256,
+      "bbox_m": [
+        -0.0368,
+        0.018265,
+        0.01225,
+        -0.0232,
+        0.035214999999999996,
+        0.01375
+      ],
+      "centre_of_mass_m": [
+        -0.030000000000000002,
+        0.026864424072705097,
+        0.013000000000000005
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 3.2018503443096513e-16
+    },
+    {
+      "name": "Q2.pad",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465825e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.00038824892240416715,
+      "bbox_m": [
+        -0.039299999999999995,
+        0.015764999999999998,
+        0.012,
+        -0.020700000000000003,
+        0.037715000000000005,
+        0.01225
+      ],
+      "centre_of_mass_m": [
+        -0.03,
+        0.02680888375254988,
+        0.012125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 1.3294581708993542e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "Q2.lead_drain",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999948e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999953,
+      "bbox_m": [
+        -0.02552,
+        0.041735,
+        0.01446,
+        -0.02432,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.024919999999999994,
+        0.044215487804878044,
+        0.02047951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q2.lead_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999961e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999965,
+      "bbox_m": [
+        -0.0306,
+        0.041735,
+        0.01446,
+        -0.0294,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.03,
+        0.044215487804878044,
+        0.020479512195121955
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q2.lead_driver_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999974e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999977,
+      "bbox_m": [
+        -0.03314,
+        0.041735,
+        0.01446,
+        -0.031939999999999996,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.03254,
+        0.04421548780487805,
+        0.02047951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q2.lead_gate",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        -0.035679999999999996,
+        0.041735,
+        0.01446,
+        -0.03448,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.03508000000000001,
+        0.044215487804878044,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q2.bushing",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.7212190548561467e-08,
+      "surface_area_m2": 0.00020318753141916572,
+      "mass_kg": 5.3821897225360074e-05,
+      "bbox_m": [
+        -0.03349891213700286,
+        0.020515000000000002,
+        0.012,
+        -0.026501087862997142,
+        0.027515,
+        0.01827
+      ],
+      "centre_of_mass_m": [
+        -0.030000000000000002,
+        0.024015,
+        0.016721091082529553
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 2.522950255509075e-15,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "Q2.screw",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.3250169671339522e-07,
+      "surface_area_m2": 0.00018571524971696058,
+      "mass_kg": 0.0010401383192001526,
+      "bbox_m": [
+        -0.032749145250502244,
+        0.021265,
+        0.0085,
+        -0.027250854749497753,
+        0.026765,
+        0.02127
+      ],
+      "centre_of_mass_m": [
+        -0.03,
+        0.024015,
+        0.01700493371917129
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.3250169671339528e-07,
+      "analytic_relative_error": 3.995387267976157e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "Q3.body",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847881e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.0028439750940810974,
+      "bbox_m": [
+        0.02203,
+        0.018265,
+        0.01225,
+        0.03797,
+        0.041735,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        0.03,
+        0.03089476136144604,
+        0.015148821048947375
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 0.0
+    },
+    {
+      "name": "Q3.tab",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.306810344679493e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.002962902068832826,
+      "bbox_m": [
+        0.0232,
+        0.018265,
+        0.01225,
+        0.0368,
+        0.035214999999999996,
+        0.01375
+      ],
+      "centre_of_mass_m": [
+        0.03,
+        0.026864424072705093,
+        0.013
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 1.6009251721548257e-16
+    },
+    {
+      "name": "Q3.pad",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465825e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.00038824892240416715,
+      "bbox_m": [
+        0.020700000000000003,
+        0.015764999999999994,
+        0.012,
+        0.039299999999999995,
+        0.037715000000000005,
+        0.01225
+      ],
+      "centre_of_mass_m": [
+        0.03,
+        0.02680888375254988,
+        0.012125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 1.3294581708993542e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "Q3.lead_drain",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999948e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999953,
+      "bbox_m": [
+        0.034480000000000004,
+        0.041735,
+        0.01446,
+        0.035679999999999996,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.03507999999999999,
+        0.04421548780487804,
+        0.02047951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q3.lead_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999961e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999965,
+      "bbox_m": [
+        0.029400000000000003,
+        0.041735,
+        0.01446,
+        0.030600000000000002,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.03,
+        0.044215487804878044,
+        0.020479512195121955
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q3.lead_driver_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999961e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999965,
+      "bbox_m": [
+        0.02686,
+        0.041735,
+        0.01446,
+        0.02806,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.027460000000000002,
+        0.044215487804878044,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q3.lead_gate",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.02432,
+        0.041735,
+        0.01446,
+        0.025520000000000004,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.024920000000000005,
+        0.044215487804878044,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q3.bushing",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.721219054856146e-08,
+      "surface_area_m2": 0.00020318753141916572,
+      "mass_kg": 5.382189722536007e-05,
+      "bbox_m": [
+        0.026501087862997142,
+        0.020515000000000002,
+        0.012,
+        0.03349891213700285,
+        0.027515,
+        0.01827
+      ],
+      "centre_of_mass_m": [
+        0.030000000000000002,
+        0.024015,
+        0.016721091082529557
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 2.3827863524252374e-15,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "Q3.screw",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.325016967133952e-07,
+      "surface_area_m2": 0.00018571524971696058,
+      "mass_kg": 0.0010401383192001523,
+      "bbox_m": [
+        0.027250854749497753,
+        0.021265,
+        0.0085,
+        0.032749145250502244,
+        0.026765,
+        0.02127
+      ],
+      "centre_of_mass_m": [
+        0.03,
+        0.024015,
+        0.0170049337191713
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.3250169671339528e-07,
+      "analytic_relative_error": 5.993080901964236e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "Q4.body",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847881e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.0028439750940810974,
+      "bbox_m": [
+        0.08203,
+        0.018265,
+        0.01225,
+        0.09797,
+        0.041735,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        0.09,
+        0.03089476136144604,
+        0.015148821048947375
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 0.0
+    },
+    {
+      "name": "Q4.tab",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.3068103446794927e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.0029629020688328256,
+      "bbox_m": [
+        0.0832,
+        0.018265,
+        0.01225,
+        0.0968,
+        0.035214999999999996,
+        0.01375
+      ],
+      "centre_of_mass_m": [
+        0.09000000000000001,
+        0.026864424072705097,
+        0.013000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 3.2018503443096513e-16
+    },
+    {
+      "name": "Q4.pad",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465825e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.00038824892240416715,
+      "bbox_m": [
+        0.08070000000000001,
+        0.015764999999999994,
+        0.012,
+        0.0993,
+        0.037715000000000005,
+        0.01225
+      ],
+      "centre_of_mass_m": [
+        0.09,
+        0.02680888375254988,
+        0.012124999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 1.3294581708993542e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "Q4.lead_drain",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.09448000000000001,
+        0.041735,
+        0.01446,
+        0.09568,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.09508,
+        0.044215487804878044,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q4.lead_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999936e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999943,
+      "bbox_m": [
+        0.08940000000000001,
+        0.041735,
+        0.01446,
+        0.09060000000000001,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.09000000000000001,
+        0.04421548780487805,
+        0.020479512195121955
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q4.lead_driver_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.08685999999999999,
+        0.041735,
+        0.01446,
+        0.08806,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.08746000000000002,
+        0.04421548780487806,
+        0.020479512195121955
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q4.lead_gate",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.08432,
+        0.041735,
+        0.01446,
+        0.08552,
+        0.044735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.08492000000000001,
+        0.044215487804878044,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q4.bushing",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.7212190548561467e-08,
+      "surface_area_m2": 0.00020318753141916572,
+      "mass_kg": 5.3821897225360074e-05,
+      "bbox_m": [
+        0.08650108786299714,
+        0.020515000000000002,
+        0.012,
+        0.09349891213700286,
+        0.027515,
+        0.01827
+      ],
+      "centre_of_mass_m": [
+        0.09,
+        0.024015,
+        0.01672109108252956
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 2.522950255509075e-15,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "Q4.screw",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.3250169671339522e-07,
+      "surface_area_m2": 0.00018571524971696058,
+      "mass_kg": 0.0010401383192001526,
+      "bbox_m": [
+        0.08725085474949774,
+        0.021265,
+        0.0085,
+        0.09274914525050224,
+        0.026765,
+        0.02127
+      ],
+      "centre_of_mass_m": [
+        0.09,
+        0.024015,
+        0.0170049337191713
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.3250169671339528e-07,
+      "analytic_relative_error": 3.995387267976157e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "Q5.body",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847881e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.0028439750940810974,
+      "bbox_m": [
+        -0.09797,
+        -0.041735,
+        0.01225,
+        -0.08203,
+        -0.018265,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        -0.09,
+        -0.03089476136144604,
+        0.015148821048947375
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 0.0
+    },
+    {
+      "name": "Q5.tab",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.3068103446794927e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.0029629020688328256,
+      "bbox_m": [
+        -0.0968,
+        -0.035214999999999996,
+        0.01225,
+        -0.0832,
+        -0.018265,
+        0.01375
+      ],
+      "centre_of_mass_m": [
+        -0.09000000000000001,
+        -0.026864424072705097,
+        0.013000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 3.2018503443096513e-16
+    },
+    {
+      "name": "Q5.pad",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465825e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.00038824892240416715,
+      "bbox_m": [
+        -0.0993,
+        -0.037715000000000005,
+        0.012,
+        -0.08070000000000001,
+        -0.015764999999999998,
+        0.01225
+      ],
+      "centre_of_mass_m": [
+        -0.09,
+        -0.02680888375254988,
+        0.012124999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 1.3294581708993542e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "Q5.lead_drain",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999926e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999934,
+      "bbox_m": [
+        -0.09567999999999999,
+        -0.044735,
+        0.01446,
+        -0.09448000000000001,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.09508,
+        -0.04421548780487804,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q5.lead_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.180799999999997e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999974,
+      "bbox_m": [
+        -0.0906,
+        -0.044735,
+        0.01446,
+        -0.0894,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.09,
+        -0.04421548780487804,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q5.lead_driver_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        -0.08806,
+        -0.044735,
+        0.01446,
+        -0.08685999999999999,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.08746000000000001,
+        -0.04421548780487806,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q5.lead_gate",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        -0.08552,
+        -0.044735,
+        0.01446,
+        -0.08431999999999999,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.08492000000000001,
+        -0.044215487804878044,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q5.bushing",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.7212190548561467e-08,
+      "surface_area_m2": 0.0002031875314191657,
+      "mass_kg": 5.3821897225360074e-05,
+      "bbox_m": [
+        -0.09349891213700286,
+        -0.027515,
+        0.012,
+        -0.08650108786299714,
+        -0.020515000000000002,
+        0.01827
+      ],
+      "centre_of_mass_m": [
+        -0.09,
+        -0.024015,
+        0.01672109108252956
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 2.522950255509075e-15,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "Q5.screw",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.3250169671339525e-07,
+      "surface_area_m2": 0.00018571524971696055,
+      "mass_kg": 0.0010401383192001528,
+      "bbox_m": [
+        -0.09274914525050225,
+        -0.026765,
+        0.0085,
+        -0.08725085474949776,
+        -0.021265,
+        0.02127
+      ],
+      "centre_of_mass_m": [
+        -0.09,
+        -0.024015,
+        0.01700493371917129
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.3250169671339528e-07,
+      "analytic_relative_error": 1.9976936339880786e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "Q6.body",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847883e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.002843975094081098,
+      "bbox_m": [
+        -0.03797,
+        -0.041735,
+        0.01225,
+        -0.02203,
+        -0.018265,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        -0.03,
+        -0.03089476136144604,
+        0.015148821048947374
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 1.4147122834624926e-16
+    },
+    {
+      "name": "Q6.tab",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.3068103446794927e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.0029629020688328256,
+      "bbox_m": [
+        -0.0368,
+        -0.035214999999999996,
+        0.01225,
+        -0.0232,
+        -0.018265,
+        0.01375
+      ],
+      "centre_of_mass_m": [
+        -0.030000000000000002,
+        -0.026864424072705097,
+        0.013000000000000005
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 3.2018503443096513e-16
+    },
+    {
+      "name": "Q6.pad",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465825e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.00038824892240416715,
+      "bbox_m": [
+        -0.039299999999999995,
+        -0.037715000000000005,
+        0.012,
+        -0.020700000000000003,
+        -0.015764999999999998,
+        0.01225
+      ],
+      "centre_of_mass_m": [
+        -0.03,
+        -0.02680888375254988,
+        0.012125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 1.3294581708993542e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "Q6.lead_drain",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        -0.035679999999999996,
+        -0.044735,
+        0.01446,
+        -0.03448,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.03508000000000001,
+        -0.044215487804878044,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q6.lead_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999958e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999962,
+      "bbox_m": [
+        -0.0306,
+        -0.044735,
+        0.01446,
+        -0.0294,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.03,
+        -0.04421548780487805,
+        0.020479512195121955
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q6.lead_driver_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999961e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999965,
+      "bbox_m": [
+        -0.028059999999999998,
+        -0.044735,
+        0.01446,
+        -0.02686,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.027459999999999995,
+        -0.044215487804878044,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q6.lead_gate",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        -0.02552,
+        -0.044735,
+        0.01446,
+        -0.02432,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        -0.024919999999999998,
+        -0.044215487804878044,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q6.bushing",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.7212190548561467e-08,
+      "surface_area_m2": 0.0002031875314191657,
+      "mass_kg": 5.3821897225360074e-05,
+      "bbox_m": [
+        -0.03349891213700286,
+        -0.027515,
+        0.012,
+        -0.026501087862997142,
+        -0.020515000000000002,
+        0.01827
+      ],
+      "centre_of_mass_m": [
+        -0.030000000000000002,
+        -0.024015,
+        0.016721091082529553
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 2.522950255509075e-15,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "Q6.screw",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.3250169671339522e-07,
+      "surface_area_m2": 0.00018571524971696055,
+      "mass_kg": 0.0010401383192001526,
+      "bbox_m": [
+        -0.032749145250502244,
+        -0.026765,
+        0.0085,
+        -0.027250854749497753,
+        -0.021265,
+        0.02127
+      ],
+      "centre_of_mass_m": [
+        -0.03,
+        -0.024015,
+        0.01700493371917129
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.3250169671339528e-07,
+      "analytic_relative_error": 3.995387267976157e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "Q7.body",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847881e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.0028439750940810974,
+      "bbox_m": [
+        0.02203,
+        -0.041735,
+        0.01225,
+        0.03797,
+        -0.018265,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        0.03,
+        -0.03089476136144604,
+        0.015148821048947374
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 0.0
+    },
+    {
+      "name": "Q7.tab",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.306810344679493e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.002962902068832826,
+      "bbox_m": [
+        0.0232,
+        -0.035214999999999996,
+        0.01225,
+        0.0368,
+        -0.018265,
+        0.01375
+      ],
+      "centre_of_mass_m": [
+        0.03,
+        -0.026864424072705093,
+        0.013
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 1.6009251721548257e-16
+    },
+    {
+      "name": "Q7.pad",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465825e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.00038824892240416715,
+      "bbox_m": [
+        0.020700000000000003,
+        -0.037715000000000005,
+        0.012,
+        0.039299999999999995,
+        -0.015764999999999994,
+        0.01225
+      ],
+      "centre_of_mass_m": [
+        0.03,
+        -0.02680888375254988,
+        0.012125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 1.3294581708993542e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "Q7.lead_drain",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.02432,
+        -0.044735,
+        0.01446,
+        0.025520000000000004,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.024920000000000005,
+        -0.04421548780487806,
+        0.020479512195121955
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q7.lead_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999958e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999962,
+      "bbox_m": [
+        0.029400000000000003,
+        -0.044735,
+        0.01446,
+        0.030600000000000002,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.03,
+        -0.04421548780487805,
+        0.020479512195121955
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q7.lead_driver_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999961e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999965,
+      "bbox_m": [
+        0.03194,
+        -0.044735,
+        0.01446,
+        0.03314,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.03254,
+        -0.04421548780487805,
+        0.02047951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q7.lead_gate",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.034480000000000004,
+        -0.044735,
+        0.01446,
+        0.035679999999999996,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.03508000000000001,
+        -0.04421548780487806,
+        0.020479512195121955
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q7.bushing",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.7212190548561467e-08,
+      "surface_area_m2": 0.0002031875314191657,
+      "mass_kg": 5.3821897225360074e-05,
+      "bbox_m": [
+        0.026501087862997142,
+        -0.027515,
+        0.012,
+        0.03349891213700285,
+        -0.020515000000000002,
+        0.01827
+      ],
+      "centre_of_mass_m": [
+        0.030000000000000002,
+        -0.024015,
+        0.016721091082529553
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 2.522950255509075e-15,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "Q7.screw",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.3250169671339522e-07,
+      "surface_area_m2": 0.00018571524971696055,
+      "mass_kg": 0.0010401383192001526,
+      "bbox_m": [
+        0.027250854749497753,
+        -0.026765,
+        0.0085,
+        0.032749145250502244,
+        -0.021265,
+        0.02127
+      ],
+      "centre_of_mass_m": [
+        0.03,
+        -0.024015,
+        0.01700493371917129
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.3250169671339528e-07,
+      "analytic_relative_error": 3.995387267976157e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "Q8.body",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847881e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.0028439750940810974,
+      "bbox_m": [
+        0.08203,
+        -0.041735,
+        0.01225,
+        0.09797,
+        -0.018265,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        0.09,
+        -0.03089476136144604,
+        0.015148821048947375
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 0.0
+    },
+    {
+      "name": "Q8.tab",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.3068103446794927e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.0029629020688328256,
+      "bbox_m": [
+        0.0832,
+        -0.035214999999999996,
+        0.01225,
+        0.0968,
+        -0.018265,
+        0.01375
+      ],
+      "centre_of_mass_m": [
+        0.09000000000000001,
+        -0.026864424072705097,
+        0.013000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 3.2018503443096513e-16
+    },
+    {
+      "name": "Q8.pad",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465825e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.00038824892240416715,
+      "bbox_m": [
+        0.08070000000000001,
+        -0.037715000000000005,
+        0.012,
+        0.0993,
+        -0.015764999999999994,
+        0.01225
+      ],
+      "centre_of_mass_m": [
+        0.09,
+        -0.02680888375254988,
+        0.012124999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 1.3294581708993542e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "Q8.lead_drain",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999923e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999931,
+      "bbox_m": [
+        0.08432,
+        -0.044735,
+        0.01446,
+        0.08552,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.08492,
+        -0.044215487804878044,
+        0.02047951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q8.lead_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.180799999999997e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999974,
+      "bbox_m": [
+        0.08940000000000001,
+        -0.044735,
+        0.01446,
+        0.09060000000000001,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.09,
+        -0.04421548780487804,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q8.lead_driver_source",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.09194,
+        -0.044735,
+        0.01446,
+        0.09314,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.09254000000000001,
+        -0.04421548780487806,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q8.lead_gate",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.09448000000000001,
+        -0.044735,
+        0.01446,
+        0.09568,
+        -0.041735,
+        0.02846
+      ],
+      "centre_of_mass_m": [
+        0.09508,
+        -0.044215487804878044,
+        0.020479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "Q8.bushing",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.7212190548561467e-08,
+      "surface_area_m2": 0.0002031875314191657,
+      "mass_kg": 5.3821897225360074e-05,
+      "bbox_m": [
+        0.08650108786299714,
+        -0.027515,
+        0.012,
+        0.09349891213700286,
+        -0.020515000000000002,
+        0.01827
+      ],
+      "centre_of_mass_m": [
+        0.09,
+        -0.024015,
+        0.01672109108252956
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 2.522950255509075e-15,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "Q8.screw",
+      "group": "dab_coldplate",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.3250169671339525e-07,
+      "surface_area_m2": 0.00018571524971696055,
+      "mass_kg": 0.0010401383192001528,
+      "bbox_m": [
+        0.08725085474949774,
+        -0.026765,
+        0.0085,
+        0.09274914525050224,
+        -0.021265,
+        0.02127
+      ],
+      "centre_of_mass_m": [
+        0.09,
+        -0.024015,
+        0.01700493371917129
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.3250169671339528e-07,
+      "analytic_relative_error": 1.9976936339880786e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "clearance_envelope",
+      "group": "dab_coldplate",
+      "role": "envelope",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 0.00101452932,
+      "surface_area_m2": 0.09076367999999999,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        -0.14299999999999996,
+        -0.063,
+        -0.006,
+        0.12300000000000003,
+        0.063,
+        0.02427
+      ],
+      "centre_of_mass_m": [
+        -0.00999999999999998,
+        -1.694327559060427e-19,
+        0.009134999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "bounding box of dab_coldplate (leads excluded) expanded by 0.003 m"
+    }
+  ],
+  "contacts": [
+    {
+      "a": "plate",
+      "b": "coolant"
+    },
+    {
+      "a": "plate",
+      "b": "cover"
+    },
+    {
+      "a": "plate",
+      "b": "inlet_boss"
+    },
+    {
+      "a": "plate",
+      "b": "outlet_boss"
+    },
+    {
+      "a": "plate",
+      "b": "Q1.pad"
+    },
+    {
+      "a": "plate",
+      "b": "Q1.bushing"
+    },
+    {
+      "a": "plate",
+      "b": "Q1.screw"
+    },
+    {
+      "a": "plate",
+      "b": "Q2.pad"
+    },
+    {
+      "a": "plate",
+      "b": "Q2.bushing"
+    },
+    {
+      "a": "plate",
+      "b": "Q2.screw"
+    },
+    {
+      "a": "plate",
+      "b": "Q3.pad"
+    },
+    {
+      "a": "plate",
+      "b": "Q3.bushing"
+    },
+    {
+      "a": "plate",
+      "b": "Q3.screw"
+    },
+    {
+      "a": "plate",
+      "b": "Q4.pad"
+    },
+    {
+      "a": "plate",
+      "b": "Q4.bushing"
+    },
+    {
+      "a": "plate",
+      "b": "Q4.screw"
+    },
+    {
+      "a": "plate",
+      "b": "Q5.pad"
+    },
+    {
+      "a": "plate",
+      "b": "Q5.bushing"
+    },
+    {
+      "a": "plate",
+      "b": "Q5.screw"
+    },
+    {
+      "a": "plate",
+      "b": "Q6.pad"
+    },
+    {
+      "a": "plate",
+      "b": "Q6.bushing"
+    },
+    {
+      "a": "plate",
+      "b": "Q6.screw"
+    },
+    {
+      "a": "plate",
+      "b": "Q7.pad"
+    },
+    {
+      "a": "plate",
+      "b": "Q7.bushing"
+    },
+    {
+      "a": "plate",
+      "b": "Q7.screw"
+    },
+    {
+      "a": "plate",
+      "b": "Q8.pad"
+    },
+    {
+      "a": "plate",
+      "b": "Q8.bushing"
+    },
+    {
+      "a": "plate",
+      "b": "Q8.screw"
+    },
+    {
+      "a": "coolant",
+      "b": "cover"
+    },
+    {
+      "a": "coolant",
+      "b": "inlet_boss"
+    },
+    {
+      "a": "coolant",
+      "b": "outlet_boss"
+    },
+    {
+      "a": "cover",
+      "b": "inlet_boss"
+    },
+    {
+      "a": "cover",
+      "b": "outlet_boss"
+    },
+    {
+      "a": "Q1.body",
+      "b": "Q1.tab"
+    },
+    {
+      "a": "Q1.body",
+      "b": "Q1.pad"
+    },
+    {
+      "a": "Q1.body",
+      "b": "Q1.lead_drain"
+    },
+    {
+      "a": "Q1.body",
+      "b": "Q1.lead_source"
+    },
+    {
+      "a": "Q1.body",
+      "b": "Q1.lead_driver_source"
+    },
+    {
+      "a": "Q1.body",
+      "b": "Q1.lead_gate"
+    },
+    {
+      "a": "Q1.body",
+      "b": "Q1.bushing"
+    },
+    {
+      "a": "Q1.tab",
+      "b": "Q1.pad"
+    },
+    {
+      "a": "Q1.tab",
+      "b": "Q1.bushing"
+    },
+    {
+      "a": "Q1.pad",
+      "b": "Q1.bushing"
+    },
+    {
+      "a": "Q1.bushing",
+      "b": "Q1.screw"
+    },
+    {
+      "a": "Q2.body",
+      "b": "Q2.tab"
+    },
+    {
+      "a": "Q2.body",
+      "b": "Q2.pad"
+    },
+    {
+      "a": "Q2.body",
+      "b": "Q2.lead_drain"
+    },
+    {
+      "a": "Q2.body",
+      "b": "Q2.lead_source"
+    },
+    {
+      "a": "Q2.body",
+      "b": "Q2.lead_driver_source"
+    },
+    {
+      "a": "Q2.body",
+      "b": "Q2.lead_gate"
+    },
+    {
+      "a": "Q2.body",
+      "b": "Q2.bushing"
+    },
+    {
+      "a": "Q2.tab",
+      "b": "Q2.pad"
+    },
+    {
+      "a": "Q2.tab",
+      "b": "Q2.bushing"
+    },
+    {
+      "a": "Q2.pad",
+      "b": "Q2.bushing"
+    },
+    {
+      "a": "Q2.bushing",
+      "b": "Q2.screw"
+    },
+    {
+      "a": "Q3.body",
+      "b": "Q3.tab"
+    },
+    {
+      "a": "Q3.body",
+      "b": "Q3.pad"
+    },
+    {
+      "a": "Q3.body",
+      "b": "Q3.lead_drain"
+    },
+    {
+      "a": "Q3.body",
+      "b": "Q3.lead_source"
+    },
+    {
+      "a": "Q3.body",
+      "b": "Q3.lead_driver_source"
+    },
+    {
+      "a": "Q3.body",
+      "b": "Q3.lead_gate"
+    },
+    {
+      "a": "Q3.body",
+      "b": "Q3.bushing"
+    },
+    {
+      "a": "Q3.tab",
+      "b": "Q3.pad"
+    },
+    {
+      "a": "Q3.tab",
+      "b": "Q3.bushing"
+    },
+    {
+      "a": "Q3.pad",
+      "b": "Q3.bushing"
+    },
+    {
+      "a": "Q3.bushing",
+      "b": "Q3.screw"
+    },
+    {
+      "a": "Q4.body",
+      "b": "Q4.tab"
+    },
+    {
+      "a": "Q4.body",
+      "b": "Q4.pad"
+    },
+    {
+      "a": "Q4.body",
+      "b": "Q4.lead_drain"
+    },
+    {
+      "a": "Q4.body",
+      "b": "Q4.lead_source"
+    },
+    {
+      "a": "Q4.body",
+      "b": "Q4.lead_driver_source"
+    },
+    {
+      "a": "Q4.body",
+      "b": "Q4.lead_gate"
+    },
+    {
+      "a": "Q4.body",
+      "b": "Q4.bushing"
+    },
+    {
+      "a": "Q4.tab",
+      "b": "Q4.pad"
+    },
+    {
+      "a": "Q4.tab",
+      "b": "Q4.bushing"
+    },
+    {
+      "a": "Q4.pad",
+      "b": "Q4.bushing"
+    },
+    {
+      "a": "Q4.bushing",
+      "b": "Q4.screw"
+    },
+    {
+      "a": "Q5.body",
+      "b": "Q5.tab"
+    },
+    {
+      "a": "Q5.body",
+      "b": "Q5.pad"
+    },
+    {
+      "a": "Q5.body",
+      "b": "Q5.lead_drain"
+    },
+    {
+      "a": "Q5.body",
+      "b": "Q5.lead_source"
+    },
+    {
+      "a": "Q5.body",
+      "b": "Q5.lead_driver_source"
+    },
+    {
+      "a": "Q5.body",
+      "b": "Q5.lead_gate"
+    },
+    {
+      "a": "Q5.body",
+      "b": "Q5.bushing"
+    },
+    {
+      "a": "Q5.tab",
+      "b": "Q5.pad"
+    },
+    {
+      "a": "Q5.tab",
+      "b": "Q5.bushing"
+    },
+    {
+      "a": "Q5.pad",
+      "b": "Q5.bushing"
+    },
+    {
+      "a": "Q5.bushing",
+      "b": "Q5.screw"
+    },
+    {
+      "a": "Q6.body",
+      "b": "Q6.tab"
+    },
+    {
+      "a": "Q6.body",
+      "b": "Q6.pad"
+    },
+    {
+      "a": "Q6.body",
+      "b": "Q6.lead_drain"
+    },
+    {
+      "a": "Q6.body",
+      "b": "Q6.lead_source"
+    },
+    {
+      "a": "Q6.body",
+      "b": "Q6.lead_driver_source"
+    },
+    {
+      "a": "Q6.body",
+      "b": "Q6.lead_gate"
+    },
+    {
+      "a": "Q6.body",
+      "b": "Q6.bushing"
+    },
+    {
+      "a": "Q6.tab",
+      "b": "Q6.pad"
+    },
+    {
+      "a": "Q6.tab",
+      "b": "Q6.bushing"
+    },
+    {
+      "a": "Q6.pad",
+      "b": "Q6.bushing"
+    },
+    {
+      "a": "Q6.bushing",
+      "b": "Q6.screw"
+    },
+    {
+      "a": "Q7.body",
+      "b": "Q7.tab"
+    },
+    {
+      "a": "Q7.body",
+      "b": "Q7.pad"
+    },
+    {
+      "a": "Q7.body",
+      "b": "Q7.lead_drain"
+    },
+    {
+      "a": "Q7.body",
+      "b": "Q7.lead_source"
+    },
+    {
+      "a": "Q7.body",
+      "b": "Q7.lead_driver_source"
+    },
+    {
+      "a": "Q7.body",
+      "b": "Q7.lead_gate"
+    },
+    {
+      "a": "Q7.body",
+      "b": "Q7.bushing"
+    },
+    {
+      "a": "Q7.tab",
+      "b": "Q7.pad"
+    },
+    {
+      "a": "Q7.tab",
+      "b": "Q7.bushing"
+    },
+    {
+      "a": "Q7.pad",
+      "b": "Q7.bushing"
+    },
+    {
+      "a": "Q7.bushing",
+      "b": "Q7.screw"
+    },
+    {
+      "a": "Q8.body",
+      "b": "Q8.tab"
+    },
+    {
+      "a": "Q8.body",
+      "b": "Q8.pad"
+    },
+    {
+      "a": "Q8.body",
+      "b": "Q8.lead_drain"
+    },
+    {
+      "a": "Q8.body",
+      "b": "Q8.lead_source"
+    },
+    {
+      "a": "Q8.body",
+      "b": "Q8.lead_driver_source"
+    },
+    {
+      "a": "Q8.body",
+      "b": "Q8.lead_gate"
+    },
+    {
+      "a": "Q8.body",
+      "b": "Q8.bushing"
+    },
+    {
+      "a": "Q8.tab",
+      "b": "Q8.pad"
+    },
+    {
+      "a": "Q8.tab",
+      "b": "Q8.bushing"
+    },
+    {
+      "a": "Q8.pad",
+      "b": "Q8.bushing"
+    },
+    {
+      "a": "Q8.bushing",
+      "b": "Q8.screw"
+    }
+  ],
+  "step_reimport": {
+    "path": "dab_coldplate.step",
+    "solids": 77,
+    "volume_m3": 0.0004510423981615064,
+    "expected_volume_m3": 0.00045104239816150666,
+    "relative_error": 6.452570883660559e-16,
+    "valid": true
+  },
+  "analytic": {
+    "analytic": {
+      "plate_gross_volume": 0.0003456,
+      "channel_volume": 4.130506144752009e-05,
+      "port_bore_volume": 8.482300164692441e-07,
+      "coolant_volume": 4.215329146398934e-05,
+      "coolant_mass": 0.04510402186646859,
+      "plate_volume": 0.00030214923077007805,
+      "plate_mass": 0.8158029230792108,
+      "cover_volume": 8.611490046668673e-05,
+      "cover_mass": 0.23251023126005416,
+      "boss_volume": 3.392920065876977e-06,
+      "boss_mass": 0.028839820559954304
+    }
+  },
+  "warnings": [],
+  "mesh_hints": {
+    "target": "gmsh",
+    "units": "m",
+    "import_note": "Import the STEP with gmsh.model.occ.importShapes; the 'coolant' solid is the fluid domain; map other solids by STEP product names.",
+    "regions": [
+      {
+        "bodies": [
+          "plate"
+        ],
+        "group": "coldplate",
+        "material": "aluminium_6063",
+        "element_size": 0.004
+      },
+      {
+        "bodies": [
+          "coolant"
+        ],
+        "group": "fluid",
+        "material": "water_glycol_50",
+        "element_size": 0.0013333333333333333,
+        "note": "fluid domain; add boundary layers at the channel walls; inlet/outlet faces at the port bore ends"
+      },
+      {
+        "bodies": [
+          "cover"
+        ],
+        "group": "coldplate_cover",
+        "material": "aluminium_6063",
+        "element_size": 0.0015
+      },
+      {
+        "bodies": [
+          "inlet_boss"
+        ],
+        "group": "ports",
+        "material": "brass",
+        "element_size": 0.0015
+      },
+      {
+        "bodies": [
+          "outlet_boss"
+        ],
+        "group": "ports",
+        "material": "brass",
+        "element_size": 0.0015
+      },
+      {
+        "bodies": [
+          "Q1.body",
+          "Q1.tab"
+        ],
+        "group": "device_Q1",
+        "material": "copper",
+        "element_size": 0.001,
+        "note": "heat source: tab/die region"
+      },
+      {
+        "bodies": [
+          "Q2.body",
+          "Q2.tab"
+        ],
+        "group": "device_Q2",
+        "material": "copper",
+        "element_size": 0.001,
+        "note": "heat source: tab/die region"
+      },
+      {
+        "bodies": [
+          "Q3.body",
+          "Q3.tab"
+        ],
+        "group": "device_Q3",
+        "material": "copper",
+        "element_size": 0.001,
+        "note": "heat source: tab/die region"
+      },
+      {
+        "bodies": [
+          "Q4.body",
+          "Q4.tab"
+        ],
+        "group": "device_Q4",
+        "material": "copper",
+        "element_size": 0.001,
+        "note": "heat source: tab/die region"
+      },
+      {
+        "bodies": [
+          "Q5.body",
+          "Q5.tab"
+        ],
+        "group": "device_Q5",
+        "material": "copper",
+        "element_size": 0.001,
+        "note": "heat source: tab/die region"
+      },
+      {
+        "bodies": [
+          "Q6.body",
+          "Q6.tab"
+        ],
+        "group": "device_Q6",
+        "material": "copper",
+        "element_size": 0.001,
+        "note": "heat source: tab/die region"
+      },
+      {
+        "bodies": [
+          "Q7.body",
+          "Q7.tab"
+        ],
+        "group": "device_Q7",
+        "material": "copper",
+        "element_size": 0.001,
+        "note": "heat source: tab/die region"
+      },
+      {
+        "bodies": [
+          "Q8.body",
+          "Q8.tab"
+        ],
+        "group": "device_Q8",
+        "material": "copper",
+        "element_size": 0.001,
+        "note": "heat source: tab/die region"
+      },
+      {
+        "bodies": [
+          "Q1.pad"
+        ],
+        "group": "isolation_pads",
+        "material": "alumina",
+        "element_size": 0.00025
+      },
+      {
+        "bodies": [
+          "Q2.pad"
+        ],
+        "group": "isolation_pads",
+        "material": "alumina",
+        "element_size": 0.00025
+      },
+      {
+        "bodies": [
+          "Q3.pad"
+        ],
+        "group": "isolation_pads",
+        "material": "alumina",
+        "element_size": 0.00025
+      },
+      {
+        "bodies": [
+          "Q4.pad"
+        ],
+        "group": "isolation_pads",
+        "material": "alumina",
+        "element_size": 0.00025
+      },
+      {
+        "bodies": [
+          "Q5.pad"
+        ],
+        "group": "isolation_pads",
+        "material": "alumina",
+        "element_size": 0.00025
+      },
+      {
+        "bodies": [
+          "Q6.pad"
+        ],
+        "group": "isolation_pads",
+        "material": "alumina",
+        "element_size": 0.00025
+      },
+      {
+        "bodies": [
+          "Q7.pad"
+        ],
+        "group": "isolation_pads",
+        "material": "alumina",
+        "element_size": 0.00025
+      },
+      {
+        "bodies": [
+          "Q8.pad"
+        ],
+        "group": "isolation_pads",
+        "material": "alumina",
+        "element_size": 0.00025
+      },
+      {
+        "bodies": [
+          "Q1.lead_drain"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q1.lead_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q1.lead_driver_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q1.lead_gate"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q1.bushing"
+        ],
+        "group": "dab_coldplate",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q1.screw"
+        ],
+        "group": "dab_coldplate",
+        "material": "steel",
+        "element_size": 0.0027491452505022454,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q2.lead_drain"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q2.lead_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q2.lead_driver_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q2.lead_gate"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q2.bushing"
+        ],
+        "group": "dab_coldplate",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q2.screw"
+        ],
+        "group": "dab_coldplate",
+        "material": "steel",
+        "element_size": 0.0027491452505022454,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q3.lead_drain"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q3.lead_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q3.lead_driver_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q3.lead_gate"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q3.bushing"
+        ],
+        "group": "dab_coldplate",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q3.screw"
+        ],
+        "group": "dab_coldplate",
+        "material": "steel",
+        "element_size": 0.0027491452505022454,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q4.lead_drain"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q4.lead_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q4.lead_driver_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q4.lead_gate"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q4.bushing"
+        ],
+        "group": "dab_coldplate",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q4.screw"
+        ],
+        "group": "dab_coldplate",
+        "material": "steel",
+        "element_size": 0.0027491452505022454,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q5.lead_drain"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q5.lead_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q5.lead_driver_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q5.lead_gate"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q5.bushing"
+        ],
+        "group": "dab_coldplate",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q5.screw"
+        ],
+        "group": "dab_coldplate",
+        "material": "steel",
+        "element_size": 0.0027491452505022454,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q6.lead_drain"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q6.lead_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q6.lead_driver_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q6.lead_gate"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q6.bushing"
+        ],
+        "group": "dab_coldplate",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q6.screw"
+        ],
+        "group": "dab_coldplate",
+        "material": "steel",
+        "element_size": 0.0027491452505022454,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q7.lead_drain"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q7.lead_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q7.lead_driver_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q7.lead_gate"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q7.bushing"
+        ],
+        "group": "dab_coldplate",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q7.screw"
+        ],
+        "group": "dab_coldplate",
+        "material": "steel",
+        "element_size": 0.0027491452505022454,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q8.lead_drain"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q8.lead_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q8.lead_driver_source"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q8.lead_gate"
+        ],
+        "group": "dab_coldplate",
+        "material": "copper",
+        "element_size": 0.0006999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q8.bushing"
+        ],
+        "group": "dab_coldplate",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "Q8.screw"
+        ],
+        "group": "dab_coldplate",
+        "material": "steel",
+        "element_size": 0.0027491452505022454,
+        "note": "default size from the body bounding box"
+      }
+    ],
+    "refinement_zones": [
+      {
+        "name": "turn_0_1",
+        "element_size": 0.001,
+        "bbox": [
+          0.071,
+          -0.043000000000000003,
+          0.0,
+          0.105,
+          -0.009000000000000001,
+          0.006
+        ]
+      },
+      {
+        "name": "turn_1_2",
+        "element_size": 0.001,
+        "bbox": [
+          -0.105,
+          -0.017,
+          0.0,
+          -0.071,
+          0.017,
+          0.006
+        ]
+      },
+      {
+        "name": "turn_2_3",
+        "element_size": 0.001,
+        "bbox": [
+          0.071,
+          0.008999999999999998,
+          0.0,
+          0.105,
+          0.043,
+          0.006
+        ]
+      }
+    ],
+    "material_tags": [
+      "alumina",
+      "aluminium_6063",
+      "brass",
+      "copper",
+      "epoxy_mold_compound",
+      "nylon_pa66",
+      "steel",
+      "water_glycol_50"
+    ],
+    "net_tags": [
+      "pe",
+      "primary",
+      "secondary"
+    ],
+    "body_count": 77
+  },
+  "parameters": {
+    "kind": "coldplate",
+    "name": "dab_coldplate",
+    "description": "Liquid cold plate alternative carrying all eight TO-247-4L devices of the DAB (primary row at +y, secondary row at -y): four-pass serpentine channel cut from the underside, closed by a cover plate, hose-boss ports on the -x face. Illustrative model.",
+    "plate": {
+      "length": 0.24,
+      "width": 0.12,
+      "thickness": 0.012,
+      "material": "aluminium_6063"
+    },
+    "channel": {
+      "width": 0.008,
+      "depth": 0.006,
+      "passes": 4,
+      "pitch": 0.026,
+      "edge_margin": 0.012,
+      "end_margin": 0.015,
+      "min_wall": 0.002
+    },
+    "cover": {
+      "thickness": 0.003,
+      "material": "aluminium_6063"
+    },
+    "ports": {
+      "style": "boss",
+      "outer_diameter": 0.012,
+      "bore": 0.006,
+      "length": 0.02,
+      "material": "brass"
+    },
+    "coolant": {
+      "material": "water_glycol_50"
+    },
+    "screw_hole_depth": 0.004,
+    "devices": [
+      {
+        "name": "Q1",
+        "package": "to247_4l",
+        "position": [
+          -0.09,
+          0.03
+        ],
+        "rotation_deg": 90,
+        "net": "primary",
+        "pad": {
+          "thickness": 0.00025,
+          "oversize": 0.0025,
+          "material": "alumina"
+        },
+        "screw_hole_diameter": 0.0025,
+        "lead_form": {
+          "horizontal": 0.003,
+          "vertical": 0.014
+        }
+      },
+      {
+        "name": "Q2",
+        "package": "to247_4l",
+        "position": [
+          -0.03,
+          0.03
+        ],
+        "rotation_deg": 90,
+        "net": "primary",
+        "pad": {
+          "thickness": 0.00025,
+          "oversize": 0.0025,
+          "material": "alumina"
+        },
+        "screw_hole_diameter": 0.0025,
+        "lead_form": {
+          "horizontal": 0.003,
+          "vertical": 0.014
+        }
+      },
+      {
+        "name": "Q3",
+        "package": "to247_4l",
+        "position": [
+          0.03,
+          0.03
+        ],
+        "rotation_deg": 90,
+        "net": "primary",
+        "pad": {
+          "thickness": 0.00025,
+          "oversize": 0.0025,
+          "material": "alumina"
+        },
+        "screw_hole_diameter": 0.0025,
+        "lead_form": {
+          "horizontal": 0.003,
+          "vertical": 0.014
+        }
+      },
+      {
+        "name": "Q4",
+        "package": "to247_4l",
+        "position": [
+          0.09,
+          0.03
+        ],
+        "rotation_deg": 90,
+        "net": "primary",
+        "pad": {
+          "thickness": 0.00025,
+          "oversize": 0.0025,
+          "material": "alumina"
+        },
+        "screw_hole_diameter": 0.0025,
+        "lead_form": {
+          "horizontal": 0.003,
+          "vertical": 0.014
+        }
+      },
+      {
+        "name": "Q5",
+        "package": "to247_4l",
+        "position": [
+          -0.09,
+          -0.03
+        ],
+        "rotation_deg": -90,
+        "net": "secondary",
+        "pad": {
+          "thickness": 0.00025,
+          "oversize": 0.0025,
+          "material": "alumina"
+        },
+        "screw_hole_diameter": 0.0025,
+        "lead_form": {
+          "horizontal": 0.003,
+          "vertical": 0.014
+        }
+      },
+      {
+        "name": "Q6",
+        "package": "to247_4l",
+        "position": [
+          -0.03,
+          -0.03
+        ],
+        "rotation_deg": -90,
+        "net": "secondary",
+        "pad": {
+          "thickness": 0.00025,
+          "oversize": 0.0025,
+          "material": "alumina"
+        },
+        "screw_hole_diameter": 0.0025,
+        "lead_form": {
+          "horizontal": 0.003,
+          "vertical": 0.014
+        }
+      },
+      {
+        "name": "Q7",
+        "package": "to247_4l",
+        "position": [
+          0.03,
+          -0.03
+        ],
+        "rotation_deg": -90,
+        "net": "secondary",
+        "pad": {
+          "thickness": 0.00025,
+          "oversize": 0.0025,
+          "material": "alumina"
+        },
+        "screw_hole_diameter": 0.0025,
+        "lead_form": {
+          "horizontal": 0.003,
+          "vertical": 0.014
+        }
+      },
+      {
+        "name": "Q8",
+        "package": "to247_4l",
+        "position": [
+          0.09,
+          -0.03
+        ],
+        "rotation_deg": -90,
+        "net": "secondary",
+        "pad": {
+          "thickness": 0.00025,
+          "oversize": 0.0025,
+          "material": "alumina"
+        },
+        "screw_hole_diameter": 0.0025,
+        "lead_form": {
+          "horizontal": 0.003,
+          "vertical": 0.014
+        }
+      }
+    ],
+    "mounting_holes": {
+      "diameter": 0.0055,
+      "inset": 0.006
+    },
+    "net": "pe",
+    "clearance_envelope_margin": 0.003,
+    "checks": {
+      "interference": {
+        "enabled": true,
+        "min_overlap_volume": 1e-12
+      },
+      "clearance_pairs": [
+        {
+          "net_a": "primary",
+          "net_b": "secondary",
+          "required_clearance": 0.0055,
+          "required_creepage": 0.008
+        },
+        {
+          "net_a": "primary",
+          "net_b": "pe",
+          "required_clearance": 0.002,
+          "required_creepage": 0.004
+        },
+        {
+          "net_a": "secondary",
+          "net_b": "pe",
+          "required_clearance": 0.002,
+          "required_creepage": 0.004
+        }
+      ]
+    }
+  },
+  "timings_s": {
+    "resolve_s": 0.0009965896606445312,
+    "build_s": 0.2900099754333496,
+    "export_s": 0.5661716461181641,
+    "checks_s": 15.343238353729248,
+    "render_s": 4.965688943862915
+  },
+  "invalid_shapes": [],
+  "check_summary": {
+    "status": "review",
+    "interference_count": 0,
+    "allowed_overlap_count": 0,
+    "contact_count": 121,
+    "keepout_violation_count": 0,
+    "envelope_intrusion_count": 0,
+    "fit_failures": 0,
+    "clearance_pairs": {
+      "pass": 1,
+      "fail": 0,
+      "review": 2,
+      "no_bodies": 0
+    },
+    "unassigned_conductor_count": 0,
+    "bodies_checked": 77,
+    "note": "required clearance/creepage values are caller inputs; no standard compliance is asserted"
+  }
+}

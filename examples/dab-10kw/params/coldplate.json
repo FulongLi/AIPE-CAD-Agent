@@ -1,0 +1,32 @@
+{
+  "kind": "coldplate",
+  "name": "dab_coldplate",
+  "description": "Liquid cold plate alternative carrying all eight TO-247-4L devices of the DAB (primary row at +y, secondary row at -y): four-pass serpentine channel cut from the underside, closed by a cover plate, hose-boss ports on the -x face. Illustrative model.",
+  "plate": {"length": 0.240, "width": 0.120, "thickness": 0.012, "material": "aluminium_6063"},
+  "channel": {"width": 0.008, "depth": 0.006, "passes": 4, "pitch": 0.026, "edge_margin": 0.012, "end_margin": 0.015, "min_wall": 0.002},
+  "cover": {"thickness": 0.003, "material": "aluminium_6063"},
+  "ports": {"style": "boss", "outer_diameter": 0.012, "bore": 0.006, "length": 0.020, "material": "brass"},
+  "coolant": {"material": "water_glycol_50"},
+  "screw_hole_depth": 0.004,
+  "devices": [
+    {"name": "Q1", "package": "to247_4l", "position": [-0.090, 0.030], "rotation_deg": 90, "net": "primary", "pad": {"thickness": 0.00025, "oversize": 0.0025, "material": "alumina"}, "screw_hole_diameter": 0.0025, "lead_form": {"horizontal": 0.003, "vertical": 0.014}},
+    {"name": "Q2", "package": "to247_4l", "position": [-0.030, 0.030], "rotation_deg": 90, "net": "primary", "pad": {"thickness": 0.00025, "oversize": 0.0025, "material": "alumina"}, "screw_hole_diameter": 0.0025, "lead_form": {"horizontal": 0.003, "vertical": 0.014}},
+    {"name": "Q3", "package": "to247_4l", "position": [0.030, 0.030], "rotation_deg": 90, "net": "primary", "pad": {"thickness": 0.00025, "oversize": 0.0025, "material": "alumina"}, "screw_hole_diameter": 0.0025, "lead_form": {"horizontal": 0.003, "vertical": 0.014}},
+    {"name": "Q4", "package": "to247_4l", "position": [0.090, 0.030], "rotation_deg": 90, "net": "primary", "pad": {"thickness": 0.00025, "oversize": 0.0025, "material": "alumina"}, "screw_hole_diameter": 0.0025, "lead_form": {"horizontal": 0.003, "vertical": 0.014}},
+    {"name": "Q5", "package": "to247_4l", "position": [-0.090, -0.030], "rotation_deg": -90, "net": "secondary", "pad": {"thickness": 0.00025, "oversize": 0.0025, "material": "alumina"}, "screw_hole_diameter": 0.0025, "lead_form": {"horizontal": 0.003, "vertical": 0.014}},
+    {"name": "Q6", "package": "to247_4l", "position": [-0.030, -0.030], "rotation_deg": -90, "net": "secondary", "pad": {"thickness": 0.00025, "oversize": 0.0025, "material": "alumina"}, "screw_hole_diameter": 0.0025, "lead_form": {"horizontal": 0.003, "vertical": 0.014}},
+    {"name": "Q7", "package": "to247_4l", "position": [0.030, -0.030], "rotation_deg": -90, "net": "secondary", "pad": {"thickness": 0.00025, "oversize": 0.0025, "material": "alumina"}, "screw_hole_diameter": 0.0025, "lead_form": {"horizontal": 0.003, "vertical": 0.014}},
+    {"name": "Q8", "package": "to247_4l", "position": [0.090, -0.030], "rotation_deg": -90, "net": "secondary", "pad": {"thickness": 0.00025, "oversize": 0.0025, "material": "alumina"}, "screw_hole_diameter": 0.0025, "lead_form": {"horizontal": 0.003, "vertical": 0.014}}
+  ],
+  "mounting_holes": {"diameter": 0.0055, "inset": 0.006},
+  "net": "pe",
+  "clearance_envelope_margin": 0.003,
+  "checks": {
+    "interference": {"enabled": true, "min_overlap_volume": 1e-12},
+    "clearance_pairs": [
+      {"net_a": "primary", "net_b": "secondary", "required_clearance": 0.0055, "required_creepage": 0.008},
+      {"net_a": "primary", "net_b": "pe", "required_clearance": 0.002, "required_creepage": 0.004},
+      {"net_a": "secondary", "net_b": "pe", "required_clearance": 0.002, "required_creepage": 0.004}
+    ]
+  }
+}

@@ -1,0 +1,931 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/FulongLi/AIPE-CAD-Agent/main/src/aipe_cad/schemas/coldplate.schema.json",
+  "title": "AIPE CAD liquid cold plate parameters",
+  "description": "Cold plate with a boolean-cut serpentine channel, cover, hose bosses and device footprints. SI units. Local frame: channel face z = 0, plate above, cover below.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "type": "string",
+      "description": "parameter kind",
+      "enum": [
+        "coldplate"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "description": "model name",
+      "default": "coldplate"
+    },
+    "description": {
+      "type": "string",
+      "description": "free text"
+    },
+    "plate": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "length": {
+          "type": "number",
+          "description": "plate length along X (channel pass direction) [m]",
+          "exclusiveMinimum": 0
+        },
+        "width": {
+          "type": "number",
+          "description": "plate width along Y [m]",
+          "exclusiveMinimum": 0
+        },
+        "thickness": {
+          "type": "number",
+          "description": "plate thickness [m]",
+          "exclusiveMinimum": 0
+        },
+        "material": {
+          "type": "string",
+          "description": "material name from aipe_cad.materials.MATERIALS",
+          "enum": [
+            "air",
+            "alumina",
+            "aluminium_6063",
+            "aluminium_generic",
+            "bobbin_pet_gf",
+            "brass",
+            "copper",
+            "epoxy_mold_compound",
+            "ferrite_generic",
+            "ferrite_n87",
+            "fr4",
+            "insulation_polymer",
+            "kapton",
+            "nylon_pa66",
+            "ptfe",
+            "stainless_steel",
+            "steel",
+            "thermal_pad",
+            "water_glycol_50"
+          ],
+          "default": "aluminium_6063"
+        },
+        "density": {
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "density override [kg/m^3]",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "length",
+        "width",
+        "thickness"
+      ]
+    },
+    "channel": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "width": {
+          "type": "number",
+          "description": "channel width [m]",
+          "exclusiveMinimum": 0
+        },
+        "depth": {
+          "type": "number",
+          "description": "channel depth from the underside [m]",
+          "exclusiveMinimum": 0
+        },
+        "passes": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "number of serpentine passes",
+          "default": 4
+        },
+        "pitch": {
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "pass pitch (default: spread evenly inside the edge margins) [m]",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "edge_margin": {
+          "type": "number",
+          "description": "minimum distance from the channel to the long edges [m]",
+          "exclusiveMinimum": 0,
+          "default": 0.012
+        },
+        "end_margin": {
+          "type": "number",
+          "description": "distance from the channel extents to the end faces [m]",
+          "exclusiveMinimum": 0,
+          "default": 0.015
+        },
+        "min_wall": {
+          "type": "number",
+          "description": "minimum wall thickness (webs, above the channel) [m]",
+          "exclusiveMinimum": 0,
+          "default": 0.002
+        }
+      },
+      "required": [
+        "width",
+        "depth"
+      ]
+    },
+    "cover": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "thickness": {
+              "type": "number",
+              "description": "cover plate thickness [m]",
+              "exclusiveMinimum": 0,
+              "default": 0.003
+            },
+            "material": {
+              "type": "string",
+              "description": "material name from aipe_cad.materials.MATERIALS",
+              "enum": [
+                "air",
+                "alumina",
+                "aluminium_6063",
+                "aluminium_generic",
+                "bobbin_pet_gf",
+                "brass",
+                "copper",
+                "epoxy_mold_compound",
+                "ferrite_generic",
+                "ferrite_n87",
+                "fr4",
+                "insulation_polymer",
+                "kapton",
+                "nylon_pa66",
+                "ptfe",
+                "stainless_steel",
+                "steel",
+                "thermal_pad",
+                "water_glycol_50"
+              ],
+              "default": "aluminium_6063"
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ports": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "style": {
+          "type": "string",
+          "description": "port style",
+          "enum": [
+            "boss"
+          ],
+          "default": "boss"
+        },
+        "outer_diameter": {
+          "type": "number",
+          "description": "boss outer diameter [m]",
+          "exclusiveMinimum": 0,
+          "default": 0.012
+        },
+        "bore": {
+          "type": "number",
+          "description": "bore diameter [m]",
+          "exclusiveMinimum": 0,
+          "default": 0.006
+        },
+        "length": {
+          "type": "number",
+          "description": "boss length beyond the end face [m]",
+          "exclusiveMinimum": 0,
+          "default": 0.02
+        },
+        "material": {
+          "type": "string",
+          "description": "material name from aipe_cad.materials.MATERIALS",
+          "enum": [
+            "air",
+            "alumina",
+            "aluminium_6063",
+            "aluminium_generic",
+            "bobbin_pet_gf",
+            "brass",
+            "copper",
+            "epoxy_mold_compound",
+            "ferrite_generic",
+            "ferrite_n87",
+            "fr4",
+            "insulation_polymer",
+            "kapton",
+            "nylon_pa66",
+            "ptfe",
+            "stainless_steel",
+            "steel",
+            "thermal_pad",
+            "water_glycol_50"
+          ],
+          "default": "brass"
+        }
+      }
+    },
+    "coolant": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "material": {
+          "type": "string",
+          "description": "material name from aipe_cad.materials.MATERIALS",
+          "enum": [
+            "air",
+            "alumina",
+            "aluminium_6063",
+            "aluminium_generic",
+            "bobbin_pet_gf",
+            "brass",
+            "copper",
+            "epoxy_mold_compound",
+            "ferrite_generic",
+            "ferrite_n87",
+            "fr4",
+            "insulation_polymer",
+            "kapton",
+            "nylon_pa66",
+            "ptfe",
+            "stainless_steel",
+            "steel",
+            "thermal_pad",
+            "water_glycol_50"
+          ],
+          "default": "water_glycol_50"
+        }
+      }
+    },
+    "devices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "device instance name (unique)"
+          },
+          "package": {
+            "anyOf": [
+              {
+                "type": "string",
+                "description": "library package",
+                "enum": [
+                  "to247_3",
+                  "to247_4l"
+                ]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "base": {
+                    "type": "string",
+                    "description": "library package to start from",
+                    "enum": [
+                      "to247_3",
+                      "to247_4l"
+                    ],
+                    "default": "to247_4l"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "free text"
+                  },
+                  "reference": {
+                    "type": "string",
+                    "description": "drawing URL"
+                  },
+                  "body_length": {
+                    "type": "number",
+                    "description": "plastic body length without leads [m]",
+                    "exclusiveMinimum": 0
+                  },
+                  "body_width": {
+                    "type": "number",
+                    "description": "body width [m]",
+                    "exclusiveMinimum": 0
+                  },
+                  "body_thickness": {
+                    "type": "number",
+                    "description": "body thickness [m]",
+                    "exclusiveMinimum": 0
+                  },
+                  "hole_diameter": {
+                    "type": "number",
+                    "description": "mounting hole diameter [m]",
+                    "exclusiveMinimum": 0
+                  },
+                  "hole_offset_from_top": {
+                    "type": "number",
+                    "description": "hole centre from the top (lead-free) body edge [m]",
+                    "exclusiveMinimum": 0
+                  },
+                  "tab_length": {
+                    "type": "number",
+                    "description": "exposed metal tab length [m]",
+                    "exclusiveMinimum": 0
+                  },
+                  "tab_width": {
+                    "type": "number",
+                    "description": "exposed metal tab width [m]",
+                    "exclusiveMinimum": 0
+                  },
+                  "tab_thickness": {
+                    "type": "number",
+                    "description": "metal tab thickness (assumption, not dimensioned on drawings) [m]",
+                    "exclusiveMinimum": 0
+                  },
+                  "lead_width": {
+                    "type": "number",
+                    "description": "lead width [m]",
+                    "exclusiveMinimum": 0
+                  },
+                  "lead_thickness": {
+                    "type": "number",
+                    "description": "lead thickness [m]",
+                    "exclusiveMinimum": 0
+                  },
+                  "lead_length": {
+                    "type": "number",
+                    "description": "straight lead length [m]",
+                    "exclusiveMinimum": 0
+                  },
+                  "lead_offsets": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "number"
+                    },
+                    "description": "lead centre offsets across the body width [m]"
+                  },
+                  "lead_names": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "body_material": {
+                    "type": "string",
+                    "description": "material name from aipe_cad.materials.MATERIALS",
+                    "enum": [
+                      "air",
+                      "alumina",
+                      "aluminium_6063",
+                      "aluminium_generic",
+                      "bobbin_pet_gf",
+                      "brass",
+                      "copper",
+                      "epoxy_mold_compound",
+                      "ferrite_generic",
+                      "ferrite_n87",
+                      "fr4",
+                      "insulation_polymer",
+                      "kapton",
+                      "nylon_pa66",
+                      "ptfe",
+                      "stainless_steel",
+                      "steel",
+                      "thermal_pad",
+                      "water_glycol_50"
+                    ]
+                  },
+                  "tab_material": {
+                    "type": "string",
+                    "description": "material name from aipe_cad.materials.MATERIALS",
+                    "enum": [
+                      "air",
+                      "alumina",
+                      "aluminium_6063",
+                      "aluminium_generic",
+                      "bobbin_pet_gf",
+                      "brass",
+                      "copper",
+                      "epoxy_mold_compound",
+                      "ferrite_generic",
+                      "ferrite_n87",
+                      "fr4",
+                      "insulation_polymer",
+                      "kapton",
+                      "nylon_pa66",
+                      "ptfe",
+                      "stainless_steel",
+                      "steel",
+                      "thermal_pad",
+                      "water_glycol_50"
+                    ]
+                  },
+                  "lead_material": {
+                    "type": "string",
+                    "description": "material name from aipe_cad.materials.MATERIALS",
+                    "enum": [
+                      "air",
+                      "alumina",
+                      "aluminium_6063",
+                      "aluminium_generic",
+                      "bobbin_pet_gf",
+                      "brass",
+                      "copper",
+                      "epoxy_mold_compound",
+                      "ferrite_generic",
+                      "ferrite_n87",
+                      "fr4",
+                      "insulation_polymer",
+                      "kapton",
+                      "nylon_pa66",
+                      "ptfe",
+                      "stainless_steel",
+                      "steel",
+                      "thermal_pad",
+                      "water_glycol_50"
+                    ]
+                  }
+                }
+              }
+            ],
+            "default": "to247_4l"
+          },
+          "position": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "number"
+            },
+            "description": "body centre on the plate top face [m, m]"
+          },
+          "rotation_deg": {
+            "type": "number",
+            "description": "rotation about the device centre (0 = leads towards +X)",
+            "default": 0.0
+          },
+          "net": {
+            "type": "string",
+            "description": "electrical net / potential group used by the clearance checks (e.g. primary, secondary, pe)"
+          },
+          "lead_nets": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "one net per lead (default: device net)"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "pad": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "thickness": {
+                    "type": "number",
+                    "description": "isolation pad thickness [m]",
+                    "exclusiveMinimum": 0,
+                    "default": 0.00025
+                  },
+                  "oversize": {
+                    "type": "number",
+                    "description": "pad overhang beyond the device tab footprint, all round [m]",
+                    "minimum": 0,
+                    "default": 0.0015
+                  },
+                  "material": {
+                    "type": "string",
+                    "description": "material name from aipe_cad.materials.MATERIALS",
+                    "enum": [
+                      "air",
+                      "alumina",
+                      "aluminium_6063",
+                      "aluminium_generic",
+                      "bobbin_pet_gf",
+                      "brass",
+                      "copper",
+                      "epoxy_mold_compound",
+                      "ferrite_generic",
+                      "ferrite_n87",
+                      "fr4",
+                      "insulation_polymer",
+                      "kapton",
+                      "nylon_pa66",
+                      "ptfe",
+                      "stainless_steel",
+                      "steel",
+                      "thermal_pad",
+                      "water_glycol_50"
+                    ],
+                    "default": "alumina"
+                  },
+                  "density": {
+                    "anyOf": [
+                      {
+                        "type": "number",
+                        "description": "density override [kg/m^3]",
+                        "exclusiveMinimum": 0
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "description": "electrical isolation pad between the device tab and the plate (null = none)"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "screw_hole_diameter": {
+            "type": "number",
+            "description": "screw hole in the plate under the device mounting hole [m]",
+            "exclusiveMinimum": 0,
+            "default": 0.0032
+          },
+          "lead_form": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "horizontal": {
+                "type": "number",
+                "description": "straight run from the body before the bend [m]",
+                "minimum": 0,
+                "default": 0.003
+              },
+              "vertical": {
+                "type": "number",
+                "description": "vertical run after the bend [m]",
+                "minimum": 0,
+                "default": 0.012
+              }
+            }
+          },
+          "overhang_allowed": {
+            "type": "boolean",
+            "description": "allow the plastic body to overhang the plate edge",
+            "default": true
+          },
+          "fastener": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "enabled": {
+                    "type": "boolean",
+                    "description": "model the fastener",
+                    "default": true
+                  },
+                  "screw": {
+                    "type": "boolean",
+                    "description": "model the metal screw (head on the bushing shoulder, shank into the plate hole)",
+                    "default": true
+                  },
+                  "screw_diameter": {
+                    "type": "number",
+                    "description": "screw nominal diameter [m]",
+                    "exclusiveMinimum": 0,
+                    "default": 0.003
+                  },
+                  "head_diameter": {
+                    "type": "number",
+                    "description": "screw head diameter [m]",
+                    "exclusiveMinimum": 0,
+                    "default": 0.0055
+                  },
+                  "head_height": {
+                    "type": "number",
+                    "description": "screw head height [m]",
+                    "exclusiveMinimum": 0,
+                    "default": 0.003
+                  },
+                  "screw_material": {
+                    "type": "string",
+                    "description": "material name from aipe_cad.materials.MATERIALS",
+                    "enum": [
+                      "air",
+                      "alumina",
+                      "aluminium_6063",
+                      "aluminium_generic",
+                      "bobbin_pet_gf",
+                      "brass",
+                      "copper",
+                      "epoxy_mold_compound",
+                      "ferrite_generic",
+                      "ferrite_n87",
+                      "fr4",
+                      "insulation_polymer",
+                      "kapton",
+                      "nylon_pa66",
+                      "ptfe",
+                      "stainless_steel",
+                      "steel",
+                      "thermal_pad",
+                      "water_glycol_50"
+                    ],
+                    "default": "steel"
+                  },
+                  "screw_net": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "net of the screw (default: plate net)"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "bushing": {
+                    "type": "boolean",
+                    "description": "model an insulating shoulder bushing filling the package and pad holes",
+                    "default": true
+                  },
+                  "shoulder_diameter": {
+                    "type": "number",
+                    "description": "bushing shoulder (flange) diameter on the body top [m]",
+                    "exclusiveMinimum": 0,
+                    "default": 0.007
+                  },
+                  "shoulder_thickness": {
+                    "type": "number",
+                    "description": "bushing shoulder thickness [m]",
+                    "exclusiveMinimum": 0,
+                    "default": 0.001
+                  },
+                  "bushing_material": {
+                    "type": "string",
+                    "description": "material name from aipe_cad.materials.MATERIALS",
+                    "enum": [
+                      "air",
+                      "alumina",
+                      "aluminium_6063",
+                      "aluminium_generic",
+                      "bobbin_pet_gf",
+                      "brass",
+                      "copper",
+                      "epoxy_mold_compound",
+                      "ferrite_generic",
+                      "ferrite_n87",
+                      "fr4",
+                      "insulation_polymer",
+                      "kapton",
+                      "nylon_pa66",
+                      "ptfe",
+                      "stainless_steel",
+                      "steel",
+                      "thermal_pad",
+                      "water_glycol_50"
+                    ],
+                    "default": "nylon_pa66"
+                  }
+                },
+                "description": "isolation hardware of the device mounting (null = not modelled)"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "position"
+        ]
+      }
+    },
+    "screw_hole_depth": {
+      "type": "number",
+      "description": "blind screw hole depth from the top [m]",
+      "exclusiveMinimum": 0,
+      "default": 0.006
+    },
+    "mounting_holes": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "diameter": {
+              "type": "number",
+              "description": "hole diameter [m]",
+              "exclusiveMinimum": 0
+            },
+            "inset": {
+              "type": "number",
+              "description": "inset from the corners [m]",
+              "exclusiveMinimum": 0
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "net": {
+      "type": "string",
+      "description": "electrical net / potential group used by the clearance checks (e.g. primary, secondary, pe)",
+      "default": "pe"
+    },
+    "clearance_envelope_margin": {
+      "type": "number",
+      "description": "envelope margin [m]",
+      "minimum": 0,
+      "default": 0.003
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "interference": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "pairwise common-volume check of all solids",
+              "default": true
+            },
+            "min_overlap_volume": {
+              "type": "number",
+              "description": "common volume above which two solids are reported as interfering [m^3]",
+              "minimum": 0,
+              "default": 1e-12
+            },
+            "allowed_overlaps": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "description": "pairs of fnmatch name patterns whose overlap is intentional"
+            }
+          }
+        },
+        "keepouts": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "report solids intruding into keep-out volumes",
+              "default": true
+            },
+            "ignore_pairs": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "description": "pairs of fnmatch patterns [keepout, body] to ignore"
+            }
+          }
+        },
+        "envelopes": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "report_intrusions": {
+              "type": "boolean",
+              "description": "report solids of other components intruding into clearance envelopes",
+              "default": true
+            },
+            "ignore_pairs": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "description": "pairs of fnmatch patterns [envelope, body] to ignore (e.g. chassis under fins)"
+            }
+          }
+        },
+        "clearance_pairs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "net_a": {
+                "type": "string",
+                "description": "electrical net / potential group used by the clearance checks (e.g. primary, secondary, pe)"
+              },
+              "net_b": {
+                "type": "string",
+                "description": "electrical net / potential group used by the clearance checks (e.g. primary, secondary, pe)"
+              },
+              "required_clearance": {
+                "type": "number",
+                "description": "caller-supplied minimum air clearance [m]",
+                "minimum": 0
+              },
+              "required_creepage": {
+                "type": "number",
+                "description": "caller-supplied minimum creepage (only compared against clearance; surface paths are not traced) [m]",
+                "minimum": 0
+              },
+              "note": {
+                "type": "string",
+                "description": "free text"
+              }
+            },
+            "required": [
+              "net_a",
+              "net_b",
+              "required_clearance"
+            ]
+          }
+        },
+        "fit_pairs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "a": {
+                "type": "string",
+                "description": "body name (component builds) or instance.body (assemblies)"
+              },
+              "b": {
+                "type": "string",
+                "description": "body name"
+              },
+              "expected_gap": {
+                "type": "number",
+                "description": "expected distance [m]",
+                "minimum": 0
+              },
+              "tolerance": {
+                "type": "number",
+                "description": "tolerance on expected_gap [m]",
+                "minimum": 0
+              },
+              "min_gap": {
+                "type": "number",
+                "description": "minimum acceptable distance [m]",
+                "minimum": 0
+              },
+              "max_gap": {
+                "type": "number",
+                "description": "maximum acceptable distance [m]",
+                "minimum": 0
+              },
+              "note": {
+                "type": "string",
+                "description": "free text"
+              }
+            },
+            "required": [
+              "a",
+              "b"
+            ]
+          }
+        }
+      },
+      "description": "check configuration; required values are inputs supplied by the caller, no standard compliance is asserted"
+    }
+  },
+  "required": [
+    "plate",
+    "channel"
+  ]
+}

@@ -1,0 +1,1084 @@
+{
+  "schema": "aipe-cad-metadata/0.1",
+  "kind": "transformer",
+  "name": "dab_transformer",
+  "units": {
+    "length": "m",
+    "area": "m^2",
+    "volume": "m^3",
+    "mass": "kg",
+    "note": "FreeCAD geometry is in mm; converted here"
+  },
+  "generator": {
+    "package": "aipe_cad",
+    "freecad_version": "1.1.4"
+  },
+  "files": {
+    "fcstd": "dab_transformer.FCStd",
+    "step": "dab_transformer.step",
+    "step_keepouts": "dab_transformer.keepouts.step",
+    "checks": "dab_transformer.checks.json",
+    "render_png": "renders/dab_transformer.png",
+    "metadata": "dab_transformer.metadata.json"
+  },
+  "totals": {
+    "bbox_m": [
+      -0.0446,
+      -0.0313,
+      -0.0354,
+      0.0446,
+      0.0313,
+      0.0337
+    ],
+    "size_m": [
+      0.0892,
+      0.0626,
+      0.0691
+    ],
+    "volume_m3": 0.00015902104695847367,
+    "mass_kg": 0.7085570075981155,
+    "surface_area_m2": 0.11108229042055703,
+    "body_count": 18,
+    "mass_by_material_kg": {
+      "ferrite_n87": 0.42213305839999976,
+      "bobbin_pet_gf": 0.020088370791459646,
+      "copper": 0.199189661366714,
+      "kapton": 0.01977842268261316,
+      "brass": 0.0007209955139988579,
+      "stainless_steel": 0.03379199999999986,
+      "aluminium_6063": 0.01285449884332996
+    }
+  },
+  "bodies": [
+    {
+      "name": "core_lower",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "ferrite_n87",
+      "net": "pe",
+      "conductive": false,
+      "density_kg_m3": 4850.0,
+      "volume_m3": 4.351887199999998e-05,
+      "surface_area_m2": 0.010969119999999999,
+      "mass_kg": 0.21106652919999988,
+      "bbox_m": [
+        -0.0326,
+        -0.0137,
+        -0.0326,
+        0.0326,
+        0.0137,
+        0.0
+      ],
+      "centre_of_mass_m": [
+        1.3375268760060565e-18,
+        -7.030820143349294e-20,
+        -0.018058914045382422
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.3518871999999984e-05,
+      "analytic_relative_error": 1.5570862172241975e-16
+    },
+    {
+      "name": "core_upper",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "ferrite_n87",
+      "net": "pe",
+      "conductive": false,
+      "density_kg_m3": 4850.0,
+      "volume_m3": 4.351887199999998e-05,
+      "surface_area_m2": 0.010969119999999999,
+      "mass_kg": 0.21106652919999988,
+      "bbox_m": [
+        -0.0326,
+        -0.0137,
+        0.0,
+        0.0326,
+        0.0137,
+        0.0326
+      ],
+      "centre_of_mass_m": [
+        1.3375268760060565e-18,
+        -7.030820143349294e-20,
+        0.018058914045382422
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.3518871999999984e-05,
+      "analytic_relative_error": 1.5570862172241975e-16
+    },
+    {
+      "name": "bobbin",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "bobbin_pet_gf",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1600.0,
+      "volume_m3": 1.255523174466228e-05,
+      "surface_area_m2": 0.017420095715745723,
+      "mass_kg": 0.020088370791459646,
+      "bbox_m": [
+        -0.0216,
+        -0.0313,
+        -0.0217,
+        0.0216,
+        0.0313,
+        0.0217
+      ],
+      "centre_of_mass_m": [
+        -5.264691699626888e-19,
+        -2.7549647095528055e-18,
+        -2.3180639791142745e-18
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.2601800343205026e-05,
+      "analytic_relative_error": 0.003695392505393641
+    },
+    {
+      "name": "primary",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 4424.0,
+      "volume_m3": 2.3855789151757072e-05,
+      "surface_area_m2": 0.009628404928297014,
+      "mass_kg": 0.10553801120737329,
+      "bbox_m": [
+        -0.01765,
+        -0.02135,
+        -0.0162,
+        0.01765,
+        0.02135,
+        0.0162
+      ],
+      "centre_of_mass_m": [
+        -1.524987827461479e-19,
+        1.993206746361761e-18,
+        1.334240997838557e-19
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.385578915175706e-05,
+      "analytic_relative_error": 4.26076676918607e-16,
+      "note": "homogenised litz winding body, 21 turns in 2 layer(s)"
+    },
+    {
+      "name": "secondary",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 7448.0,
+      "volume_m3": 1.2574066884981298e-05,
+      "surface_area_m2": 0.010835430476193763,
+      "mass_kg": 0.09365165015934071,
+      "bbox_m": [
+        -0.020649999999999998,
+        -0.02435,
+        -0.0162,
+        0.020649999999999998,
+        0.02435,
+        0.0162
+      ],
+      "centre_of_mass_m": [
+        1.1572958344724517e-18,
+        -2.4031788542760237e-18,
+        -9.633403346121893e-19
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.2574066884981288e-05,
+      "analytic_relative_error": 8.083618021144898e-16,
+      "note": "homogenised foil winding body, 10 turns in 10 layer(s)"
+    },
+    {
+      "name": "barrier_primary_secondary",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 2.945374436755704e-06,
+      "surface_area_m2": 0.01192730836270376,
+      "mass_kg": 0.0041824317001931,
+      "bbox_m": [
+        -0.01815,
+        -0.02185,
+        -0.0202,
+        0.01815,
+        0.02185,
+        0.0202
+      ],
+      "centre_of_mass_m": [
+        -4.9405994181152804e-18,
+        1.1390283352572953e-17,
+        -2.56443733763912e-19
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.9453744367556963e-06,
+      "analytic_relative_error": 2.588226620750364e-15
+    },
+    {
+      "name": "outer_wrap",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 1.9880660592301794e-06,
+      "surface_area_m2": 0.013352192840044184,
+      "mass_kg": 0.0028230538041068547,
+      "bbox_m": [
+        -0.020950000000000003,
+        -0.024650000000000005,
+        -0.0202,
+        0.020950000000000003,
+        0.024650000000000005,
+        0.0202
+      ],
+      "centre_of_mass_m": [
+        -1.4639267302819562e-17,
+        9.589306635410707e-18,
+        -2.3626208225816073e-18
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.9880660592301747e-06,
+      "analytic_relative_error": 2.3433231447563676e-15
+    },
+    {
+      "name": "margin_primary_lower",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 2.945159154537911e-06,
+      "surface_area_m2": 0.0024794715959143964,
+      "mass_kg": 0.004182125999443833,
+      "bbox_m": [
+        -0.01765,
+        -0.02135,
+        -0.0202,
+        0.01765,
+        0.02135,
+        -0.0162
+      ],
+      "centre_of_mass_m": [
+        7.720250876523734e-19,
+        1.269016237828589e-18,
+        -0.018199999999999997
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.945159154537909e-06,
+      "analytic_relative_error": 5.752035138401194e-16
+    },
+    {
+      "name": "margin_primary_upper",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 2.945159154537911e-06,
+      "surface_area_m2": 0.0024794715959143964,
+      "mass_kg": 0.004182125999443833,
+      "bbox_m": [
+        -0.01765,
+        -0.02135,
+        0.0162,
+        0.01765,
+        0.02135,
+        0.0202
+      ],
+      "centre_of_mass_m": [
+        7.720250876523734e-19,
+        1.269016237828589e-18,
+        0.018199999999999997
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.945159154537909e-06,
+      "analytic_relative_error": 5.752035138401194e-16
+    },
+    {
+      "name": "margin_secondary_lower",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 1.5523539364174444e-06,
+      "surface_area_m2": 0.002018060117342678,
+      "mass_kg": 0.002204342589712771,
+      "bbox_m": [
+        -0.020649999999999998,
+        -0.02435,
+        -0.0202,
+        0.020649999999999998,
+        0.02435,
+        -0.0162
+      ],
+      "centre_of_mass_m": [
+        0.0,
+        1.9324847625098507e-18,
+        -0.01819999999999998
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.552353936417443e-06,
+      "analytic_relative_error": 9.548773787477412e-16
+    },
+    {
+      "name": "margin_secondary_upper",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 1.5523539364174444e-06,
+      "surface_area_m2": 0.002018060117342678,
+      "mass_kg": 0.002204342589712771,
+      "bbox_m": [
+        -0.020649999999999998,
+        -0.02435,
+        0.0162,
+        0.020649999999999998,
+        0.02435,
+        0.0202
+      ],
+      "centre_of_mass_m": [
+        0.0,
+        4.276008827316565e-18,
+        0.018200000000000018
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.552353936417443e-06,
+      "analytic_relative_error": 9.548773787477412e-16
+    },
+    {
+      "name": "pin_primary_1",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "brass",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 2.1205750411731113e-08,
+      "surface_area_m2": 6.008295949990481e-05,
+      "mass_kg": 0.00018024887849971447,
+      "bbox_m": [
+        -0.0032494070479204763,
+        -0.029049851747327552,
+        0.0217,
+        -0.0017499999999999998,
+        -0.02755014825267245,
+        0.0337
+      ],
+      "centre_of_mass_m": [
+        -0.0025,
+        -0.028300000000000002,
+        0.027700000000000002
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.1205750411731103e-08,
+      "analytic_relative_error": 4.6808847401812e-16
+    },
+    {
+      "name": "pin_primary_2",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "brass",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 2.1205750411731113e-08,
+      "surface_area_m2": 6.008295949990481e-05,
+      "mass_kg": 0.00018024887849971447,
+      "bbox_m": [
+        0.0017505929520795235,
+        -0.029049851747327552,
+        0.0217,
+        0.00325,
+        -0.02755014825267245,
+        0.0337
+      ],
+      "centre_of_mass_m": [
+        0.0025000000000000005,
+        -0.028300000000000002,
+        0.027700000000000002
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.1205750411731103e-08,
+      "analytic_relative_error": 4.6808847401812e-16
+    },
+    {
+      "name": "pin_secondary_1",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "brass",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 2.1205750411731113e-08,
+      "surface_area_m2": 6.008295949990481e-05,
+      "mass_kg": 0.00018024887849971447,
+      "bbox_m": [
+        -0.0032494070479204763,
+        0.02755014825267245,
+        0.0217,
+        -0.0017500000000000003,
+        0.029049851747327552,
+        0.0337
+      ],
+      "centre_of_mass_m": [
+        -0.0025,
+        0.028300000000000002,
+        0.027700000000000002
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.1205750411731103e-08,
+      "analytic_relative_error": 4.6808847401812e-16
+    },
+    {
+      "name": "pin_secondary_2",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "brass",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 2.1205750411731113e-08,
+      "surface_area_m2": 6.008295949990481e-05,
+      "mass_kg": 0.00018024887849971447,
+      "bbox_m": [
+        0.0017505929520795235,
+        0.02755014825267245,
+        0.0217,
+        0.00325,
+        0.029049851747327552,
+        0.0337
+      ],
+      "centre_of_mass_m": [
+        0.0025000000000000005,
+        0.028300000000000002,
+        0.027700000000000002
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.1205750411731103e-08,
+      "analytic_relative_error": 4.6808847401812e-16
+    },
+    {
+      "name": "clip_neg_y",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "stainless_steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 8000.0,
+      "volume_m3": 2.111999999999991e-06,
+      "surface_area_m2": 0.005702399999999998,
+      "mass_kg": 0.01689599999999993,
+      "bbox_m": [
+        -0.03339999999999999,
+        -0.011699999999999999,
+        -0.03339999999999999,
+        0.03339999999999999,
+        -0.0016999999999999993,
+        0.03339999999999999
+      ],
+      "centre_of_mass_m": [
+        -4.1340668262406005e-17,
+        -0.0066999999999999916,
+        -1.3920365047715126e-17
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.112000000000008e-06,
+      "analytic_relative_error": 8.02114533384751e-15
+    },
+    {
+      "name": "clip_pos_y",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "stainless_steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 8000.0,
+      "volume_m3": 2.111999999999991e-06,
+      "surface_area_m2": 0.005702399999999998,
+      "mass_kg": 0.01689599999999993,
+      "bbox_m": [
+        -0.03339999999999999,
+        0.0017000000000000001,
+        -0.03339999999999999,
+        0.03339999999999999,
+        0.011699999999999999,
+        0.03339999999999999
+      ],
+      "centre_of_mass_m": [
+        -4.1340668262406005e-17,
+        0.0066999999999999985,
+        -1.3920365047715126e-17
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.112000000000008e-06,
+      "analytic_relative_error": 8.02114533384751e-15
+    },
+    {
+      "name": "base_plate",
+      "group": "dab_transformer",
+      "role": "solid",
+      "material": "aluminium_6063",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 2700.0,
+      "volume_m3": 4.760925497529615e-06,
+      "surface_area_m2": 0.005340422833058848,
+      "mass_kg": 0.01285449884332996,
+      "bbox_m": [
+        -0.0446,
+        -0.0137,
+        -0.0354,
+        0.0446,
+        0.0137,
+        -0.0334
+      ],
+      "centre_of_mass_m": [
+        -5.969786640255488e-19,
+        -5.969786640255489e-20,
+        -0.03439999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.760925497529613e-06,
+      "analytic_relative_error": 3.5582701207730116e-16
+    },
+    {
+      "name": "clearance_envelope",
+      "group": "dab_transformer",
+      "role": "envelope",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 0.0005675112959999999,
+      "surface_area_m2": 0.041479519999999985,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        -0.0496,
+        -0.0363,
+        -0.0404,
+        0.0496,
+        0.0363,
+        0.03839999999999998
+      ],
+      "centre_of_mass_m": [
+        -6.090258960803311e-19,
+        -8.787066416068248e-19,
+        -0.001000000000000007
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "bounding box of the transformer structure (pins excluded) expanded by 0.005 m"
+    }
+  ],
+  "contacts": [
+    {
+      "a": "core_lower",
+      "b": "core_upper"
+    },
+    {
+      "a": "core_lower",
+      "b": "clip_neg_y"
+    },
+    {
+      "a": "core_lower",
+      "b": "clip_pos_y"
+    },
+    {
+      "a": "core_upper",
+      "b": "clip_neg_y"
+    },
+    {
+      "a": "core_upper",
+      "b": "clip_pos_y"
+    },
+    {
+      "a": "bobbin",
+      "b": "primary"
+    },
+    {
+      "a": "bobbin",
+      "b": "barrier_primary_secondary"
+    },
+    {
+      "a": "bobbin",
+      "b": "outer_wrap"
+    },
+    {
+      "a": "bobbin",
+      "b": "margin_primary_lower"
+    },
+    {
+      "a": "bobbin",
+      "b": "margin_primary_upper"
+    },
+    {
+      "a": "bobbin",
+      "b": "margin_secondary_lower"
+    },
+    {
+      "a": "bobbin",
+      "b": "margin_secondary_upper"
+    },
+    {
+      "a": "bobbin",
+      "b": "pin_primary_1"
+    },
+    {
+      "a": "bobbin",
+      "b": "pin_primary_2"
+    },
+    {
+      "a": "bobbin",
+      "b": "pin_secondary_1"
+    },
+    {
+      "a": "bobbin",
+      "b": "pin_secondary_2"
+    },
+    {
+      "a": "primary",
+      "b": "barrier_primary_secondary"
+    },
+    {
+      "a": "primary",
+      "b": "margin_primary_lower"
+    },
+    {
+      "a": "primary",
+      "b": "margin_primary_upper"
+    },
+    {
+      "a": "secondary",
+      "b": "barrier_primary_secondary"
+    },
+    {
+      "a": "secondary",
+      "b": "outer_wrap"
+    },
+    {
+      "a": "secondary",
+      "b": "margin_secondary_lower"
+    },
+    {
+      "a": "secondary",
+      "b": "margin_secondary_upper"
+    },
+    {
+      "a": "barrier_primary_secondary",
+      "b": "margin_primary_lower"
+    },
+    {
+      "a": "barrier_primary_secondary",
+      "b": "margin_primary_upper"
+    },
+    {
+      "a": "barrier_primary_secondary",
+      "b": "margin_secondary_lower"
+    },
+    {
+      "a": "barrier_primary_secondary",
+      "b": "margin_secondary_upper"
+    },
+    {
+      "a": "outer_wrap",
+      "b": "margin_secondary_lower"
+    },
+    {
+      "a": "outer_wrap",
+      "b": "margin_secondary_upper"
+    },
+    {
+      "a": "clip_neg_y",
+      "b": "base_plate"
+    },
+    {
+      "a": "clip_pos_y",
+      "b": "base_plate"
+    }
+  ],
+  "step_reimport": {
+    "path": "dab_transformer.step",
+    "solids": 18,
+    "volume_m3": 0.0001590210469584737,
+    "expected_volume_m3": 0.00015902104695847372,
+    "relative_error": 1.8301873250987833e-16,
+    "valid": true
+  },
+  "analytic": {
+    "analytic_masses": {
+      "core": 0.42213305839999987,
+      "bobbin": 0.020162880549128043,
+      "windings": 0.19918966136671387,
+      "copper": 0.16825039930101832,
+      "insulation": 0.019778422682613137,
+      "terminals": 0.0007209955139988575,
+      "mounting": 0.04664649884333008,
+      "total": 0.7086315173557838
+    }
+  },
+  "warnings": [],
+  "mesh_hints": {
+    "target": "gmsh",
+    "units": "m",
+    "import_note": "Import the STEP with gmsh.model.occ.importShapes and map solids to regions by their STEP product names (body names below).",
+    "regions": [
+      {
+        "bodies": [
+          "core_lower",
+          "core_upper"
+        ],
+        "group": "core",
+        "material": "ferrite_n87",
+        "element_size": 0.002599999999999999,
+        "note": "magnetic core; refine towards the air gap if present"
+      },
+      {
+        "bodies": [
+          "bobbin"
+        ],
+        "group": "structure",
+        "material": "bobbin_pet_gf",
+        "element_size": 0.00075
+      },
+      {
+        "bodies": [
+          "primary"
+        ],
+        "group": "winding_primary",
+        "material": "copper",
+        "element_size": 0.0029249999999999996,
+        "note": "homogenised winding body; assign effective (anisotropic) material properties"
+      },
+      {
+        "bodies": [
+          "secondary"
+        ],
+        "group": "winding_secondary",
+        "material": "copper",
+        "element_size": 0.00125,
+        "note": "homogenised winding body; assign effective (anisotropic) material properties"
+      },
+      {
+        "bodies": [
+          "barrier_primary_secondary"
+        ],
+        "group": "insulation",
+        "material": "kapton",
+        "element_size": 0.0005,
+        "note": "thin layer: one element across the thickness or a shell/thin-layer treatment"
+      },
+      {
+        "bodies": [
+          "outer_wrap"
+        ],
+        "group": "insulation",
+        "material": "kapton",
+        "element_size": 0.0003,
+        "note": "thin layer: one element across the thickness or a shell/thin-layer treatment"
+      },
+      {
+        "bodies": [
+          "margin_primary_lower"
+        ],
+        "group": "dab_transformer",
+        "material": "kapton",
+        "element_size": 0.002135,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "margin_primary_upper"
+        ],
+        "group": "dab_transformer",
+        "material": "kapton",
+        "element_size": 0.002135,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "margin_secondary_lower"
+        ],
+        "group": "dab_transformer",
+        "material": "kapton",
+        "element_size": 0.002435,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "margin_secondary_upper"
+        ],
+        "group": "dab_transformer",
+        "material": "kapton",
+        "element_size": 0.002435,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "pin_primary_1"
+        ],
+        "group": "dab_transformer",
+        "material": "brass",
+        "element_size": 0.0007497035239602383,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "pin_primary_2"
+        ],
+        "group": "dab_transformer",
+        "material": "brass",
+        "element_size": 0.0007497035239602382,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "pin_secondary_1"
+        ],
+        "group": "dab_transformer",
+        "material": "brass",
+        "element_size": 0.000749703523960238,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "pin_secondary_2"
+        ],
+        "group": "dab_transformer",
+        "material": "brass",
+        "element_size": 0.0007497035239602382,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "clip_neg_y"
+        ],
+        "group": "dab_transformer",
+        "material": "stainless_steel",
+        "element_size": 0.004999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "clip_pos_y"
+        ],
+        "group": "dab_transformer",
+        "material": "stainless_steel",
+        "element_size": 0.004999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "base_plate"
+        ],
+        "group": "dab_transformer",
+        "material": "aluminium_6063",
+        "element_size": 0.00446,
+        "note": "default size from the body bounding box"
+      }
+    ],
+    "air_region": {
+      "bbox": [
+        -0.1338,
+        -0.1205,
+        -0.1246,
+        0.1338,
+        0.1205,
+        0.12290000000000001
+      ],
+      "element_size": 0.00892,
+      "note": "suggested far-field box for magnetostatic/thermal analysis"
+    },
+    "refinement_zones": [],
+    "contact_pairs_note": "bodies listed in metadata 'contacts' touch (distance 0); mesh them conformally or define thermal contact",
+    "material_tags": [
+      "aluminium_6063",
+      "bobbin_pet_gf",
+      "brass",
+      "copper",
+      "ferrite_n87",
+      "kapton",
+      "stainless_steel"
+    ],
+    "net_tags": [
+      "pe",
+      "primary",
+      "secondary"
+    ],
+    "body_count": 18
+  },
+  "parameters": {
+    "kind": "transformer",
+    "name": "dab_transformer",
+    "description": "10 kW DAB transformer (800 V : 400 V, 100 kHz): E65/32/27 ferrite pair, 21:10 turns, litz primary, copper-foil secondary, polyimide inter-winding barrier and margins, pin terminals, clips and base plate. Illustrative parametric model, not a manufacturable design.",
+    "core": {
+      "shape": "E",
+      "total_width": 0.0652,
+      "half_height": 0.0326,
+      "depth": 0.0274,
+      "window_height": 0.0222,
+      "inner_width": 0.0442,
+      "centre_leg_width": 0.02,
+      "air_gap": 0.0,
+      "material": "ferrite_n87",
+      "net": "pe",
+      "reference": "TDK E 65/32/27 core (B66387), data sheet https://www.tdk-electronics.tdk.com/inf/80/db/fer/e_65_32_27.pdf (Oct 2024): Sigma l/A 0.27 mm^-1, le 147 mm, Ae 535 mm^2, Amin 529 mm^2, Ve 78650 mm^3, approx. 394 g/set. Nominal outline letters A=65.2, B=32.6, C=44.2, D=22.2, E=20.0, F=27.4 mm are transcribed from the IEC 62317-8 E65/32/27 outline reproduced in that drawing and must be verified against the current revision; the model is fully parametric."
+    },
+    "bobbin": {
+      "wall_thickness": 0.0015,
+      "flange_thickness": 0.0015,
+      "core_clearance": 0.0003,
+      "window_clearance": 0.0005,
+      "pin_strip_width": 0.006,
+      "corner_radius": 0.001,
+      "material": "bobbin_pet_gf"
+    },
+    "windings": [
+      {
+        "name": "primary",
+        "turns": 21,
+        "net": "primary",
+        "margin": 0.004,
+        "terminal_count": 2,
+        "terminal_side": "-y",
+        "conductor": {
+          "type": "litz",
+          "outer_diameter": 0.0029,
+          "strand_count": 420,
+          "strand_diameter": 0.0001,
+          "insulation_thickness": 5e-05,
+          "fill_factor": 0.4
+        }
+      },
+      {
+        "name": "secondary",
+        "turns": 10,
+        "net": "secondary",
+        "margin": 0.004,
+        "terminal_count": 2,
+        "terminal_side": "+y",
+        "conductor": {
+          "type": "foil",
+          "foil_thickness": 0.0002,
+          "insulation_thickness": 5e-05
+        }
+      }
+    ],
+    "insulation": {
+      "inter_winding_barrier": 0.0005,
+      "outer_wrap": 0.0003,
+      "fill_margins": true,
+      "material": "kapton"
+    },
+    "terminals": {
+      "style": "pin",
+      "diameter": 0.0015,
+      "length": 0.012,
+      "pitch": 0.005,
+      "flange": "top",
+      "direction": "+z",
+      "material": "brass"
+    },
+    "mounting": {
+      "clips": true,
+      "clip_thickness": 0.0008,
+      "clip_width": 0.01,
+      "clip_inset": 0.002,
+      "clip_material": "stainless_steel",
+      "base_plate": true,
+      "plate_thickness": 0.002,
+      "plate_margin_x": 0.012,
+      "hole_diameter": 0.0045,
+      "hole_inset": 0.006,
+      "plate_material": "aluminium_6063",
+      "net": "pe"
+    },
+    "clearance_envelope_margin": 0.005,
+    "checks": {
+      "interference": {
+        "enabled": true,
+        "min_overlap_volume": 1e-12
+      },
+      "clearance_pairs": [
+        {
+          "net_a": "primary",
+          "net_b": "secondary",
+          "required_clearance": 0.0055,
+          "required_creepage": 0.008,
+          "note": "illustrative caller-supplied values for the 800 V primary to 400 V secondary isolation; not a standard assertion"
+        },
+        {
+          "net_a": "primary",
+          "net_b": "pe",
+          "required_clearance": 0.002,
+          "required_creepage": 0.004,
+          "note": "illustrative functional-insulation value to earthed core/mounting parts"
+        },
+        {
+          "net_a": "secondary",
+          "net_b": "pe",
+          "required_clearance": 0.002,
+          "required_creepage": 0.004
+        }
+      ]
+    }
+  },
+  "timings_s": {
+    "resolve_s": 0.0,
+    "build_s": 0.1329030990600586,
+    "export_s": 0.3225698471069336,
+    "checks_s": 2.6796762943267822,
+    "render_s": 1.6404528617858887
+  },
+  "invalid_shapes": [],
+  "check_summary": {
+    "status": "review",
+    "interference_count": 0,
+    "allowed_overlap_count": 0,
+    "contact_count": 31,
+    "keepout_violation_count": 0,
+    "envelope_intrusion_count": 0,
+    "fit_failures": 0,
+    "clearance_pairs": {
+      "pass": 2,
+      "fail": 0,
+      "review": 1,
+      "no_bodies": 0
+    },
+    "unassigned_conductor_count": 0,
+    "bodies_checked": 18,
+    "note": "required clearance/creepage values are caller inputs; no standard compliance is asserted"
+  }
+}

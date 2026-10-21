@@ -1,0 +1,91 @@
+{
+  "kind": "assembly",
+  "name": "dab_10kw_assembly",
+  "description": "10 kW DAB converter mechanical layout in one coordinate system: aluminium chassis plate, four plate-fin heat sinks (two per bridge, fins through chassis cut-outs), primary and secondary power boards above their heat sinks, transformer on the chassis between them, control board above the transformer, DC input/output terminal blocks. Illustrative layout for interference/clearance checking, not a manufacturable assembly.",
+  "chassis": {"length": 0.440, "width": 0.240, "thickness": 0.003, "material": "aluminium_6063", "net": "pe",
+              "cutouts_under_heatsinks": true, "cutout_clearance": 0.0015, "min_rim": 0.0015},
+  "cooling": {
+    "variant": "heatsinks",
+    "heatsink": {"$ref": "heatsink.json"},
+    "placements": [
+      {"name": "hs_pri_a", "position": [-0.150, 0.045, 0.0], "rotation_deg": 0, "device_net": "primary"},
+      {"name": "hs_pri_b", "position": [-0.150, -0.045, 0.0], "rotation_deg": 0, "device_net": "primary"},
+      {"name": "hs_sec_a", "position": [0.150, 0.045, 0.0], "rotation_deg": 180, "device_net": "secondary"},
+      {"name": "hs_sec_b", "position": [0.150, -0.045, 0.0], "rotation_deg": 180, "device_net": "secondary"}
+    ]
+  },
+  "transformer": {
+    "name": "transformer",
+    "params": {"$ref": "transformer.json"},
+    "position": [0.0, 0.0, "on_chassis"],
+    "rotation_deg": 0
+  },
+  "boards": [
+    {
+      "name": "primary_power_board",
+      "size": [0.160, 0.200], "thickness": 0.0016, "position": [-0.130, 0.0, 0.0225], "rotation_deg": 0,
+      "material": "fr4",
+      "copper_zones": [
+        {"name": "hv_power_plane", "offset": [0.0, 0.0], "size": [0.150, 0.190], "net": "primary", "thickness": 0.00007, "side": "top"}
+      ],
+      "keepouts": [
+        {"name": "dc_link_capacitors", "offset": [0.055, 0.0], "size": [0.040, 0.180, 0.040], "side": "top"},
+        {"name": "gate_drivers", "offset": [-0.030, 0.0], "size": [0.030, 0.040, 0.015], "side": "top"}
+      ],
+      "mounting_holes": {"diameter": 0.0032, "inset": 0.005},
+      "standoffs": {"enabled": true, "diameter": 0.006, "material": "nylon_pa66"},
+      "lead_holes": {"enabled": true, "clearance": 0.0004}
+    },
+    {
+      "name": "secondary_power_board",
+      "size": [0.160, 0.200], "thickness": 0.0016, "position": [0.130, 0.0, 0.0225], "rotation_deg": 0,
+      "material": "fr4",
+      "copper_zones": [
+        {"name": "lv_power_plane", "offset": [0.0, 0.0], "size": [0.150, 0.190], "net": "secondary", "thickness": 0.00007, "side": "top"}
+      ],
+      "keepouts": [
+        {"name": "output_capacitors", "offset": [-0.055, 0.0], "size": [0.040, 0.180, 0.040], "side": "top"},
+        {"name": "gate_drivers", "offset": [0.030, 0.0], "size": [0.030, 0.040, 0.015], "side": "top"}
+      ],
+      "mounting_holes": {"diameter": 0.0032, "inset": 0.005},
+      "standoffs": {"enabled": true, "diameter": 0.006, "material": "nylon_pa66"},
+      "lead_holes": {"enabled": true, "clearance": 0.0004}
+    },
+    {
+      "name": "control_board",
+      "size": [0.080, 0.120], "thickness": 0.0016, "position": [0.0, 0.0, 0.080], "rotation_deg": 0,
+      "material": "fr4",
+      "copper_zones": [
+        {"name": "control_ground", "offset": [0.0, 0.0], "size": [0.070, 0.110], "net": "control", "thickness": 0.00007, "side": "bottom"}
+      ],
+      "keepouts": [
+        {"name": "controller_and_connectors", "offset": [0.0, 0.0], "size": [0.070, 0.110, 0.012], "side": "top"}
+      ],
+      "mounting_holes": {"diameter": 0.0032, "inset": 0.005},
+      "standoffs": {"enabled": true, "diameter": 0.006, "material": "nylon_pa66"},
+      "lead_holes": {"enabled": false}
+    }
+  ],
+  "connectors": [
+    {"name": "dc_input", "type": "dc_terminal_block", "position": [-0.195, 0.0, "on_board:primary_power_board"], "rotation_deg": 0,
+     "body_size": [0.030, 0.025, 0.020], "poles": 2, "pole_pitch": 0.0125, "pin_diameter": 0.006, "pin_length": 0.008,
+     "net": "primary", "housing_material": "nylon_pa66", "pin_material": "brass"},
+    {"name": "dc_output", "type": "dc_terminal_block", "position": [0.195, 0.0, "on_board:secondary_power_board"], "rotation_deg": 0,
+     "body_size": [0.030, 0.025, 0.020], "poles": 2, "pole_pitch": 0.0125, "pin_diameter": 0.006, "pin_length": 0.008,
+     "net": "secondary", "housing_material": "nylon_pa66", "pin_material": "brass"}
+  ],
+  "clearance_envelope_margin": 0.0,
+  "checks": {
+    "interference": {"enabled": true, "min_overlap_volume": 1e-12, "allowed_overlaps": []},
+    "keepouts": {"enabled": true},
+    "envelopes": {"report_intrusions": true, "ignore_pairs": [["*.clearance_envelope", "chassis.plate"]]},
+    "clearance_pairs": [
+      {"net_a": "primary", "net_b": "secondary", "required_clearance": 0.0055, "required_creepage": 0.008,
+       "note": "illustrative caller-supplied reinforced-isolation values between the 800 V and 400 V circuits; not a standard assertion"},
+      {"net_a": "primary", "net_b": "pe", "required_clearance": 0.002, "required_creepage": 0.004},
+      {"net_a": "secondary", "net_b": "pe", "required_clearance": 0.002, "required_creepage": 0.004},
+      {"net_a": "primary", "net_b": "control", "required_clearance": 0.0055, "required_creepage": 0.008},
+      {"net_a": "secondary", "net_b": "control", "required_clearance": 0.003, "required_creepage": 0.004}
+    ]
+  }
+}
