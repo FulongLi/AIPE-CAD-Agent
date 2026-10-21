@@ -1,0 +1,72 @@
+name: Tests
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  parameters-and-schemas:
+    name: pure-Python tests (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .[dev]
+      - name: Parameter rules, schemas, CLI and manifest (no FreeCAD on this runner)
+        run: python -m pytest -q -ra -m "not freecad and not cadquery" --junitxml=pytest-pure.xml
+      - name: Report what did not run here
+        run: |
+          echo "FreeCAD-marked tests (volumes vs analytic formulas, STEP re-import, interference and clearance cases)"
+          echo "and the optional CadQuery backend tests are not executed on this runner: no freecadcmd is installed."
+          echo "They are run in the validated local path documented in docs/validation.md (FreeCAD 1.1.4, Windows 11)."
+          python -m pytest -q -m "freecad or cadquery" --collect-only 2>/dev/null | tail -1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pytest-pure-py${{ matrix.python-version }}
+          path: pytest-pure.xml
+          if-no-files-found: ignore
+
+  freecad-geometry:
+    name: FreeCAD geometry tests (headless freecadcmd)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install the package
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .[dev]
+      - name: Install FreeCAD from the Ubuntu archive
+        id: freecad
+        continue-on-error: true
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y freecad
+          which freecadcmd && freecadcmd --version
+      - name: FreeCAD-marked tests
+        if: steps.freecad.outcome == 'success'
+        run: python -m pytest -q -ra -m freecad --junitxml=pytest-freecad.xml
+      - name: FreeCAD unavailable on this runner
+        if: steps.freecad.outcome != 'success'
+        run: |
+          echo "::warning::freecadcmd could not be installed on the runner; the FreeCAD geometry tests were NOT executed here."
+          echo "See docs/validation.md for the last validated local execution."
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pytest-freecad
+          path: pytest-freecad.xml
+          if-no-files-found: ignore
