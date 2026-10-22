@@ -1,0 +1,6168 @@
+{
+  "schema": "aipe-cad-metadata/0.1",
+  "kind": "assembly",
+  "name": "dab_10kw_assembly",
+  "units": {
+    "length": "m",
+    "area": "m^2",
+    "volume": "m^3",
+    "mass": "kg",
+    "note": "FreeCAD geometry is in mm; converted here"
+  },
+  "generator": {
+    "package": "aipe_cad",
+    "freecad_version": "1.1.4"
+  },
+  "files": {
+    "fcstd": "dab_10kw_assembly.FCStd",
+    "step": "dab_10kw_assembly.step",
+    "step_keepouts": "dab_10kw_assembly.keepouts.step",
+    "checks": "dab_10kw_assembly.checks.json",
+    "render_png": "renders/dab_10kw_assembly.png",
+    "metadata": "dab_10kw_assembly.metadata.json"
+  },
+  "totals": {
+    "bbox_m": [
+      -0.22,
+      -0.12,
+      -0.035,
+      0.22,
+      0.12,
+      0.08159999999999999
+    ],
+    "size_m": [
+      0.44,
+      0.24,
+      0.1166
+    ],
+    "volume_m3": 0.0009674595709025398,
+    "mass_kg": 2.7888092640327753,
+    "surface_area_m2": 0.8932571264864584,
+    "body_count": 119,
+    "mass_by_material_kg": {
+      "aluminium_6063": 1.6977186008194225,
+      "epoxy_mold_compound": 0.02275180075264878,
+      "copper": 0.2658173521373167,
+      "alumina": 0.0031059913792333377,
+      "nylon_pa66": 0.048168326240652024,
+      "steel": 0.010544419905519468,
+      "ferrite_n87": 0.4221330583999998,
+      "bobbin_pet_gf": 0.02008837079145963,
+      "kapton": 0.01977842268261316,
+      "brass": 0.0276381613699562,
+      "stainless_steel": 0.03379199999999974,
+      "fr4": 0.21727275955394976
+    }
+  },
+  "bodies": [
+    {
+      "name": "chassis.plate",
+      "group": "chassis",
+      "role": "solid",
+      "material": "aluminium_6063",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 2700.0,
+      "volume_m3": 0.00027057421205251724,
+      "surface_area_m2": 0.18861294952517416,
+      "mass_kg": 0.7305503725417966,
+      "bbox_m": [
+        -0.22,
+        -0.12,
+        -0.003,
+        0.22,
+        0.12,
+        0.0
+      ],
+      "centre_of_mass_m": [
+        -4.70757105849303e-18,
+        -1.4243721785336819e-18,
+        -0.0015
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 0.00027057421205251724,
+      "analytic_relative_error": 0.0,
+      "note": "chassis plate with airflow cut-outs and mounting holes"
+    },
+    {
+      "name": "hs_pri_a.body",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "aluminium_6063",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 2700.0,
+      "volume_m3": 8.836238235502743e-05,
+      "surface_area_m2": 0.06747383447473758,
+      "mass_kg": 0.23857843235857407,
+      "bbox_m": [
+        -0.19,
+        0.005,
+        -0.035,
+        -0.11,
+        0.085,
+        0.008
+      ],
+      "centre_of_mass_m": [
+        -0.15003293358406625,
+        0.045,
+        -0.005197352746043988
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "base plate with 12 fins (one extruded solid)"
+    },
+    {
+      "name": "hs_pri_a.Q1.body",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847883e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.002843975094081098,
+      "bbox_m": [
+        -0.133135,
+        0.057030000000000004,
+        0.00825,
+        -0.109665,
+        0.07297,
+        0.013269999999999999
+      ],
+      "centre_of_mass_m": [
+        -0.12050523863855396,
+        0.065,
+        0.011148821048947375
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 1.4147122834624926e-16
+    },
+    {
+      "name": "hs_pri_a.Q1.tab",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.306810344679494e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.002962902068832827,
+      "bbox_m": [
+        -0.133135,
+        0.0582,
+        0.00825,
+        -0.116185,
+        0.0718,
+        0.00975
+      ],
+      "centre_of_mass_m": [
+        -0.12453557592729492,
+        0.065,
+        0.009000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 1.6009251721548257e-16
+    },
+    {
+      "name": "hs_pri_a.Q1.pad",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465826e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.0003882489224041672,
+      "bbox_m": [
+        -0.13563499999999998,
+        0.0557,
+        0.008,
+        -0.11368500000000001,
+        0.07429999999999999,
+        0.00825
+      ],
+      "centre_of_mass_m": [
+        -0.12459111624745013,
+        0.065,
+        0.008124999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 2.6589163417987084e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "hs_pri_a.Q1.lead_drain",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.180799999999995e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999954,
+      "bbox_m": [
+        -0.109665,
+        0.05932,
+        0.01046,
+        -0.106665,
+        0.06052,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512197,
+        0.05992,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_a.Q1.lead_source",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.180799999999993e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999936,
+      "bbox_m": [
+        -0.109665,
+        0.0644,
+        0.01046,
+        -0.106665,
+        0.06559999999999999,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        0.065,
+        0.01647951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_a.Q1.lead_driver_source",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999976e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999978,
+      "bbox_m": [
+        -0.109665,
+        0.06694,
+        0.01046,
+        -0.106665,
+        0.06814,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        0.06754,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_a.Q1.lead_gate",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        -0.109665,
+        0.06948,
+        0.01046,
+        -0.106665,
+        0.07068,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512197,
+        0.07008,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_a.Q1.bushing",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.7212190548561314e-08,
+      "surface_area_m2": 0.0002031875314191656,
+      "mass_kg": 5.38218972253599e-05,
+      "bbox_m": [
+        -0.130885,
+        0.06150108786299714,
+        0.008,
+        -0.123885,
+        0.06849891213700286,
+        0.014270000000000001
+      ],
+      "centre_of_mass_m": [
+        -0.127385,
+        0.065,
+        0.01272109108252956
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 7.008195154191875e-16,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "hs_pri_a.Q1.screw",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.679047755655966e-07,
+      "surface_area_m2": 0.00022866082129153307,
+      "mass_kg": 0.0013180524881899333,
+      "bbox_m": [
+        -0.130135,
+        0.06225085474949776,
+        0.0005000000000000004,
+        -0.124635,
+        0.06774914525050224,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        -0.12738500000000003,
+        0.06500000000000002,
+        0.010957551816561655
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.679047755655967e-07,
+      "analytic_relative_error": 6.305902738628354e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "hs_pri_a.Q2.body",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847881e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.0028439750940810974,
+      "bbox_m": [
+        -0.133135,
+        0.01703,
+        0.00825,
+        -0.109665,
+        0.03297,
+        0.013269999999999999
+      ],
+      "centre_of_mass_m": [
+        -0.12050523863855396,
+        0.025,
+        0.011148821048947377
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 0.0
+    },
+    {
+      "name": "hs_pri_a.Q2.tab",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.3068103446794953e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.002962902068832828,
+      "bbox_m": [
+        -0.133135,
+        0.0182,
+        0.00825,
+        -0.116185,
+        0.0318,
+        0.00975
+      ],
+      "centre_of_mass_m": [
+        -0.12453557592729492,
+        0.025,
+        0.009000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 4.802775516464477e-16
+    },
+    {
+      "name": "hs_pri_a.Q2.pad",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465826e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.0003882489224041672,
+      "bbox_m": [
+        -0.13563499999999998,
+        0.015700000000000002,
+        0.008,
+        -0.11368500000000001,
+        0.0343,
+        0.00825
+      ],
+      "centre_of_mass_m": [
+        -0.12459111624745013,
+        0.024999999999999998,
+        0.008125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 2.6589163417987084e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "hs_pri_a.Q2.lead_drain",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999958e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999962,
+      "bbox_m": [
+        -0.109665,
+        0.01932,
+        0.01046,
+        -0.106665,
+        0.02052,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        0.01992,
+        0.01647951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_a.Q2.lead_source",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999976e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999978,
+      "bbox_m": [
+        -0.109665,
+        0.024399999999999998,
+        0.01046,
+        -0.106665,
+        0.0256,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        0.025,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_a.Q2.lead_driver_source",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999961e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999965,
+      "bbox_m": [
+        -0.109665,
+        0.026940000000000002,
+        0.01046,
+        -0.106665,
+        0.028140000000000002,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        0.02754,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_a.Q2.lead_gate",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999958e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999962,
+      "bbox_m": [
+        -0.109665,
+        0.02948,
+        0.01046,
+        -0.106665,
+        0.03068,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        0.03008,
+        0.01647951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_a.Q2.bushing",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.721219054856135e-08,
+      "surface_area_m2": 0.0002031875314191656,
+      "mass_kg": 5.382189722535994e-05,
+      "bbox_m": [
+        -0.130885,
+        0.02150108786299714,
+        0.008,
+        -0.123885,
+        0.028498912137002858,
+        0.014270000000000001
+      ],
+      "centre_of_mass_m": [
+        -0.127385,
+        0.025,
+        0.012721091082529558
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 0.0,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "hs_pri_a.Q2.screw",
+      "group": "hs_pri_a",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.6790477556559656e-07,
+      "surface_area_m2": 0.00022866082129153307,
+      "mass_kg": 0.001318052488189933,
+      "bbox_m": [
+        -0.130135,
+        0.022250854749497756,
+        0.0005000000000000004,
+        -0.124635,
+        0.027749145250502247,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        -0.12738500000000003,
+        0.025,
+        0.010957551816561653
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.679047755655967e-07,
+      "analytic_relative_error": 7.882378423285443e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "hs_pri_a.clearance_envelope",
+      "group": "hs_pri_a",
+      "role": "envelope",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 0.0004326436787000001,
+      "surface_area_m2": 0.0349335409,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        -0.193,
+        0.002,
+        -0.038,
+        -0.106665,
+        0.088,
+        0.020269999999999996
+      ],
+      "centre_of_mass_m": [
+        -0.1498325,
+        0.045,
+        -0.008865
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "bounding box of hs_pri_a (leads excluded) expanded by 0.003 m"
+    },
+    {
+      "name": "hs_pri_b.body",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "aluminium_6063",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 2700.0,
+      "volume_m3": 8.836238235502743e-05,
+      "surface_area_m2": 0.06747383447473758,
+      "mass_kg": 0.23857843235857407,
+      "bbox_m": [
+        -0.19,
+        -0.085,
+        -0.035,
+        -0.11,
+        -0.005,
+        0.008
+      ],
+      "centre_of_mass_m": [
+        -0.15003293358406625,
+        -0.045,
+        -0.0051973527460439884
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "base plate with 12 fins (one extruded solid)"
+    },
+    {
+      "name": "hs_pri_b.Q1.body",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847883e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.002843975094081098,
+      "bbox_m": [
+        -0.133135,
+        -0.03297,
+        0.00825,
+        -0.109665,
+        -0.01703,
+        0.013269999999999999
+      ],
+      "centre_of_mass_m": [
+        -0.12050523863855396,
+        -0.025,
+        0.011148821048947375
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 1.4147122834624926e-16
+    },
+    {
+      "name": "hs_pri_b.Q1.tab",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.3068103446794953e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.002962902068832828,
+      "bbox_m": [
+        -0.133135,
+        -0.0318,
+        0.00825,
+        -0.116185,
+        -0.0182,
+        0.00975
+      ],
+      "centre_of_mass_m": [
+        -0.12453557592729492,
+        -0.025,
+        0.009000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 4.802775516464477e-16
+    },
+    {
+      "name": "hs_pri_b.Q1.pad",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465826e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.0003882489224041672,
+      "bbox_m": [
+        -0.13563499999999998,
+        -0.0343,
+        0.008,
+        -0.11368500000000001,
+        -0.015700000000000002,
+        0.00825
+      ],
+      "centre_of_mass_m": [
+        -0.12459111624745013,
+        -0.024999999999999998,
+        0.008125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 2.6589163417987084e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "hs_pri_b.Q1.lead_drain",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999961e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999965,
+      "bbox_m": [
+        -0.109665,
+        -0.03068,
+        0.01046,
+        -0.106665,
+        -0.02948,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        -0.03008,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_b.Q1.lead_source",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999976e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999978,
+      "bbox_m": [
+        -0.109665,
+        -0.0256,
+        0.01046,
+        -0.106665,
+        -0.024399999999999998,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        -0.025,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_b.Q1.lead_driver_source",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999963e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999966,
+      "bbox_m": [
+        -0.109665,
+        -0.023059999999999997,
+        0.01046,
+        -0.106665,
+        -0.02186,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512194,
+        -0.02246,
+        0.01647951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_b.Q1.lead_gate",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999961e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999965,
+      "bbox_m": [
+        -0.109665,
+        -0.02052,
+        0.01046,
+        -0.106665,
+        -0.01932,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        -0.01992,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_b.Q1.bushing",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.721219054856135e-08,
+      "surface_area_m2": 0.0002031875314191656,
+      "mass_kg": 5.382189722535994e-05,
+      "bbox_m": [
+        -0.130885,
+        -0.028498912137002858,
+        0.008,
+        -0.123885,
+        -0.02150108786299714,
+        0.014270000000000001
+      ],
+      "centre_of_mass_m": [
+        -0.127385,
+        -0.025,
+        0.012721091082529558
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 0.0,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "hs_pri_b.Q1.screw",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.6790477556559656e-07,
+      "surface_area_m2": 0.00022866082129153307,
+      "mass_kg": 0.001318052488189933,
+      "bbox_m": [
+        -0.130135,
+        -0.027749145250502247,
+        0.0005000000000000004,
+        -0.124635,
+        -0.022250854749497756,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        -0.12738500000000003,
+        -0.025,
+        0.010957551816561653
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.679047755655967e-07,
+      "analytic_relative_error": 7.882378423285443e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "hs_pri_b.Q2.body",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847883e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.002843975094081098,
+      "bbox_m": [
+        -0.133135,
+        -0.07297,
+        0.00825,
+        -0.109665,
+        -0.057030000000000004,
+        0.013269999999999999
+      ],
+      "centre_of_mass_m": [
+        -0.12050523863855396,
+        -0.065,
+        0.011148821048947375
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 1.4147122834624926e-16
+    },
+    {
+      "name": "hs_pri_b.Q2.tab",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.306810344679494e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.002962902068832827,
+      "bbox_m": [
+        -0.133135,
+        -0.0718,
+        0.00825,
+        -0.116185,
+        -0.0582,
+        0.00975
+      ],
+      "centre_of_mass_m": [
+        -0.12453557592729492,
+        -0.065,
+        0.009000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 1.6009251721548257e-16
+    },
+    {
+      "name": "hs_pri_b.Q2.pad",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465826e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.0003882489224041672,
+      "bbox_m": [
+        -0.13563499999999998,
+        -0.07429999999999999,
+        0.008,
+        -0.11368500000000001,
+        -0.0557,
+        0.00825
+      ],
+      "centre_of_mass_m": [
+        -0.12459111624745013,
+        -0.065,
+        0.008124999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 2.6589163417987084e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "hs_pri_b.Q2.lead_drain",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.180799999999997e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999974,
+      "bbox_m": [
+        -0.109665,
+        -0.07068,
+        0.01046,
+        -0.106665,
+        -0.06948,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        -0.07007999999999999,
+        0.016479512195121945
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_b.Q2.lead_source",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.180799999999993e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999936,
+      "bbox_m": [
+        -0.109665,
+        -0.06559999999999999,
+        0.01046,
+        -0.106665,
+        -0.0644,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        -0.065,
+        0.01647951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_b.Q2.lead_driver_source",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999976e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999978,
+      "bbox_m": [
+        -0.109665,
+        -0.06306,
+        0.01046,
+        -0.106665,
+        -0.06186,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512196,
+        -0.06246,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_b.Q2.lead_gate",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        -0.109665,
+        -0.06052,
+        0.01046,
+        -0.106665,
+        -0.05932,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        -0.10718451219512197,
+        -0.05992,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_pri_b.Q2.bushing",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.7212190548561314e-08,
+      "surface_area_m2": 0.0002031875314191656,
+      "mass_kg": 5.38218972253599e-05,
+      "bbox_m": [
+        -0.130885,
+        -0.06849891213700286,
+        0.008,
+        -0.123885,
+        -0.06150108786299715,
+        0.014270000000000001
+      ],
+      "centre_of_mass_m": [
+        -0.127385,
+        -0.065,
+        0.01272109108252956
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 7.008195154191875e-16,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "hs_pri_b.Q2.screw",
+      "group": "hs_pri_b",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.679047755655966e-07,
+      "surface_area_m2": 0.00022866082129153307,
+      "mass_kg": 0.0013180524881899333,
+      "bbox_m": [
+        -0.130135,
+        -0.06774914525050224,
+        0.0005000000000000004,
+        -0.124635,
+        -0.06225085474949776,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        -0.12738500000000003,
+        -0.06500000000000002,
+        0.010957551816561655
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.679047755655967e-07,
+      "analytic_relative_error": 6.305902738628354e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "hs_pri_b.clearance_envelope",
+      "group": "hs_pri_b",
+      "role": "envelope",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 0.0004326436787000001,
+      "surface_area_m2": 0.0349335409,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        -0.193,
+        -0.088,
+        -0.038,
+        -0.106665,
+        -0.002,
+        0.020269999999999996
+      ],
+      "centre_of_mass_m": [
+        -0.1498325,
+        -0.045,
+        -0.008865
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "bounding box of hs_pri_b (leads excluded) expanded by 0.003 m"
+    },
+    {
+      "name": "hs_sec_a.body",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "aluminium_6063",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 2700.0,
+      "volume_m3": 8.836238235502743e-05,
+      "surface_area_m2": 0.06747383447473758,
+      "mass_kg": 0.23857843235857407,
+      "bbox_m": [
+        0.11,
+        0.004999999999999985,
+        -0.035,
+        0.19,
+        0.085,
+        0.008
+      ],
+      "centre_of_mass_m": [
+        0.15003293358406625,
+        0.045,
+        -0.005197352746043986
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "base plate with 12 fins (one extruded solid)"
+    },
+    {
+      "name": "hs_sec_a.Q1.body",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.496828996884788e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.002843975094081097,
+      "bbox_m": [
+        0.109665,
+        0.017030000000000007,
+        0.00825,
+        0.133135,
+        0.032970000000000006,
+        0.013269999999999999
+      ],
+      "centre_of_mass_m": [
+        0.12050523863855395,
+        0.025000000000000005,
+        0.011148821048947379
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 1.4147122834624926e-16
+    },
+    {
+      "name": "hs_sec_a.Q1.tab",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.306810344679494e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.002962902068832827,
+      "bbox_m": [
+        0.116185,
+        0.018200000000000004,
+        0.00825,
+        0.133135,
+        0.0318,
+        0.00975
+      ],
+      "centre_of_mass_m": [
+        0.12453557592729489,
+        0.025,
+        0.009000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 1.6009251721548257e-16
+    },
+    {
+      "name": "hs_sec_a.Q1.pad",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465824e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.0003882489224041671,
+      "bbox_m": [
+        0.113685,
+        0.015700000000000002,
+        0.008,
+        0.13563499999999998,
+        0.034300000000000004,
+        0.00825
+      ],
+      "centre_of_mass_m": [
+        0.12459111624745012,
+        0.025,
+        0.008125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 0.0,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "hs_sec_a.Q1.lead_drain",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.106665,
+        0.029480000000000003,
+        0.01046,
+        0.109665,
+        0.030680000000000006,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512196,
+        0.03008000000000001,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_a.Q1.lead_source",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999966e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999969,
+      "bbox_m": [
+        0.106665,
+        0.0244,
+        0.01046,
+        0.109665,
+        0.025600000000000008,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512194,
+        0.025,
+        0.01647951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_a.Q1.lead_driver_source",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999961e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999965,
+      "bbox_m": [
+        0.106665,
+        0.021860000000000004,
+        0.01046,
+        0.109665,
+        0.02306,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512194,
+        0.022460000000000004,
+        0.01647951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_a.Q1.lead_gate",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.106665,
+        0.019320000000000007,
+        0.01046,
+        0.109665,
+        0.020520000000000004,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512196,
+        0.019920000000000004,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_a.Q1.bushing",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.72121905485614e-08,
+      "surface_area_m2": 0.00020318753141916564,
+      "mass_kg": 5.382189722536e-05,
+      "bbox_m": [
+        0.123885,
+        0.021501087862997145,
+        0.008,
+        0.130885,
+        0.02849891213700286,
+        0.014270000000000001
+      ],
+      "centre_of_mass_m": [
+        0.12738500000000003,
+        0.025000000000000005,
+        0.01272109108252956
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 1.1213112246707e-15,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "hs_sec_a.Q1.screw",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.6790477556559667e-07,
+      "surface_area_m2": 0.00022866082129153307,
+      "mass_kg": 0.001318052488189934,
+      "bbox_m": [
+        0.124635,
+        0.02225085474949776,
+        0.0005000000000000004,
+        0.130135,
+        0.02774914525050225,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        0.127385,
+        0.025000000000000005,
+        0.010957551816561655
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.679047755655967e-07,
+      "analytic_relative_error": 1.5764756846570885e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "hs_sec_a.Q2.body",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847883e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.002843975094081098,
+      "bbox_m": [
+        0.109665,
+        0.057030000000000004,
+        0.00825,
+        0.13313500000000003,
+        0.07297,
+        0.013269999999999999
+      ],
+      "centre_of_mass_m": [
+        0.12050523863855397,
+        0.065,
+        0.011148821048947377
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 1.4147122834624926e-16
+    },
+    {
+      "name": "hs_sec_a.Q2.tab",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.306810344679494e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.002962902068832827,
+      "bbox_m": [
+        0.116185,
+        0.0582,
+        0.00825,
+        0.133135,
+        0.07180000000000002,
+        0.00975
+      ],
+      "centre_of_mass_m": [
+        0.12453557592729492,
+        0.065,
+        0.009000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 1.6009251721548257e-16
+    },
+    {
+      "name": "hs_sec_a.Q2.pad",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465826e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.0003882489224041672,
+      "bbox_m": [
+        0.11368500000000001,
+        0.0557,
+        0.008,
+        0.135635,
+        0.07429999999999999,
+        0.00825
+      ],
+      "centre_of_mass_m": [
+        0.12459111624745013,
+        0.065,
+        0.008124999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 2.6589163417987084e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "hs_sec_a.Q2.lead_drain",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999969e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999973,
+      "bbox_m": [
+        0.106665,
+        0.06948,
+        0.01046,
+        0.109665,
+        0.07068,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512196,
+        0.07008,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_a.Q2.lead_source",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999951e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999955,
+      "bbox_m": [
+        0.106665,
+        0.0644,
+        0.01046,
+        0.109665,
+        0.0656,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512197,
+        0.06500000000000002,
+        0.01647951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_a.Q2.lead_driver_source",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999974e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999977,
+      "bbox_m": [
+        0.106665,
+        0.06186,
+        0.01046,
+        0.109665,
+        0.06306,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512196,
+        0.06246,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_a.Q2.lead_gate",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.106665,
+        0.059320000000000005,
+        0.01046,
+        0.109665,
+        0.060520000000000004,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512197,
+        0.05992,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_a.Q2.bushing",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.721219054856133e-08,
+      "surface_area_m2": 0.00020318753141916564,
+      "mass_kg": 5.382189722535991e-05,
+      "bbox_m": [
+        0.12388500000000001,
+        0.06150108786299714,
+        0.008,
+        0.130885,
+        0.06849891213700286,
+        0.014270000000000001
+      ],
+      "centre_of_mass_m": [
+        0.127385,
+        0.065,
+        0.01272109108252956
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 4.204917092515125e-16,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "hs_sec_a.Q2.screw",
+      "group": "hs_sec_a",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.679047755655966e-07,
+      "surface_area_m2": 0.00022866082129153307,
+      "mass_kg": 0.0013180524881899333,
+      "bbox_m": [
+        0.12463500000000001,
+        0.06225085474949776,
+        0.0005000000000000004,
+        0.130135,
+        0.06774914525050224,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        0.12738500000000003,
+        0.06500000000000002,
+        0.010957551816561655
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.679047755655967e-07,
+      "analytic_relative_error": 6.305902738628354e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "hs_sec_a.clearance_envelope",
+      "group": "hs_sec_a",
+      "role": "envelope",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 0.0004326436787,
+      "surface_area_m2": 0.0349335409,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        0.106665,
+        0.0019999999999999857,
+        -0.038,
+        0.193,
+        0.088,
+        0.020269999999999996
+      ],
+      "centre_of_mass_m": [
+        0.1498325,
+        0.045000000000000005,
+        -0.008865000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "bounding box of hs_sec_a (leads excluded) expanded by 0.003 m"
+    },
+    {
+      "name": "hs_sec_b.body",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "aluminium_6063",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 2700.0,
+      "volume_m3": 8.836238235502745e-05,
+      "surface_area_m2": 0.06747383447473758,
+      "mass_kg": 0.2385784323585741,
+      "bbox_m": [
+        0.11,
+        -0.085,
+        -0.035,
+        0.19,
+        -0.004999999999999993,
+        0.008
+      ],
+      "centre_of_mass_m": [
+        0.15003293358406625,
+        -0.045,
+        -0.005197352746043986
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "base plate with 12 fins (one extruded solid)"
+    },
+    {
+      "name": "hs_sec_b.Q1.body",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.496828996884788e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.002843975094081097,
+      "bbox_m": [
+        0.10966499999999998,
+        -0.07297,
+        0.00825,
+        0.133135,
+        -0.05703,
+        0.013269999999999999
+      ],
+      "centre_of_mass_m": [
+        0.12050523863855395,
+        -0.065,
+        0.011148821048947374
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 1.4147122834624926e-16
+    },
+    {
+      "name": "hs_sec_b.Q1.tab",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.306810344679493e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.002962902068832826,
+      "bbox_m": [
+        0.116185,
+        -0.0718,
+        0.00825,
+        0.133135,
+        -0.058199999999999995,
+        0.00975
+      ],
+      "centre_of_mass_m": [
+        0.12453557592729489,
+        -0.065,
+        0.009000000000000003
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 1.6009251721548257e-16
+    },
+    {
+      "name": "hs_sec_b.Q1.pad",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465825e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.00038824892240416715,
+      "bbox_m": [
+        0.113685,
+        -0.07429999999999999,
+        0.008,
+        0.13563499999999998,
+        -0.05569999999999999,
+        0.00825
+      ],
+      "centre_of_mass_m": [
+        0.12459111624745012,
+        -0.065,
+        0.008124999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 1.3294581708993542e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "hs_sec_b.Q1.lead_drain",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999948e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999953,
+      "bbox_m": [
+        0.106665,
+        -0.06052,
+        0.01046,
+        0.109665,
+        -0.05931999999999999,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512193,
+        -0.059919999999999994,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_b.Q1.lead_source",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999953e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999958,
+      "bbox_m": [
+        0.106665,
+        -0.06559999999999999,
+        0.01046,
+        0.109665,
+        -0.06439999999999999,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512196,
+        -0.065,
+        0.01647951219512195
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_b.Q1.lead_driver_source",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999976e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999978,
+      "bbox_m": [
+        0.106665,
+        -0.06814,
+        0.01046,
+        0.109665,
+        -0.06694,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512196,
+        -0.06753999999999999,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_b.Q1.lead_gate",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.106665,
+        -0.07067999999999999,
+        0.01046,
+        0.109665,
+        -0.06947999999999999,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512196,
+        -0.07008,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_b.Q1.bushing",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.72121905485614e-08,
+      "surface_area_m2": 0.00020318753141916564,
+      "mass_kg": 5.382189722536e-05,
+      "bbox_m": [
+        0.123885,
+        -0.06849891213700286,
+        0.008,
+        0.130885,
+        -0.06150108786299715,
+        0.014270000000000001
+      ],
+      "centre_of_mass_m": [
+        0.127385,
+        -0.065,
+        0.012721091082529558
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 1.1213112246707e-15,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "hs_sec_b.Q1.screw",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.6790477556559667e-07,
+      "surface_area_m2": 0.00022866082129153307,
+      "mass_kg": 0.001318052488189934,
+      "bbox_m": [
+        0.124635,
+        -0.06774914525050225,
+        0.0005000000000000004,
+        0.130135,
+        -0.06225085474949776,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        0.127385,
+        -0.065,
+        0.010957551816561655
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.679047755655967e-07,
+      "analytic_relative_error": 1.5764756846570885e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "hs_sec_b.Q2.body",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "epoxy_mold_compound",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1900.0,
+      "volume_m3": 1.4968289968847885e-06,
+      "surface_area_m2": 0.001214207139940743,
+      "mass_kg": 0.0028439750940810983,
+      "bbox_m": [
+        0.109665,
+        -0.03297,
+        0.00825,
+        0.133135,
+        -0.017029999999999993,
+        0.013269999999999999
+      ],
+      "centre_of_mass_m": [
+        0.12050523863855397,
+        -0.024999999999999998,
+        0.011148821048947372
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.4968289968847881e-06,
+      "analytic_relative_error": 2.8294245669249853e-16
+    },
+    {
+      "name": "hs_sec_b.Q2.tab",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 3.3068103446794953e-07,
+      "surface_area_m2": 0.0005494283985070429,
+      "mass_kg": 0.002962902068832828,
+      "bbox_m": [
+        0.116185,
+        -0.031799999999999995,
+        0.00825,
+        0.133135,
+        -0.018199999999999997,
+        0.00975
+      ],
+      "centre_of_mass_m": [
+        0.12453557592729492,
+        -0.025,
+        0.009000000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 3.3068103446794937e-07,
+      "analytic_relative_error": 4.802775516464477e-16
+    },
+    {
+      "name": "hs_sec_b.Q2.pad",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "alumina",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 3900.0,
+      "volume_m3": 9.955100574465826e-08,
+      "surface_area_m2": 0.0008194947713822286,
+      "mass_kg": 0.0003882489224041672,
+      "bbox_m": [
+        0.11368500000000001,
+        -0.0343,
+        0.008,
+        0.13563499999999998,
+        -0.0157,
+        0.00825
+      ],
+      "centre_of_mass_m": [
+        0.12459111624745013,
+        -0.024999999999999994,
+        0.008125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 9.955100574465824e-08,
+      "analytic_relative_error": 2.6589163417987084e-16,
+      "note": "electrical isolation pad"
+    },
+    {
+      "name": "hs_sec_b.Q2.lead_drain",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999972e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999976,
+      "bbox_m": [
+        0.106665,
+        -0.020519999999999997,
+        0.01046,
+        0.109665,
+        -0.019319999999999993,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512197,
+        -0.019919999999999997,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_b.Q2.lead_source",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999966e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999969,
+      "bbox_m": [
+        0.106665,
+        -0.025599999999999998,
+        0.01046,
+        0.109665,
+        -0.02439999999999999,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512194,
+        -0.024999999999999998,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_b.Q2.lead_driver_source",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.1807999999999966e-08,
+      "surface_area_m2": 6.0479999999999956e-05,
+      "mass_kg": 0.00010579967999999969,
+      "bbox_m": [
+        0.106665,
+        -0.02814,
+        0.01046,
+        0.109665,
+        -0.02694,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512194,
+        -0.027539999999999995,
+        0.016479512195121948
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_b.Q2.lead_gate",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.180799999999997e-08,
+      "surface_area_m2": 6.047999999999993e-05,
+      "mass_kg": 0.00010579967999999974,
+      "bbox_m": [
+        0.106665,
+        -0.030679999999999992,
+        0.01046,
+        0.109665,
+        -0.029479999999999996,
+        0.024460000000000003
+      ],
+      "centre_of_mass_m": [
+        0.10718451219512196,
+        -0.030079999999999996,
+        0.016479512195121945
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "hs_sec_b.Q2.bushing",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 4.7212190548561334e-08,
+      "surface_area_m2": 0.00020318753141916564,
+      "mass_kg": 5.382189722535992e-05,
+      "bbox_m": [
+        0.12388500000000001,
+        -0.028498912137002855,
+        0.008,
+        0.130885,
+        -0.021501087862997138,
+        0.014270000000000001
+      ],
+      "centre_of_mass_m": [
+        0.127385,
+        -0.024999999999999994,
+        0.012721091082529558
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.721219054856135e-08,
+      "analytic_relative_error": 2.80327806167675e-16,
+      "note": "insulating shoulder bushing"
+    },
+    {
+      "name": "hs_sec_b.Q2.screw",
+      "group": "hs_sec_b",
+      "role": "solid",
+      "material": "steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 7850.0,
+      "volume_m3": 1.679047755655966e-07,
+      "surface_area_m2": 0.00022866082129153307,
+      "mass_kg": 0.0013180524881899333,
+      "bbox_m": [
+        0.12463500000000001,
+        -0.02774914525050224,
+        0.0005000000000000004,
+        0.130135,
+        -0.022250854749497753,
+        0.01727
+      ],
+      "centre_of_mass_m": [
+        0.12738500000000003,
+        -0.024999999999999998,
+        0.010957551816561655
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.679047755655967e-07,
+      "analytic_relative_error": 6.305902738628354e-16,
+      "note": "mounting screw (thread engagement not modelled)"
+    },
+    {
+      "name": "hs_sec_b.clearance_envelope",
+      "group": "hs_sec_b",
+      "role": "envelope",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 0.0004326436787000001,
+      "surface_area_m2": 0.0349335409,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        0.106665,
+        -0.088,
+        -0.038,
+        0.193,
+        -0.001999999999999993,
+        0.020269999999999996
+      ],
+      "centre_of_mass_m": [
+        0.1498325,
+        -0.045,
+        -0.008865
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "bounding box of hs_sec_b (leads excluded) expanded by 0.003 m"
+    },
+    {
+      "name": "transformer.core_lower",
+      "group": "transformer",
+      "role": "solid",
+      "material": "ferrite_n87",
+      "net": "pe",
+      "conductive": false,
+      "density_kg_m3": 4850.0,
+      "volume_m3": 4.351887199999998e-05,
+      "surface_area_m2": 0.010969119999999999,
+      "mass_kg": 0.21106652919999988,
+      "bbox_m": [
+        -0.0326,
+        -0.0137,
+        0.0028000000000000043,
+        0.0326,
+        0.0137,
+        0.0354
+      ],
+      "centre_of_mass_m": [
+        -1.3375268760060565e-18,
+        -1.2622897231143167e-19,
+        0.017341085954617568
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.3518871999999984e-05,
+      "analytic_relative_error": 1.5570862172241975e-16
+    },
+    {
+      "name": "transformer.core_upper",
+      "group": "transformer",
+      "role": "solid",
+      "material": "ferrite_n87",
+      "net": "pe",
+      "conductive": false,
+      "density_kg_m3": 4850.0,
+      "volume_m3": 4.351887199999999e-05,
+      "surface_area_m2": 0.010969119999999999,
+      "mass_kg": 0.21106652919999996,
+      "bbox_m": [
+        -0.0326,
+        -0.0137,
+        0.0354,
+        0.0326,
+        0.0137,
+        0.068
+      ],
+      "centre_of_mass_m": [
+        0.0,
+        9.857252661788215e-20,
+        0.05345891404538243
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.3518871999999984e-05,
+      "analytic_relative_error": 1.5570862172241975e-16
+    },
+    {
+      "name": "transformer.bobbin",
+      "group": "transformer",
+      "role": "solid",
+      "material": "bobbin_pet_gf",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1600.0,
+      "volume_m3": 1.255523174466227e-05,
+      "surface_area_m2": 0.017420095715745723,
+      "mass_kg": 0.02008837079145963,
+      "bbox_m": [
+        -0.0216,
+        -0.0313,
+        0.013699999999999999,
+        0.0216,
+        0.0313,
+        0.05709999999999999
+      ],
+      "centre_of_mass_m": [
+        9.223208169837337e-19,
+        -3.6446123109120956e-19,
+        0.0354
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.2601800343205026e-05,
+      "analytic_relative_error": 0.0036953925053944472
+    },
+    {
+      "name": "transformer.primary",
+      "group": "transformer",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 4424.0,
+      "volume_m3": 2.3855789151757072e-05,
+      "surface_area_m2": 0.009628404928297014,
+      "mass_kg": 0.10553801120737329,
+      "bbox_m": [
+        -0.01765,
+        -0.02135,
+        0.0192,
+        0.01765,
+        0.02135,
+        0.05159999999999999
+      ],
+      "centre_of_mass_m": [
+        -1.524987827461479e-19,
+        1.3832116153771696e-18,
+        0.0354
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.385578915175706e-05,
+      "analytic_relative_error": 4.26076676918607e-16,
+      "note": "homogenised litz winding body, 21 turns in 2 layer(s)"
+    },
+    {
+      "name": "transformer.secondary",
+      "group": "transformer",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 7448.0,
+      "volume_m3": 1.2574066884981305e-05,
+      "surface_area_m2": 0.010835430476193763,
+      "mass_kg": 0.09365165015934075,
+      "bbox_m": [
+        -0.020649999999999998,
+        -0.02435,
+        0.0192,
+        0.020649999999999998,
+        0.02435,
+        0.05159999999999999
+      ],
+      "centre_of_mass_m": [
+        3.471887503417354e-18,
+        2.226004483613782e-18,
+        0.0354
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.2574066884981288e-05,
+      "analytic_relative_error": 1.3472696701908165e-15,
+      "note": "homogenised foil winding body, 10 turns in 10 layer(s)"
+    },
+    {
+      "name": "transformer.barrier_primary_secondary",
+      "group": "transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 2.945374436755704e-06,
+      "surface_area_m2": 0.01192730836270376,
+      "mass_kg": 0.0041824317001931,
+      "bbox_m": [
+        -0.01815,
+        -0.02185,
+        0.0152,
+        0.01815,
+        0.02185,
+        0.0556
+      ],
+      "centre_of_mass_m": [
+        -4.9405994181152804e-18,
+        1.1390283352572953e-17,
+        0.035399999999999994
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.9453744367556963e-06,
+      "analytic_relative_error": 2.588226620750364e-15
+    },
+    {
+      "name": "transformer.outer_wrap",
+      "group": "transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 1.9880660592301794e-06,
+      "surface_area_m2": 0.013352192840044184,
+      "mass_kg": 0.0028230538041068547,
+      "bbox_m": [
+        -0.020950000000000003,
+        -0.024650000000000005,
+        0.0152,
+        0.020950000000000003,
+        0.024650000000000005,
+        0.0556
+      ],
+      "centre_of_mass_m": [
+        -1.4639267302819562e-17,
+        3.8867841241049835e-17,
+        0.03539999999999993
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.9880660592301747e-06,
+      "analytic_relative_error": 2.3433231447563676e-15
+    },
+    {
+      "name": "transformer.margin_primary_lower",
+      "group": "transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 2.945159154537911e-06,
+      "surface_area_m2": 0.0024794715959143964,
+      "mass_kg": 0.004182125999443833,
+      "bbox_m": [
+        -0.01765,
+        -0.02135,
+        0.0152,
+        0.01765,
+        0.02135,
+        0.0192
+      ],
+      "centre_of_mass_m": [
+        -4.632150525914241e-19,
+        1.269016237828589e-18,
+        0.017200000000000003
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.945159154537909e-06,
+      "analytic_relative_error": 5.752035138401194e-16
+    },
+    {
+      "name": "transformer.margin_primary_upper",
+      "group": "transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 2.945159154537911e-06,
+      "surface_area_m2": 0.0024794715959143964,
+      "mass_kg": 0.004182125999443833,
+      "bbox_m": [
+        -0.01765,
+        -0.02135,
+        0.05159999999999999,
+        0.01765,
+        0.02135,
+        0.0556
+      ],
+      "centre_of_mass_m": [
+        7.720250876523734e-19,
+        1.886636307950488e-18,
+        0.05359999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.945159154537909e-06,
+      "analytic_relative_error": 5.752035138401194e-16
+    },
+    {
+      "name": "transformer.margin_secondary_lower",
+      "group": "transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 1.5523539364174436e-06,
+      "surface_area_m2": 0.002018060117342678,
+      "mass_kg": 0.00220434258971277,
+      "bbox_m": [
+        -0.020649999999999998,
+        -0.02435,
+        0.0152,
+        0.020649999999999998,
+        0.02435,
+        0.0192
+      ],
+      "centre_of_mass_m": [
+        1.1717620324033579e-18,
+        7.607227301064939e-19,
+        0.017199999999999993
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.552353936417443e-06,
+      "analytic_relative_error": 4.092331623204605e-16
+    },
+    {
+      "name": "transformer.margin_secondary_upper",
+      "group": "transformer",
+      "role": "solid",
+      "material": "kapton",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1420.0,
+      "volume_m3": 1.5523539364174436e-06,
+      "surface_area_m2": 0.002018060117342678,
+      "mass_kg": 0.00220434258971277,
+      "bbox_m": [
+        -0.020649999999999998,
+        -0.02435,
+        0.05159999999999999,
+        0.020649999999999998,
+        0.02435,
+        0.0556
+      ],
+      "centre_of_mass_m": [
+        1.1717620324033579e-18,
+        7.607227301064939e-19,
+        0.0536
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.552353936417443e-06,
+      "analytic_relative_error": 4.092331623204605e-16
+    },
+    {
+      "name": "transformer.pin_primary_1",
+      "group": "transformer",
+      "role": "solid",
+      "material": "brass",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 2.1205750411731113e-08,
+      "surface_area_m2": 6.008295949990481e-05,
+      "mass_kg": 0.00018024887849971447,
+      "bbox_m": [
+        -0.0032494070479204763,
+        -0.029049851747327552,
+        0.05709999999999999,
+        -0.0017499999999999998,
+        -0.02755014825267245,
+        0.0691
+      ],
+      "centre_of_mass_m": [
+        -0.002499999999999999,
+        -0.028300000000000002,
+        0.06309999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.1205750411731103e-08,
+      "analytic_relative_error": 4.6808847401812e-16
+    },
+    {
+      "name": "transformer.pin_primary_2",
+      "group": "transformer",
+      "role": "solid",
+      "material": "brass",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 2.1205750411731113e-08,
+      "surface_area_m2": 6.008295949990481e-05,
+      "mass_kg": 0.00018024887849971447,
+      "bbox_m": [
+        0.0017505929520795235,
+        -0.029049851747327552,
+        0.05709999999999999,
+        0.00325,
+        -0.02755014825267245,
+        0.0691
+      ],
+      "centre_of_mass_m": [
+        0.0025,
+        -0.028300000000000002,
+        0.06309999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.1205750411731103e-08,
+      "analytic_relative_error": 4.6808847401812e-16
+    },
+    {
+      "name": "transformer.pin_secondary_1",
+      "group": "transformer",
+      "role": "solid",
+      "material": "brass",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 2.1205750411731113e-08,
+      "surface_area_m2": 6.008295949990481e-05,
+      "mass_kg": 0.00018024887849971447,
+      "bbox_m": [
+        -0.0032494070479204763,
+        0.02755014825267245,
+        0.05709999999999999,
+        -0.0017500000000000003,
+        0.029049851747327552,
+        0.0691
+      ],
+      "centre_of_mass_m": [
+        -0.002499999999999999,
+        0.028300000000000002,
+        0.06309999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.1205750411731103e-08,
+      "analytic_relative_error": 4.6808847401812e-16
+    },
+    {
+      "name": "transformer.pin_secondary_2",
+      "group": "transformer",
+      "role": "solid",
+      "material": "brass",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 2.1205750411731113e-08,
+      "surface_area_m2": 6.008295949990481e-05,
+      "mass_kg": 0.00018024887849971447,
+      "bbox_m": [
+        0.0017505929520795235,
+        0.02755014825267245,
+        0.05709999999999999,
+        0.00325,
+        0.029049851747327552,
+        0.0691
+      ],
+      "centre_of_mass_m": [
+        0.0025,
+        0.028300000000000002,
+        0.06309999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.1205750411731103e-08,
+      "analytic_relative_error": 4.6808847401812e-16
+    },
+    {
+      "name": "transformer.clip_neg_y",
+      "group": "transformer",
+      "role": "solid",
+      "material": "stainless_steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 8000.0,
+      "volume_m3": 2.1119999999999838e-06,
+      "surface_area_m2": 0.005702399999999998,
+      "mass_kg": 0.01689599999999987,
+      "bbox_m": [
+        -0.03339999999999999,
+        -0.011699999999999999,
+        0.002000000000000007,
+        0.03339999999999999,
+        -0.0016999999999999993,
+        0.06879999999999999
+      ],
+      "centre_of_mass_m": [
+        -4.134066826240615e-17,
+        -0.006700000000000007,
+        0.03539999999999989
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.112000000000008e-06,
+      "analytic_relative_error": 1.1430132100732703e-14
+    },
+    {
+      "name": "transformer.clip_pos_y",
+      "group": "transformer",
+      "role": "solid",
+      "material": "stainless_steel",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 8000.0,
+      "volume_m3": 2.1119999999999838e-06,
+      "surface_area_m2": 0.005702399999999998,
+      "mass_kg": 0.01689599999999987,
+      "bbox_m": [
+        -0.03339999999999999,
+        0.0017000000000000001,
+        0.002000000000000007,
+        0.03339999999999999,
+        0.011699999999999999,
+        0.06879999999999999
+      ],
+      "centre_of_mass_m": [
+        -4.134066826240615e-17,
+        0.006700000000000014,
+        0.035399999999999876
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 2.112000000000008e-06,
+      "analytic_relative_error": 1.1430132100732703e-14
+    },
+    {
+      "name": "transformer.base_plate",
+      "group": "transformer",
+      "role": "solid",
+      "material": "aluminium_6063",
+      "net": "pe",
+      "conductive": true,
+      "density_kg_m3": 2700.0,
+      "volume_m3": 4.760925497529614e-06,
+      "surface_area_m2": 0.005340422833058848,
+      "mass_kg": 0.012854498843329959,
+      "bbox_m": [
+        -0.0446,
+        -0.0137,
+        0.0,
+        0.0446,
+        0.0137,
+        0.002
+      ],
+      "centre_of_mass_m": [
+        -5.730995174645272e-19,
+        -1.3133530608562077e-19,
+        0.001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 4.760925497529613e-06,
+      "analytic_relative_error": 1.7791350603865058e-16
+    },
+    {
+      "name": "transformer.clearance_envelope",
+      "group": "transformer",
+      "role": "envelope",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 0.0005675112959999999,
+      "surface_area_m2": 0.041479519999999985,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        -0.0496,
+        -0.0363,
+        -0.005,
+        0.0496,
+        0.0363,
+        0.07379999999999998
+      ],
+      "centre_of_mass_m": [
+        -3.38514702263034e-19,
+        -8.205321913235351e-19,
+        0.03439999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "bounding box of the transformer structure (pins excluded) expanded by 0.005 m"
+    },
+    {
+      "name": "primary_power_board.board",
+      "group": "primary_power_board",
+      "role": "solid",
+      "material": "fr4",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1850.0,
+      "volume_m3": 5.1068103374031665e-05,
+      "surface_area_m2": 0.06521231857894895,
+      "mass_kg": 0.09447599124195857,
+      "bbox_m": [
+        -0.21,
+        -0.1,
+        0.0225,
+        -0.05,
+        0.1,
+        0.0241
+      ],
+      "centre_of_mass_m": [
+        -0.13003627674613016,
+        -1.0000318555568138e-06,
+        0.023299999999999998
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 5.1068103374031685e-05,
+      "analytic_relative_error": 3.980721701217608e-16,
+      "note": "board outline (dielectric)"
+    },
+    {
+      "name": "primary_power_board.hv_power_plane",
+      "group": "primary_power_board",
+      "role": "solid",
+      "material": "copper",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.9382579210165488e-06,
+      "surface_area_m2": 0.055438217556143615,
+      "mass_kg": 0.017366790972308276,
+      "bbox_m": [
+        -0.205,
+        -0.095,
+        0.0241,
+        -0.055,
+        0.095,
+        0.02417
+      ],
+      "centre_of_mass_m": [
+        -0.12860024954400642,
+        -2.2284985909953413e-06,
+        0.024135
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "copper zone (conductive region used by the clearance checks; keep-back around holes and connectors)"
+    },
+    {
+      "name": "primary_power_board.keepout_dc_link_capacitors",
+      "group": "primary_power_board",
+      "role": "keepout",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 0.000288,
+      "surface_area_m2": 0.031999999999999994,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        -0.09500000000000001,
+        -0.09,
+        0.024100000000000003,
+        -0.055000000000000014,
+        0.09,
+        0.0641
+      ],
+      "centre_of_mass_m": [
+        -0.07500000000000001,
+        -1.6168794698185393e-18,
+        0.04410000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "component keep-out volume",
+      "owner": "primary_power_board"
+    },
+    {
+      "name": "primary_power_board.keepout_gate_drivers",
+      "group": "primary_power_board",
+      "role": "keepout",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 1.7999999999999994e-05,
+      "surface_area_m2": 0.004499999999999999,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        -0.175,
+        -0.02,
+        0.0241,
+        -0.145,
+        0.02,
+        0.039099999999999996
+      ],
+      "centre_of_mass_m": [
+        -0.16000000000000003,
+        3.157967714489335e-20,
+        0.0316
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "component keep-out volume",
+      "owner": "primary_power_board"
+    },
+    {
+      "name": "primary_power_board.standoff_1",
+      "group": "primary_power_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 6.361725123519332e-07,
+      "surface_area_m2": 0.00048066367599923835,
+      "mass_kg": 0.0007252366640812037,
+      "bbox_m": [
+        -0.20800000000000002,
+        -0.09799906754600245,
+        0.0,
+        -0.20200000000000004,
+        -0.09200093245399756,
+        0.0225
+      ],
+      "centre_of_mass_m": [
+        -0.20500000000000004,
+        -0.09500000000000003,
+        0.01125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "primary_power_board.standoff_2",
+      "group": "primary_power_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 6.361725123519332e-07,
+      "surface_area_m2": 0.00048066367599923835,
+      "mass_kg": 0.0007252366640812037,
+      "bbox_m": [
+        -0.20800000000000002,
+        0.09200093245399756,
+        0.0,
+        -0.20200000000000004,
+        0.09799906754600245,
+        0.0225
+      ],
+      "centre_of_mass_m": [
+        -0.20500000000000004,
+        0.09500000000000003,
+        0.01125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "primary_power_board.standoff_3",
+      "group": "primary_power_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 6.361725123519335e-07,
+      "surface_area_m2": 0.00048066367599923835,
+      "mass_kg": 0.0007252366640812042,
+      "bbox_m": [
+        -0.05800000000000001,
+        -0.09799906754600245,
+        0.0,
+        -0.052000000000000005,
+        -0.09200093245399756,
+        0.0225
+      ],
+      "centre_of_mass_m": [
+        -0.05500000000000001,
+        -0.095,
+        0.011249999999999998
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "primary_power_board.standoff_4",
+      "group": "primary_power_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 6.361725123519335e-07,
+      "surface_area_m2": 0.00048066367599923835,
+      "mass_kg": 0.0007252366640812042,
+      "bbox_m": [
+        -0.05800000000000001,
+        0.09200093245399756,
+        0.0,
+        -0.052000000000000005,
+        0.09799906754600245,
+        0.0225
+      ],
+      "centre_of_mass_m": [
+        -0.05500000000000001,
+        0.095,
+        0.011249999999999998
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "secondary_power_board.board",
+      "group": "secondary_power_board",
+      "role": "solid",
+      "material": "fr4",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1850.0,
+      "volume_m3": 5.106810337403166e-05,
+      "surface_area_m2": 0.06521231857894895,
+      "mass_kg": 0.09447599124195857,
+      "bbox_m": [
+        0.05,
+        -0.1,
+        0.0225,
+        0.21,
+        0.1,
+        0.0241
+      ],
+      "centre_of_mass_m": [
+        0.1300362767461304,
+        1.0000318555592605e-06,
+        0.0233
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 5.1068103374031685e-05,
+      "analytic_relative_error": 5.30762893495681e-16,
+      "note": "board outline (dielectric)"
+    },
+    {
+      "name": "secondary_power_board.lv_power_plane",
+      "group": "secondary_power_board",
+      "role": "solid",
+      "material": "copper",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 1.9382579210165543e-06,
+      "surface_area_m2": 0.05543821755614356,
+      "mass_kg": 0.017366790972308328,
+      "bbox_m": [
+        0.055,
+        -0.095,
+        0.0241,
+        0.205,
+        0.095,
+        0.02417
+      ],
+      "centre_of_mass_m": [
+        0.1286002495440065,
+        2.228498591034791e-06,
+        0.024134999999999993
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "copper zone (conductive region used by the clearance checks; keep-back around holes and connectors)"
+    },
+    {
+      "name": "secondary_power_board.keepout_output_capacitors",
+      "group": "secondary_power_board",
+      "role": "keepout",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 0.000288,
+      "surface_area_m2": 0.031999999999999994,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        0.055000000000000014,
+        -0.09,
+        0.024100000000000003,
+        0.09500000000000001,
+        0.09,
+        0.0641
+      ],
+      "centre_of_mass_m": [
+        0.07500000000000001,
+        -1.6168794698185393e-18,
+        0.04410000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "component keep-out volume",
+      "owner": "secondary_power_board"
+    },
+    {
+      "name": "secondary_power_board.keepout_gate_drivers",
+      "group": "secondary_power_board",
+      "role": "keepout",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 1.7999999999999994e-05,
+      "surface_area_m2": 0.004499999999999999,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        0.145,
+        -0.02,
+        0.0241,
+        0.175,
+        0.02,
+        0.039099999999999996
+      ],
+      "centre_of_mass_m": [
+        0.16000000000000003,
+        3.157967714489335e-20,
+        0.0316
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "component keep-out volume",
+      "owner": "secondary_power_board"
+    },
+    {
+      "name": "secondary_power_board.standoff_1",
+      "group": "secondary_power_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 6.361725123519335e-07,
+      "surface_area_m2": 0.00048066367599923835,
+      "mass_kg": 0.0007252366640812042,
+      "bbox_m": [
+        0.052000000000000005,
+        -0.09799906754600245,
+        0.0,
+        0.05800000000000001,
+        -0.09200093245399756,
+        0.0225
+      ],
+      "centre_of_mass_m": [
+        0.05500000000000001,
+        -0.095,
+        0.011249999999999998
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "secondary_power_board.standoff_2",
+      "group": "secondary_power_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 6.361725123519335e-07,
+      "surface_area_m2": 0.00048066367599923835,
+      "mass_kg": 0.0007252366640812042,
+      "bbox_m": [
+        0.052000000000000005,
+        0.09200093245399756,
+        0.0,
+        0.05800000000000001,
+        0.09799906754600245,
+        0.0225
+      ],
+      "centre_of_mass_m": [
+        0.05500000000000001,
+        0.095,
+        0.011249999999999998
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "secondary_power_board.standoff_3",
+      "group": "secondary_power_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 6.361725123519332e-07,
+      "surface_area_m2": 0.00048066367599923835,
+      "mass_kg": 0.0007252366640812037,
+      "bbox_m": [
+        0.20200000000000004,
+        -0.09799906754600245,
+        0.0,
+        0.20800000000000002,
+        -0.09200093245399756,
+        0.0225
+      ],
+      "centre_of_mass_m": [
+        0.20500000000000004,
+        -0.09500000000000003,
+        0.01125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "secondary_power_board.standoff_4",
+      "group": "secondary_power_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 6.361725123519332e-07,
+      "surface_area_m2": 0.00048066367599923835,
+      "mass_kg": 0.0007252366640812037,
+      "bbox_m": [
+        0.20200000000000004,
+        0.09200093245399756,
+        0.0,
+        0.20800000000000002,
+        0.09799906754600245,
+        0.0225
+      ],
+      "centre_of_mass_m": [
+        0.20500000000000004,
+        0.09500000000000003,
+        0.01125
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "control_board.board",
+      "group": "control_board",
+      "role": "solid",
+      "material": "fr4",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1850.0,
+      "volume_m3": 1.530852814596357e-05,
+      "surface_area_m2": 0.019839999999999997,
+      "mass_kg": 0.028320777070032607,
+      "bbox_m": [
+        -0.04,
+        -0.06,
+        0.08,
+        0.04,
+        0.06,
+        0.08159999999999999
+      ],
+      "centre_of_mass_m": [
+        2.5101140216434277e-18,
+        -3.0448128664905483e-19,
+        0.08079999999999996
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "analytic_volume_m3": 1.5308528145963585e-05,
+      "analytic_relative_error": 8.852926308034528e-16,
+      "note": "board outline (dielectric)"
+    },
+    {
+      "name": "control_board.control_ground",
+      "group": "control_board",
+      "role": "solid",
+      "material": "copper",
+      "net": "control",
+      "conductive": true,
+      "density_kg_m3": 8960.0,
+      "volume_m3": 5.363060842994945e-07,
+      "surface_area_m2": 0.015347810360387307,
+      "mass_kg": 0.004805302515323471,
+      "bbox_m": [
+        -0.035,
+        -0.055,
+        0.07993,
+        0.035,
+        0.055,
+        0.08
+      ],
+      "centre_of_mass_m": [
+        -2.649765708655675e-19,
+        8.479250267698161e-19,
+        0.07996500000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "copper zone (conductive region used by the clearance checks; keep-back around holes and connectors)"
+    },
+    {
+      "name": "control_board.keepout_controller_and_connectors",
+      "group": "control_board",
+      "role": "keepout",
+      "material": "air",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": null,
+      "volume_m3": 9.240000000000001e-05,
+      "surface_area_m2": 0.019719999999999998,
+      "mass_kg": 0.0,
+      "bbox_m": [
+        -0.035,
+        -0.055,
+        0.0816,
+        0.035,
+        0.055,
+        0.0936
+      ],
+      "centre_of_mass_m": [
+        -3.7007434154171887e-19,
+        -2.0301221021717148e-19,
+        0.08760000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "component keep-out volume",
+      "owner": "control_board"
+    },
+    {
+      "name": "control_board.standoff_1",
+      "group": "control_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 2.2619467105846507e-06,
+      "surface_area_m2": 0.0015645131414877167,
+      "mass_kg": 0.0025786192500665017,
+      "bbox_m": [
+        -0.038,
+        -0.05799906754600245,
+        0.0,
+        -0.032,
+        -0.05200093245399755,
+        0.08
+      ],
+      "centre_of_mass_m": [
+        -0.03499999999999999,
+        -0.05499999999999999,
+        0.04
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "control_board.standoff_2",
+      "group": "control_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 2.2619467105846507e-06,
+      "surface_area_m2": 0.0015645131414877167,
+      "mass_kg": 0.0025786192500665017,
+      "bbox_m": [
+        -0.038,
+        0.05200093245399755,
+        0.0,
+        -0.032,
+        0.05799906754600245,
+        0.08
+      ],
+      "centre_of_mass_m": [
+        -0.03499999999999999,
+        0.05499999999999999,
+        0.04
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "control_board.standoff_3",
+      "group": "control_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 2.2619467105846507e-06,
+      "surface_area_m2": 0.0015645131414877167,
+      "mass_kg": 0.0025786192500665017,
+      "bbox_m": [
+        0.032,
+        -0.05799906754600245,
+        0.0,
+        0.038,
+        -0.05200093245399755,
+        0.08
+      ],
+      "centre_of_mass_m": [
+        0.03499999999999999,
+        -0.05499999999999999,
+        0.04
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "control_board.standoff_4",
+      "group": "control_board",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 2.2619467105846507e-06,
+      "surface_area_m2": 0.0015645131414877167,
+      "mass_kg": 0.0025786192500665017,
+      "bbox_m": [
+        0.032,
+        0.05200093245399755,
+        0.0,
+        0.038,
+        0.05799906754600245,
+        0.08
+      ],
+      "centre_of_mass_m": [
+        0.03499999999999999,
+        0.05499999999999999,
+        0.04
+      ],
+      "solid_count": 1,
+      "is_valid": true,
+      "note": "standoff on chassis"
+    },
+    {
+      "name": "dc_input.housing",
+      "group": "dc_input",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 1.3869026644707676e-05,
+      "surface_area_m2": 0.004340884901332317,
+      "mass_kg": 0.01581069037496675,
+      "bbox_m": [
+        -0.21,
+        -0.0125,
+        0.0241,
+        -0.18,
+        0.0125,
+        0.0441
+      ],
+      "centre_of_mass_m": [
+        -0.19499999999999998,
+        -4.649805431953896e-20,
+        0.03409999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "dc_input.pin1",
+      "group": "dc_input",
+      "role": "solid",
+      "material": "brass",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 7.916813487046277e-07,
+      "surface_area_m2": 0.0005843362335677016,
+      "mass_kg": 0.006729291463989336,
+      "bbox_m": [
+        -0.20425,
+        -0.0029990675460024496,
+        0.0241,
+        -0.19825,
+        0.0029990675460024488,
+        0.0521
+      ],
+      "centre_of_mass_m": [
+        -0.20125000000000004,
+        2.486349196308222e-19,
+        0.03810000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "dc_input.pin2",
+      "group": "dc_input",
+      "role": "solid",
+      "material": "brass",
+      "net": "primary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 7.916813487046277e-07,
+      "surface_area_m2": 0.0005843362335677016,
+      "mass_kg": 0.006729291463989336,
+      "bbox_m": [
+        -0.19175,
+        -0.0029990675460024496,
+        0.0241,
+        -0.18575,
+        0.0029990675460024488,
+        0.0521
+      ],
+      "centre_of_mass_m": [
+        -0.18875000000000003,
+        2.486349196308222e-19,
+        0.03810000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "dc_output.housing",
+      "group": "dc_output",
+      "role": "solid",
+      "material": "nylon_pa66",
+      "net": null,
+      "conductive": false,
+      "density_kg_m3": 1140.0,
+      "volume_m3": 1.3869026644707676e-05,
+      "surface_area_m2": 0.004340884901332317,
+      "mass_kg": 0.01581069037496675,
+      "bbox_m": [
+        0.18,
+        -0.0125,
+        0.0241,
+        0.21,
+        0.0125,
+        0.0441
+      ],
+      "centre_of_mass_m": [
+        0.19500000000000003,
+        -4.649805431953896e-20,
+        0.03409999999999999
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "dc_output.pin1",
+      "group": "dc_output",
+      "role": "solid",
+      "material": "brass",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 7.916813487046277e-07,
+      "surface_area_m2": 0.0005843362335677016,
+      "mass_kg": 0.006729291463989336,
+      "bbox_m": [
+        0.18575,
+        -0.0029990675460024496,
+        0.0241,
+        0.19175,
+        0.0029990675460024488,
+        0.0521
+      ],
+      "centre_of_mass_m": [
+        0.18875000000000003,
+        2.486349196308222e-19,
+        0.03810000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    },
+    {
+      "name": "dc_output.pin2",
+      "group": "dc_output",
+      "role": "solid",
+      "material": "brass",
+      "net": "secondary",
+      "conductive": true,
+      "density_kg_m3": 8500.0,
+      "volume_m3": 7.916813487046277e-07,
+      "surface_area_m2": 0.0005843362335677016,
+      "mass_kg": 0.006729291463989336,
+      "bbox_m": [
+        0.19825,
+        -0.0029990675460024496,
+        0.0241,
+        0.20425,
+        0.0029990675460024488,
+        0.0521
+      ],
+      "centre_of_mass_m": [
+        0.20125000000000004,
+        2.486349196308222e-19,
+        0.03810000000000001
+      ],
+      "solid_count": 1,
+      "is_valid": true
+    }
+  ],
+  "contacts": [
+    {
+      "a": "chassis.plate",
+      "b": "hs_pri_a.body"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "hs_pri_b.body"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "hs_sec_a.body"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "hs_sec_b.body"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "transformer.base_plate"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "primary_power_board.standoff_1"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "primary_power_board.standoff_2"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "primary_power_board.standoff_3"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "primary_power_board.standoff_4"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "secondary_power_board.standoff_1"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "secondary_power_board.standoff_2"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "secondary_power_board.standoff_3"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "secondary_power_board.standoff_4"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "control_board.standoff_1"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "control_board.standoff_2"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "control_board.standoff_3"
+    },
+    {
+      "a": "chassis.plate",
+      "b": "control_board.standoff_4"
+    },
+    {
+      "a": "hs_pri_a.body",
+      "b": "hs_pri_a.Q1.pad"
+    },
+    {
+      "a": "hs_pri_a.body",
+      "b": "hs_pri_a.Q1.bushing"
+    },
+    {
+      "a": "hs_pri_a.body",
+      "b": "hs_pri_a.Q2.pad"
+    },
+    {
+      "a": "hs_pri_a.body",
+      "b": "hs_pri_a.Q2.bushing"
+    },
+    {
+      "a": "hs_pri_a.Q1.body",
+      "b": "hs_pri_a.Q1.tab"
+    },
+    {
+      "a": "hs_pri_a.Q1.body",
+      "b": "hs_pri_a.Q1.pad"
+    },
+    {
+      "a": "hs_pri_a.Q1.body",
+      "b": "hs_pri_a.Q1.lead_drain"
+    },
+    {
+      "a": "hs_pri_a.Q1.body",
+      "b": "hs_pri_a.Q1.lead_source"
+    },
+    {
+      "a": "hs_pri_a.Q1.body",
+      "b": "hs_pri_a.Q1.lead_driver_source"
+    },
+    {
+      "a": "hs_pri_a.Q1.body",
+      "b": "hs_pri_a.Q1.lead_gate"
+    },
+    {
+      "a": "hs_pri_a.Q1.body",
+      "b": "hs_pri_a.Q1.bushing"
+    },
+    {
+      "a": "hs_pri_a.Q1.tab",
+      "b": "hs_pri_a.Q1.pad"
+    },
+    {
+      "a": "hs_pri_a.Q1.tab",
+      "b": "hs_pri_a.Q1.bushing"
+    },
+    {
+      "a": "hs_pri_a.Q1.pad",
+      "b": "hs_pri_a.Q1.bushing"
+    },
+    {
+      "a": "hs_pri_a.Q1.bushing",
+      "b": "hs_pri_a.Q1.screw"
+    },
+    {
+      "a": "hs_pri_a.Q2.body",
+      "b": "hs_pri_a.Q2.tab"
+    },
+    {
+      "a": "hs_pri_a.Q2.body",
+      "b": "hs_pri_a.Q2.pad"
+    },
+    {
+      "a": "hs_pri_a.Q2.body",
+      "b": "hs_pri_a.Q2.lead_drain"
+    },
+    {
+      "a": "hs_pri_a.Q2.body",
+      "b": "hs_pri_a.Q2.lead_source"
+    },
+    {
+      "a": "hs_pri_a.Q2.body",
+      "b": "hs_pri_a.Q2.lead_driver_source"
+    },
+    {
+      "a": "hs_pri_a.Q2.body",
+      "b": "hs_pri_a.Q2.lead_gate"
+    },
+    {
+      "a": "hs_pri_a.Q2.body",
+      "b": "hs_pri_a.Q2.bushing"
+    },
+    {
+      "a": "hs_pri_a.Q2.tab",
+      "b": "hs_pri_a.Q2.pad"
+    },
+    {
+      "a": "hs_pri_a.Q2.tab",
+      "b": "hs_pri_a.Q2.bushing"
+    },
+    {
+      "a": "hs_pri_a.Q2.pad",
+      "b": "hs_pri_a.Q2.bushing"
+    },
+    {
+      "a": "hs_pri_a.Q2.bushing",
+      "b": "hs_pri_a.Q2.screw"
+    },
+    {
+      "a": "hs_pri_b.body",
+      "b": "hs_pri_b.Q1.pad"
+    },
+    {
+      "a": "hs_pri_b.body",
+      "b": "hs_pri_b.Q1.bushing"
+    },
+    {
+      "a": "hs_pri_b.body",
+      "b": "hs_pri_b.Q2.pad"
+    },
+    {
+      "a": "hs_pri_b.body",
+      "b": "hs_pri_b.Q2.bushing"
+    },
+    {
+      "a": "hs_pri_b.Q1.body",
+      "b": "hs_pri_b.Q1.tab"
+    },
+    {
+      "a": "hs_pri_b.Q1.body",
+      "b": "hs_pri_b.Q1.pad"
+    },
+    {
+      "a": "hs_pri_b.Q1.body",
+      "b": "hs_pri_b.Q1.lead_drain"
+    },
+    {
+      "a": "hs_pri_b.Q1.body",
+      "b": "hs_pri_b.Q1.lead_source"
+    },
+    {
+      "a": "hs_pri_b.Q1.body",
+      "b": "hs_pri_b.Q1.lead_driver_source"
+    },
+    {
+      "a": "hs_pri_b.Q1.body",
+      "b": "hs_pri_b.Q1.lead_gate"
+    },
+    {
+      "a": "hs_pri_b.Q1.body",
+      "b": "hs_pri_b.Q1.bushing"
+    },
+    {
+      "a": "hs_pri_b.Q1.tab",
+      "b": "hs_pri_b.Q1.pad"
+    },
+    {
+      "a": "hs_pri_b.Q1.tab",
+      "b": "hs_pri_b.Q1.bushing"
+    },
+    {
+      "a": "hs_pri_b.Q1.pad",
+      "b": "hs_pri_b.Q1.bushing"
+    },
+    {
+      "a": "hs_pri_b.Q1.bushing",
+      "b": "hs_pri_b.Q1.screw"
+    },
+    {
+      "a": "hs_pri_b.Q2.body",
+      "b": "hs_pri_b.Q2.tab"
+    },
+    {
+      "a": "hs_pri_b.Q2.body",
+      "b": "hs_pri_b.Q2.pad"
+    },
+    {
+      "a": "hs_pri_b.Q2.body",
+      "b": "hs_pri_b.Q2.lead_drain"
+    },
+    {
+      "a": "hs_pri_b.Q2.body",
+      "b": "hs_pri_b.Q2.lead_source"
+    },
+    {
+      "a": "hs_pri_b.Q2.body",
+      "b": "hs_pri_b.Q2.lead_driver_source"
+    },
+    {
+      "a": "hs_pri_b.Q2.body",
+      "b": "hs_pri_b.Q2.lead_gate"
+    },
+    {
+      "a": "hs_pri_b.Q2.body",
+      "b": "hs_pri_b.Q2.bushing"
+    },
+    {
+      "a": "hs_pri_b.Q2.tab",
+      "b": "hs_pri_b.Q2.pad"
+    },
+    {
+      "a": "hs_pri_b.Q2.tab",
+      "b": "hs_pri_b.Q2.bushing"
+    },
+    {
+      "a": "hs_pri_b.Q2.pad",
+      "b": "hs_pri_b.Q2.bushing"
+    },
+    {
+      "a": "hs_pri_b.Q2.bushing",
+      "b": "hs_pri_b.Q2.screw"
+    },
+    {
+      "a": "hs_sec_a.body",
+      "b": "hs_sec_a.Q1.pad"
+    },
+    {
+      "a": "hs_sec_a.body",
+      "b": "hs_sec_a.Q1.bushing"
+    },
+    {
+      "a": "hs_sec_a.body",
+      "b": "hs_sec_a.Q2.pad"
+    },
+    {
+      "a": "hs_sec_a.body",
+      "b": "hs_sec_a.Q2.bushing"
+    },
+    {
+      "a": "hs_sec_a.Q1.body",
+      "b": "hs_sec_a.Q1.tab"
+    },
+    {
+      "a": "hs_sec_a.Q1.body",
+      "b": "hs_sec_a.Q1.pad"
+    },
+    {
+      "a": "hs_sec_a.Q1.body",
+      "b": "hs_sec_a.Q1.lead_drain"
+    },
+    {
+      "a": "hs_sec_a.Q1.body",
+      "b": "hs_sec_a.Q1.lead_source"
+    },
+    {
+      "a": "hs_sec_a.Q1.body",
+      "b": "hs_sec_a.Q1.lead_driver_source"
+    },
+    {
+      "a": "hs_sec_a.Q1.body",
+      "b": "hs_sec_a.Q1.lead_gate"
+    },
+    {
+      "a": "hs_sec_a.Q1.body",
+      "b": "hs_sec_a.Q1.bushing"
+    },
+    {
+      "a": "hs_sec_a.Q1.tab",
+      "b": "hs_sec_a.Q1.pad"
+    },
+    {
+      "a": "hs_sec_a.Q1.tab",
+      "b": "hs_sec_a.Q1.bushing"
+    },
+    {
+      "a": "hs_sec_a.Q1.pad",
+      "b": "hs_sec_a.Q1.bushing"
+    },
+    {
+      "a": "hs_sec_a.Q1.bushing",
+      "b": "hs_sec_a.Q1.screw"
+    },
+    {
+      "a": "hs_sec_a.Q2.body",
+      "b": "hs_sec_a.Q2.tab"
+    },
+    {
+      "a": "hs_sec_a.Q2.body",
+      "b": "hs_sec_a.Q2.pad"
+    },
+    {
+      "a": "hs_sec_a.Q2.body",
+      "b": "hs_sec_a.Q2.lead_drain"
+    },
+    {
+      "a": "hs_sec_a.Q2.body",
+      "b": "hs_sec_a.Q2.lead_source"
+    },
+    {
+      "a": "hs_sec_a.Q2.body",
+      "b": "hs_sec_a.Q2.lead_driver_source"
+    },
+    {
+      "a": "hs_sec_a.Q2.body",
+      "b": "hs_sec_a.Q2.lead_gate"
+    },
+    {
+      "a": "hs_sec_a.Q2.body",
+      "b": "hs_sec_a.Q2.bushing"
+    },
+    {
+      "a": "hs_sec_a.Q2.tab",
+      "b": "hs_sec_a.Q2.pad"
+    },
+    {
+      "a": "hs_sec_a.Q2.tab",
+      "b": "hs_sec_a.Q2.bushing"
+    },
+    {
+      "a": "hs_sec_a.Q2.pad",
+      "b": "hs_sec_a.Q2.bushing"
+    },
+    {
+      "a": "hs_sec_a.Q2.bushing",
+      "b": "hs_sec_a.Q2.screw"
+    },
+    {
+      "a": "hs_sec_b.body",
+      "b": "hs_sec_b.Q1.pad"
+    },
+    {
+      "a": "hs_sec_b.body",
+      "b": "hs_sec_b.Q1.bushing"
+    },
+    {
+      "a": "hs_sec_b.body",
+      "b": "hs_sec_b.Q2.pad"
+    },
+    {
+      "a": "hs_sec_b.body",
+      "b": "hs_sec_b.Q2.bushing"
+    },
+    {
+      "a": "hs_sec_b.Q1.body",
+      "b": "hs_sec_b.Q1.tab"
+    },
+    {
+      "a": "hs_sec_b.Q1.body",
+      "b": "hs_sec_b.Q1.pad"
+    },
+    {
+      "a": "hs_sec_b.Q1.body",
+      "b": "hs_sec_b.Q1.lead_drain"
+    },
+    {
+      "a": "hs_sec_b.Q1.body",
+      "b": "hs_sec_b.Q1.lead_source"
+    },
+    {
+      "a": "hs_sec_b.Q1.body",
+      "b": "hs_sec_b.Q1.lead_driver_source"
+    },
+    {
+      "a": "hs_sec_b.Q1.body",
+      "b": "hs_sec_b.Q1.lead_gate"
+    },
+    {
+      "a": "hs_sec_b.Q1.body",
+      "b": "hs_sec_b.Q1.bushing"
+    },
+    {
+      "a": "hs_sec_b.Q1.tab",
+      "b": "hs_sec_b.Q1.pad"
+    },
+    {
+      "a": "hs_sec_b.Q1.tab",
+      "b": "hs_sec_b.Q1.bushing"
+    },
+    {
+      "a": "hs_sec_b.Q1.pad",
+      "b": "hs_sec_b.Q1.bushing"
+    },
+    {
+      "a": "hs_sec_b.Q1.bushing",
+      "b": "hs_sec_b.Q1.screw"
+    },
+    {
+      "a": "hs_sec_b.Q2.body",
+      "b": "hs_sec_b.Q2.tab"
+    },
+    {
+      "a": "hs_sec_b.Q2.body",
+      "b": "hs_sec_b.Q2.pad"
+    },
+    {
+      "a": "hs_sec_b.Q2.body",
+      "b": "hs_sec_b.Q2.lead_drain"
+    },
+    {
+      "a": "hs_sec_b.Q2.body",
+      "b": "hs_sec_b.Q2.lead_source"
+    },
+    {
+      "a": "hs_sec_b.Q2.body",
+      "b": "hs_sec_b.Q2.lead_driver_source"
+    },
+    {
+      "a": "hs_sec_b.Q2.body",
+      "b": "hs_sec_b.Q2.lead_gate"
+    },
+    {
+      "a": "hs_sec_b.Q2.body",
+      "b": "hs_sec_b.Q2.bushing"
+    },
+    {
+      "a": "hs_sec_b.Q2.tab",
+      "b": "hs_sec_b.Q2.pad"
+    },
+    {
+      "a": "hs_sec_b.Q2.tab",
+      "b": "hs_sec_b.Q2.bushing"
+    },
+    {
+      "a": "hs_sec_b.Q2.pad",
+      "b": "hs_sec_b.Q2.bushing"
+    },
+    {
+      "a": "hs_sec_b.Q2.bushing",
+      "b": "hs_sec_b.Q2.screw"
+    },
+    {
+      "a": "transformer.core_lower",
+      "b": "transformer.core_upper"
+    },
+    {
+      "a": "transformer.core_lower",
+      "b": "transformer.clip_neg_y"
+    },
+    {
+      "a": "transformer.core_lower",
+      "b": "transformer.clip_pos_y"
+    },
+    {
+      "a": "transformer.core_upper",
+      "b": "transformer.clip_neg_y"
+    },
+    {
+      "a": "transformer.core_upper",
+      "b": "transformer.clip_pos_y"
+    },
+    {
+      "a": "transformer.bobbin",
+      "b": "transformer.primary"
+    },
+    {
+      "a": "transformer.bobbin",
+      "b": "transformer.barrier_primary_secondary"
+    },
+    {
+      "a": "transformer.bobbin",
+      "b": "transformer.outer_wrap"
+    },
+    {
+      "a": "transformer.bobbin",
+      "b": "transformer.margin_primary_lower"
+    },
+    {
+      "a": "transformer.bobbin",
+      "b": "transformer.margin_primary_upper"
+    },
+    {
+      "a": "transformer.bobbin",
+      "b": "transformer.margin_secondary_lower"
+    },
+    {
+      "a": "transformer.bobbin",
+      "b": "transformer.margin_secondary_upper"
+    },
+    {
+      "a": "transformer.bobbin",
+      "b": "transformer.pin_primary_1"
+    },
+    {
+      "a": "transformer.bobbin",
+      "b": "transformer.pin_primary_2"
+    },
+    {
+      "a": "transformer.bobbin",
+      "b": "transformer.pin_secondary_1"
+    },
+    {
+      "a": "transformer.bobbin",
+      "b": "transformer.pin_secondary_2"
+    },
+    {
+      "a": "transformer.primary",
+      "b": "transformer.barrier_primary_secondary"
+    },
+    {
+      "a": "transformer.primary",
+      "b": "transformer.margin_primary_lower"
+    },
+    {
+      "a": "transformer.primary",
+      "b": "transformer.margin_primary_upper"
+    },
+    {
+      "a": "transformer.secondary",
+      "b": "transformer.barrier_primary_secondary"
+    },
+    {
+      "a": "transformer.secondary",
+      "b": "transformer.outer_wrap"
+    },
+    {
+      "a": "transformer.secondary",
+      "b": "transformer.margin_secondary_lower"
+    },
+    {
+      "a": "transformer.secondary",
+      "b": "transformer.margin_secondary_upper"
+    },
+    {
+      "a": "transformer.barrier_primary_secondary",
+      "b": "transformer.margin_primary_lower"
+    },
+    {
+      "a": "transformer.barrier_primary_secondary",
+      "b": "transformer.margin_primary_upper"
+    },
+    {
+      "a": "transformer.barrier_primary_secondary",
+      "b": "transformer.margin_secondary_lower"
+    },
+    {
+      "a": "transformer.barrier_primary_secondary",
+      "b": "transformer.margin_secondary_upper"
+    },
+    {
+      "a": "transformer.outer_wrap",
+      "b": "transformer.margin_secondary_lower"
+    },
+    {
+      "a": "transformer.outer_wrap",
+      "b": "transformer.margin_secondary_upper"
+    },
+    {
+      "a": "transformer.clip_neg_y",
+      "b": "transformer.base_plate"
+    },
+    {
+      "a": "transformer.clip_pos_y",
+      "b": "transformer.base_plate"
+    },
+    {
+      "a": "primary_power_board.board",
+      "b": "primary_power_board.hv_power_plane"
+    },
+    {
+      "a": "primary_power_board.board",
+      "b": "primary_power_board.standoff_1"
+    },
+    {
+      "a": "primary_power_board.board",
+      "b": "primary_power_board.standoff_2"
+    },
+    {
+      "a": "primary_power_board.board",
+      "b": "primary_power_board.standoff_3"
+    },
+    {
+      "a": "primary_power_board.board",
+      "b": "primary_power_board.standoff_4"
+    },
+    {
+      "a": "primary_power_board.board",
+      "b": "dc_input.housing"
+    },
+    {
+      "a": "primary_power_board.board",
+      "b": "dc_input.pin1"
+    },
+    {
+      "a": "primary_power_board.board",
+      "b": "dc_input.pin2"
+    },
+    {
+      "a": "secondary_power_board.board",
+      "b": "secondary_power_board.lv_power_plane"
+    },
+    {
+      "a": "secondary_power_board.board",
+      "b": "secondary_power_board.standoff_1"
+    },
+    {
+      "a": "secondary_power_board.board",
+      "b": "secondary_power_board.standoff_2"
+    },
+    {
+      "a": "secondary_power_board.board",
+      "b": "secondary_power_board.standoff_3"
+    },
+    {
+      "a": "secondary_power_board.board",
+      "b": "secondary_power_board.standoff_4"
+    },
+    {
+      "a": "secondary_power_board.board",
+      "b": "dc_output.housing"
+    },
+    {
+      "a": "secondary_power_board.board",
+      "b": "dc_output.pin1"
+    },
+    {
+      "a": "secondary_power_board.board",
+      "b": "dc_output.pin2"
+    },
+    {
+      "a": "control_board.board",
+      "b": "control_board.control_ground"
+    },
+    {
+      "a": "control_board.board",
+      "b": "control_board.standoff_1"
+    },
+    {
+      "a": "control_board.board",
+      "b": "control_board.standoff_2"
+    },
+    {
+      "a": "control_board.board",
+      "b": "control_board.standoff_3"
+    },
+    {
+      "a": "control_board.board",
+      "b": "control_board.standoff_4"
+    },
+    {
+      "a": "dc_input.housing",
+      "b": "dc_input.pin1"
+    },
+    {
+      "a": "dc_input.housing",
+      "b": "dc_input.pin2"
+    },
+    {
+      "a": "dc_output.housing",
+      "b": "dc_output.pin1"
+    },
+    {
+      "a": "dc_output.housing",
+      "b": "dc_output.pin2"
+    }
+  ],
+  "step_reimport": {
+    "path": "dab_10kw_assembly.step",
+    "solids": 119,
+    "volume_m3": 0.0009674595709025418,
+    "expected_volume_m3": 0.0009674595709025397,
+    "relative_error": 2.1659569618293865e-15,
+    "valid": true
+  },
+  "analytic": {
+    "analytic_masses": {
+      "hs_pri_a": 0.2403,
+      "hs_pri_b": 0.2403,
+      "hs_sec_a": 0.2403,
+      "hs_sec_b": 0.2403,
+      "transformer": 0.7086315173557838,
+      "primary_power_board": 0.09737693789828343,
+      "secondary_power_board": 0.09737693789828343,
+      "control_board": 0.038635254070298636,
+      "dc_input": 0.020945309407993908,
+      "dc_output": 0.020945309407993908,
+      "chassis": 0.7305503725417966,
+      "total_estimate": 2.6756616385804337
+    }
+  },
+  "warnings": [
+    "hs_pri_a: device Q1: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+    "hs_pri_a: device Q2: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+    "hs_pri_b: device Q1: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+    "hs_pri_b: device Q2: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+    "hs_sec_a: device Q1: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+    "hs_sec_a: device Q2: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+    "hs_sec_b: device Q1: plastic body overhangs the plate edge (allowed; tab stays on the plate)",
+    "hs_sec_b: device Q2: plastic body overhangs the plate edge (allowed; tab stays on the plate)"
+  ],
+  "mesh_hints": {
+    "target": "gmsh",
+    "units": "m",
+    "note": "Component-level mesh hints are nested under cooling[*].resolved.mesh_hints and transformer.resolved.mesh_hints; body names in the assembly STEP are prefixed with the instance name.",
+    "regions": [
+      {
+        "bodies": [
+          "chassis.plate"
+        ],
+        "group": "chassis",
+        "material": "aluminium_6063",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.body"
+        ],
+        "group": "hs_pri_a",
+        "material": "aluminium_6063",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q1.body"
+        ],
+        "group": "hs_pri_a",
+        "material": "epoxy_mold_compound",
+        "element_size": 0.002509999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q1.tab"
+        ],
+        "group": "hs_pri_a",
+        "material": "copper",
+        "element_size": 0.0008475000000000004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q1.pad"
+        ],
+        "group": "hs_pri_a",
+        "material": "alumina",
+        "element_size": 0.0010974999999999984,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q1.lead_drain"
+        ],
+        "group": "hs_pri_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q1.lead_source"
+        ],
+        "group": "hs_pri_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q1.lead_driver_source"
+        ],
+        "group": "hs_pri_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q1.lead_gate"
+        ],
+        "group": "hs_pri_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q1.bushing"
+        ],
+        "group": "hs_pri_a",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q1.screw"
+        ],
+        "group": "hs_pri_a",
+        "material": "steel",
+        "element_size": 0.002749145250502242,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q2.body"
+        ],
+        "group": "hs_pri_a",
+        "material": "epoxy_mold_compound",
+        "element_size": 0.002509999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q2.tab"
+        ],
+        "group": "hs_pri_a",
+        "material": "copper",
+        "element_size": 0.0008475000000000004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q2.pad"
+        ],
+        "group": "hs_pri_a",
+        "material": "alumina",
+        "element_size": 0.0010974999999999984,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q2.lead_drain"
+        ],
+        "group": "hs_pri_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q2.lead_source"
+        ],
+        "group": "hs_pri_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q2.lead_driver_source"
+        ],
+        "group": "hs_pri_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q2.lead_gate"
+        ],
+        "group": "hs_pri_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q2.bushing"
+        ],
+        "group": "hs_pri_a",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_a.Q2.screw"
+        ],
+        "group": "hs_pri_a",
+        "material": "steel",
+        "element_size": 0.0027491452505022454,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.body"
+        ],
+        "group": "hs_pri_b",
+        "material": "aluminium_6063",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q1.body"
+        ],
+        "group": "hs_pri_b",
+        "material": "epoxy_mold_compound",
+        "element_size": 0.002509999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q1.tab"
+        ],
+        "group": "hs_pri_b",
+        "material": "copper",
+        "element_size": 0.0008475000000000004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q1.pad"
+        ],
+        "group": "hs_pri_b",
+        "material": "alumina",
+        "element_size": 0.0010974999999999984,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q1.lead_drain"
+        ],
+        "group": "hs_pri_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q1.lead_source"
+        ],
+        "group": "hs_pri_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q1.lead_driver_source"
+        ],
+        "group": "hs_pri_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q1.lead_gate"
+        ],
+        "group": "hs_pri_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q1.bushing"
+        ],
+        "group": "hs_pri_b",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q1.screw"
+        ],
+        "group": "hs_pri_b",
+        "material": "steel",
+        "element_size": 0.0027491452505022454,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q2.body"
+        ],
+        "group": "hs_pri_b",
+        "material": "epoxy_mold_compound",
+        "element_size": 0.002509999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q2.tab"
+        ],
+        "group": "hs_pri_b",
+        "material": "copper",
+        "element_size": 0.0008475000000000004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q2.pad"
+        ],
+        "group": "hs_pri_b",
+        "material": "alumina",
+        "element_size": 0.0010974999999999984,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q2.lead_drain"
+        ],
+        "group": "hs_pri_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q2.lead_source"
+        ],
+        "group": "hs_pri_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q2.lead_driver_source"
+        ],
+        "group": "hs_pri_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q2.lead_gate"
+        ],
+        "group": "hs_pri_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q2.bushing"
+        ],
+        "group": "hs_pri_b",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_pri_b.Q2.screw"
+        ],
+        "group": "hs_pri_b",
+        "material": "steel",
+        "element_size": 0.002749145250502242,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.body"
+        ],
+        "group": "hs_sec_a",
+        "material": "aluminium_6063",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q1.body"
+        ],
+        "group": "hs_sec_a",
+        "material": "epoxy_mold_compound",
+        "element_size": 0.002509999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q1.tab"
+        ],
+        "group": "hs_sec_a",
+        "material": "copper",
+        "element_size": 0.0008475000000000004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q1.pad"
+        ],
+        "group": "hs_sec_a",
+        "material": "alumina",
+        "element_size": 0.001097499999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q1.lead_drain"
+        ],
+        "group": "hs_sec_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q1.lead_source"
+        ],
+        "group": "hs_sec_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q1.lead_driver_source"
+        ],
+        "group": "hs_sec_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q1.lead_gate"
+        ],
+        "group": "hs_sec_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q1.bushing"
+        ],
+        "group": "hs_sec_a",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q1.screw"
+        ],
+        "group": "hs_sec_a",
+        "material": "steel",
+        "element_size": 0.0027491452505022454,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q2.body"
+        ],
+        "group": "hs_sec_a",
+        "material": "epoxy_mold_compound",
+        "element_size": 0.002509999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q2.tab"
+        ],
+        "group": "hs_sec_a",
+        "material": "copper",
+        "element_size": 0.0008475000000000004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q2.pad"
+        ],
+        "group": "hs_sec_a",
+        "material": "alumina",
+        "element_size": 0.0010975,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q2.lead_drain"
+        ],
+        "group": "hs_sec_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q2.lead_source"
+        ],
+        "group": "hs_sec_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q2.lead_driver_source"
+        ],
+        "group": "hs_sec_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q2.lead_gate"
+        ],
+        "group": "hs_sec_a",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q2.bushing"
+        ],
+        "group": "hs_sec_a",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_a.Q2.screw"
+        ],
+        "group": "hs_sec_a",
+        "material": "steel",
+        "element_size": 0.002749145250502242,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.body"
+        ],
+        "group": "hs_sec_b",
+        "material": "aluminium_6063",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q1.body"
+        ],
+        "group": "hs_sec_b",
+        "material": "epoxy_mold_compound",
+        "element_size": 0.002509999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q1.tab"
+        ],
+        "group": "hs_sec_b",
+        "material": "copper",
+        "element_size": 0.0008475000000000004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q1.pad"
+        ],
+        "group": "hs_sec_b",
+        "material": "alumina",
+        "element_size": 0.001097499999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q1.lead_drain"
+        ],
+        "group": "hs_sec_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q1.lead_source"
+        ],
+        "group": "hs_sec_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q1.lead_driver_source"
+        ],
+        "group": "hs_sec_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q1.lead_gate"
+        ],
+        "group": "hs_sec_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q1.bushing"
+        ],
+        "group": "hs_sec_b",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q1.screw"
+        ],
+        "group": "hs_sec_b",
+        "material": "steel",
+        "element_size": 0.002749145250502249,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q2.body"
+        ],
+        "group": "hs_sec_b",
+        "material": "epoxy_mold_compound",
+        "element_size": 0.002509999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q2.tab"
+        ],
+        "group": "hs_sec_b",
+        "material": "copper",
+        "element_size": 0.0008475000000000004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q2.pad"
+        ],
+        "group": "hs_sec_b",
+        "material": "alumina",
+        "element_size": 0.0010974999999999984,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q2.lead_drain"
+        ],
+        "group": "hs_sec_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q2.lead_source"
+        ],
+        "group": "hs_sec_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q2.lead_driver_source"
+        ],
+        "group": "hs_sec_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q2.lead_gate"
+        ],
+        "group": "hs_sec_b",
+        "material": "copper",
+        "element_size": 0.0007000000000000001,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q2.bushing"
+        ],
+        "group": "hs_sec_b",
+        "material": "nylon_pa66",
+        "element_size": 0.0031350000000000006,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "hs_sec_b.Q2.screw"
+        ],
+        "group": "hs_sec_b",
+        "material": "steel",
+        "element_size": 0.0027491452505022437,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.core_lower"
+        ],
+        "group": "transformer",
+        "material": "ferrite_n87",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.core_upper"
+        ],
+        "group": "transformer",
+        "material": "ferrite_n87",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.bobbin"
+        ],
+        "group": "transformer",
+        "material": "bobbin_pet_gf",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.primary"
+        ],
+        "group": "transformer",
+        "material": "copper",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.secondary"
+        ],
+        "group": "transformer",
+        "material": "copper",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.barrier_primary_secondary"
+        ],
+        "group": "transformer",
+        "material": "kapton",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.outer_wrap"
+        ],
+        "group": "transformer",
+        "material": "kapton",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.margin_primary_lower"
+        ],
+        "group": "transformer",
+        "material": "kapton",
+        "element_size": 0.002135,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.margin_primary_upper"
+        ],
+        "group": "transformer",
+        "material": "kapton",
+        "element_size": 0.002135,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.margin_secondary_lower"
+        ],
+        "group": "transformer",
+        "material": "kapton",
+        "element_size": 0.002435,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.margin_secondary_upper"
+        ],
+        "group": "transformer",
+        "material": "kapton",
+        "element_size": 0.002435,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.pin_primary_1"
+        ],
+        "group": "transformer",
+        "material": "brass",
+        "element_size": 0.0007497035239602383,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.pin_primary_2"
+        ],
+        "group": "transformer",
+        "material": "brass",
+        "element_size": 0.0007497035239602382,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.pin_secondary_1"
+        ],
+        "group": "transformer",
+        "material": "brass",
+        "element_size": 0.000749703523960238,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.pin_secondary_2"
+        ],
+        "group": "transformer",
+        "material": "brass",
+        "element_size": 0.0007497035239602382,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.clip_neg_y"
+        ],
+        "group": "transformer",
+        "material": "stainless_steel",
+        "element_size": 0.004999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.clip_pos_y"
+        ],
+        "group": "transformer",
+        "material": "stainless_steel",
+        "element_size": 0.004999999999999999,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "transformer.base_plate"
+        ],
+        "group": "transformer",
+        "material": "aluminium_6063",
+        "element_size": 0.00446,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "primary_power_board.board"
+        ],
+        "group": "primary_power_board",
+        "material": "fr4",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "primary_power_board.hv_power_plane"
+        ],
+        "group": "primary_power_board",
+        "material": "copper",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "primary_power_board.standoff_1"
+        ],
+        "group": "primary_power_board",
+        "material": "nylon_pa66",
+        "element_size": 0.0029990675460024457,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "primary_power_board.standoff_2"
+        ],
+        "group": "primary_power_board",
+        "material": "nylon_pa66",
+        "element_size": 0.0029990675460024457,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "primary_power_board.standoff_3"
+        ],
+        "group": "primary_power_board",
+        "material": "nylon_pa66",
+        "element_size": 0.0029990675460024457,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "primary_power_board.standoff_4"
+        ],
+        "group": "primary_power_board",
+        "material": "nylon_pa66",
+        "element_size": 0.0029990675460024457,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "secondary_power_board.board"
+        ],
+        "group": "secondary_power_board",
+        "material": "fr4",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "secondary_power_board.lv_power_plane"
+        ],
+        "group": "secondary_power_board",
+        "material": "copper",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "secondary_power_board.standoff_1"
+        ],
+        "group": "secondary_power_board",
+        "material": "nylon_pa66",
+        "element_size": 0.0029990675460024457,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "secondary_power_board.standoff_2"
+        ],
+        "group": "secondary_power_board",
+        "material": "nylon_pa66",
+        "element_size": 0.0029990675460024457,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "secondary_power_board.standoff_3"
+        ],
+        "group": "secondary_power_board",
+        "material": "nylon_pa66",
+        "element_size": 0.0029990675460024457,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "secondary_power_board.standoff_4"
+        ],
+        "group": "secondary_power_board",
+        "material": "nylon_pa66",
+        "element_size": 0.0029990675460024457,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "control_board.board"
+        ],
+        "group": "control_board",
+        "material": "fr4",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "control_board.control_ground"
+        ],
+        "group": "control_board",
+        "material": "copper",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "control_board.standoff_1"
+        ],
+        "group": "control_board",
+        "material": "nylon_pa66",
+        "element_size": 0.004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "control_board.standoff_2"
+        ],
+        "group": "control_board",
+        "material": "nylon_pa66",
+        "element_size": 0.004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "control_board.standoff_3"
+        ],
+        "group": "control_board",
+        "material": "nylon_pa66",
+        "element_size": 0.004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "control_board.standoff_4"
+        ],
+        "group": "control_board",
+        "material": "nylon_pa66",
+        "element_size": 0.004,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "dc_input.housing"
+        ],
+        "group": "dc_input",
+        "material": "nylon_pa66",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "dc_input.pin1"
+        ],
+        "group": "dc_input",
+        "material": "brass",
+        "element_size": 0.002999067546002449,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "dc_input.pin2"
+        ],
+        "group": "dc_input",
+        "material": "brass",
+        "element_size": 0.002999067546002449,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "dc_output.housing"
+        ],
+        "group": "dc_output",
+        "material": "nylon_pa66",
+        "element_size": 0.005,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "dc_output.pin1"
+        ],
+        "group": "dc_output",
+        "material": "brass",
+        "element_size": 0.002999067546002449,
+        "note": "default size from the body bounding box"
+      },
+      {
+        "bodies": [
+          "dc_output.pin2"
+        ],
+        "group": "dc_output",
+        "material": "brass",
+        "element_size": 0.002999067546002449,
+        "note": "default size from the body bounding box"
+      }
+    ],
+    "material_tags": [
+      "alumina",
+      "aluminium_6063",
+      "bobbin_pet_gf",
+      "brass",
+      "copper",
+      "epoxy_mold_compound",
+      "ferrite_n87",
+      "fr4",
+      "kapton",
+      "nylon_pa66",
+      "stainless_steel",
+      "steel"
+    ],
+    "net_tags": [
+      "control",
+      "pe",
+      "primary",
+      "secondary"
+    ],
+    "body_count": 119
+  },
+  "parameters": {
+    "kind": "assembly",
+    "name": "dab_10kw_assembly",
+    "description": "10 kW DAB converter mechanical layout in one coordinate system: aluminium chassis plate, four plate-fin heat sinks (two per bridge, fins through chassis cut-outs), primary and secondary power boards above their heat sinks, transformer on the chassis between them, control board above the transformer, DC input/output terminal blocks. Illustrative layout for interference/clearance checking, not a manufacturable assembly.",
+    "chassis": {
+      "length": 0.44,
+      "width": 0.24,
+      "thickness": 0.003,
+      "material": "aluminium_6063",
+      "net": "pe",
+      "cutouts_under_heatsinks": true,
+      "cutout_clearance": 0.0015,
+      "min_rim": 0.0015
+    },
+    "cooling": {
+      "variant": "heatsinks",
+      "heatsink": {
+        "kind": "heatsink",
+        "name": "dab_heatsink",
+        "description": "Plate-fin aluminium heat sink for one SiC half-bridge: two TO-247-4L devices on alumina isolation pads, M3 screw holes, four M4 corner mounting holes. Fins hang down from the base (z < 0). Illustrative model.",
+        "base": {
+          "length": 0.08,
+          "width": 0.08,
+          "thickness": 0.008,
+          "material": "aluminium_6063"
+        },
+        "fins": {
+          "thickness": 0.0015,
+          "height": 0.035,
+          "pitch": 0.005,
+          "count": 12,
+          "length": 0.06
+        },
+        "devices": [
+          {
+            "name": "Q1",
+            "package": "to247_4l",
+            "position": [
+              0.0286,
+              0.02
+            ],
+            "rotation_deg": 0,
+            "net": "primary",
+            "pad": {
+              "thickness": 0.00025,
+              "oversize": 0.0025,
+              "material": "alumina"
+            },
+            "screw_hole_diameter": 0.0032,
+            "lead_form": {
+              "horizontal": 0.003,
+              "vertical": 0.014
+            }
+          },
+          {
+            "name": "Q2",
+            "package": "to247_4l",
+            "position": [
+              0.0286,
+              -0.02
+            ],
+            "rotation_deg": 0,
+            "net": "primary",
+            "pad": {
+              "thickness": 0.00025,
+              "oversize": 0.0025,
+              "material": "alumina"
+            },
+            "screw_hole_diameter": 0.0032,
+            "lead_form": {
+              "horizontal": 0.003,
+              "vertical": 0.014
+            }
+          }
+        ],
+        "mounting_holes": {
+          "diameter": 0.0045,
+          "inset": 0.005
+        },
+        "net": "pe",
+        "clearance_envelope_margin": 0.003,
+        "checks": {
+          "interference": {
+            "enabled": true,
+            "min_overlap_volume": 1e-12
+          },
+          "clearance_pairs": [
+            {
+              "net_a": "primary",
+              "net_b": "pe",
+              "required_clearance": 0.002,
+              "required_creepage": 0.004,
+              "note": "illustrative functional-insulation value between device tabs/leads and the earthed heat sink"
+            }
+          ]
+        }
+      },
+      "placements": [
+        {
+          "name": "hs_pri_a",
+          "position": [
+            -0.15,
+            0.045,
+            0.0
+          ],
+          "rotation_deg": 0,
+          "device_net": "primary"
+        },
+        {
+          "name": "hs_pri_b",
+          "position": [
+            -0.15,
+            -0.045,
+            0.0
+          ],
+          "rotation_deg": 0,
+          "device_net": "primary"
+        },
+        {
+          "name": "hs_sec_a",
+          "position": [
+            0.15,
+            0.045,
+            0.0
+          ],
+          "rotation_deg": 180,
+          "device_net": "secondary"
+        },
+        {
+          "name": "hs_sec_b",
+          "position": [
+            0.15,
+            -0.045,
+            0.0
+          ],
+          "rotation_deg": 180,
+          "device_net": "secondary"
+        }
+      ]
+    },
+    "transformer": {
+      "name": "transformer",
+      "params": {
+        "kind": "transformer",
+        "name": "dab_transformer",
+        "description": "10 kW DAB transformer (800 V : 400 V, 100 kHz): E65/32/27 ferrite pair, 21:10 turns, litz primary, copper-foil secondary, polyimide inter-winding barrier and margins, pin terminals, clips and base plate. Illustrative parametric model, not a manufacturable design.",
+        "core": {
+          "shape": "E",
+          "total_width": 0.0652,
+          "half_height": 0.0326,
+          "depth": 0.0274,
+          "window_height": 0.0222,
+          "inner_width": 0.0442,
+          "centre_leg_width": 0.02,
+          "air_gap": 0.0,
+          "material": "ferrite_n87",
+          "net": "pe",
+          "reference": "TDK E 65/32/27 core (B66387), data sheet https://www.tdk-electronics.tdk.com/inf/80/db/fer/e_65_32_27.pdf (Oct 2024): Sigma l/A 0.27 mm^-1, le 147 mm, Ae 535 mm^2, Amin 529 mm^2, Ve 78650 mm^3, approx. 394 g/set. Nominal outline letters A=65.2, B=32.6, C=44.2, D=22.2, E=20.0, F=27.4 mm are transcribed from the IEC 62317-8 E65/32/27 outline reproduced in that drawing and must be verified against the current revision; the model is fully parametric."
+        },
+        "bobbin": {
+          "wall_thickness": 0.0015,
+          "flange_thickness": 0.0015,
+          "core_clearance": 0.0003,
+          "window_clearance": 0.0005,
+          "pin_strip_width": 0.006,
+          "corner_radius": 0.001,
+          "material": "bobbin_pet_gf"
+        },
+        "windings": [
+          {
+            "name": "primary",
+            "turns": 21,
+            "net": "primary",
+            "margin": 0.004,
+            "terminal_count": 2,
+            "terminal_side": "-y",
+            "conductor": {
+              "type": "litz",
+              "outer_diameter": 0.0029,
+              "strand_count": 420,
+              "strand_diameter": 0.0001,
+              "insulation_thickness": 5e-05,
+              "fill_factor": 0.4
+            }
+          },
+          {
+            "name": "secondary",
+            "turns": 10,
+            "net": "secondary",
+            "margin": 0.004,
+            "terminal_count": 2,
+            "terminal_side": "+y",
+            "conductor": {
+              "type": "foil",
+              "foil_thickness": 0.0002,
+              "insulation_thickness": 5e-05
+            }
+          }
+        ],
+        "insulation": {
+          "inter_winding_barrier": 0.0005,
+          "outer_wrap": 0.0003,
+          "fill_margins": true,
+          "material": "kapton"
+        },
+        "terminals": {
+          "style": "pin",
+          "diameter": 0.0015,
+          "length": 0.012,
+          "pitch": 0.005,
+          "flange": "top",
+          "direction": "+z",
+          "material": "brass"
+        },
+        "mounting": {
+          "clips": true,
+          "clip_thickness": 0.0008,
+          "clip_width": 0.01,
+          "clip_inset": 0.002,
+          "clip_material": "stainless_steel",
+          "base_plate": true,
+          "plate_thickness": 0.002,
+          "plate_margin_x": 0.012,
+          "hole_diameter": 0.0045,
+          "hole_inset": 0.006,
+          "plate_material": "aluminium_6063",
+          "net": "pe"
+        },
+        "clearance_envelope_margin": 0.005,
+        "checks": {
+          "interference": {
+            "enabled": true,
+            "min_overlap_volume": 1e-12
+          },
+          "clearance_pairs": [
+            {
+              "net_a": "primary",
+              "net_b": "secondary",
+              "required_clearance": 0.0055,
+              "required_creepage": 0.008,
+              "note": "illustrative caller-supplied values for the 800 V primary to 400 V secondary isolation; not a standard assertion"
+            },
+            {
+              "net_a": "primary",
+              "net_b": "pe",
+              "required_clearance": 0.002,
+              "required_creepage": 0.004,
+              "note": "illustrative functional-insulation value to earthed core/mounting parts"
+            },
+            {
+              "net_a": "secondary",
+              "net_b": "pe",
+              "required_clearance": 0.002,
+              "required_creepage": 0.004
+            }
+          ]
+        }
+      },
+      "position": [
+        0.0,
+        0.0,
+        "on_chassis"
+      ],
+      "rotation_deg": 0
+    },
+    "boards": [
+      {
+        "name": "primary_power_board",
+        "size": [
+          0.16,
+          0.2
+        ],
+        "thickness": 0.0016,
+        "position": [
+          -0.13,
+          0.0,
+          0.0225
+        ],
+        "rotation_deg": 0,
+        "material": "fr4",
+        "copper_zones": [
+          {
+            "name": "hv_power_plane",
+            "offset": [
+              0.0,
+              0.0
+            ],
+            "size": [
+              0.15,
+              0.19
+            ],
+            "net": "primary",
+            "thickness": 7e-05,
+            "side": "top"
+          }
+        ],
+        "keepouts": [
+          {
+            "name": "dc_link_capacitors",
+            "offset": [
+              0.055,
+              0.0
+            ],
+            "size": [
+              0.04,
+              0.18,
+              0.04
+            ],
+            "side": "top"
+          },
+          {
+            "name": "gate_drivers",
+            "offset": [
+              -0.03,
+              0.0
+            ],
+            "size": [
+              0.03,
+              0.04,
+              0.015
+            ],
+            "side": "top"
+          }
+        ],
+        "mounting_holes": {
+          "diameter": 0.0032,
+          "inset": 0.005
+        },
+        "standoffs": {
+          "enabled": true,
+          "diameter": 0.006,
+          "material": "nylon_pa66"
+        },
+        "lead_holes": {
+          "enabled": true,
+          "clearance": 0.0004
+        }
+      },
+      {
+        "name": "secondary_power_board",
+        "size": [
+          0.16,
+          0.2
+        ],
+        "thickness": 0.0016,
+        "position": [
+          0.13,
+          0.0,
+          0.0225
+        ],
+        "rotation_deg": 0,
+        "material": "fr4",
+        "copper_zones": [
+          {
+            "name": "lv_power_plane",
+            "offset": [
+              0.0,
+              0.0
+            ],
+            "size": [
+              0.15,
+              0.19
+            ],
+            "net": "secondary",
+            "thickness": 7e-05,
+            "side": "top"
+          }
+        ],
+        "keepouts": [
+          {
+            "name": "output_capacitors",
+            "offset": [
+              -0.055,
+              0.0
+            ],
+            "size": [
+              0.04,
+              0.18,
+              0.04
+            ],
+            "side": "top"
+          },
+          {
+            "name": "gate_drivers",
+            "offset": [
+              0.03,
+              0.0
+            ],
+            "size": [
+              0.03,
+              0.04,
+              0.015
+            ],
+            "side": "top"
+          }
+        ],
+        "mounting_holes": {
+          "diameter": 0.0032,
+          "inset": 0.005
+        },
+        "standoffs": {
+          "enabled": true,
+          "diameter": 0.006,
+          "material": "nylon_pa66"
+        },
+        "lead_holes": {
+          "enabled": true,
+          "clearance": 0.0004
+        }
+      },
+      {
+        "name": "control_board",
+        "size": [
+          0.08,
+          0.12
+        ],
+        "thickness": 0.0016,
+        "position": [
+          0.0,
+          0.0,
+          0.08
+        ],
+        "rotation_deg": 0,
+        "material": "fr4",
+        "copper_zones": [
+          {
+            "name": "control_ground",
+            "offset": [
+              0.0,
+              0.0
+            ],
+            "size": [
+              0.07,
+              0.11
+            ],
+            "net": "control",
+            "thickness": 7e-05,
+            "side": "bottom"
+          }
+        ],
+        "keepouts": [
+          {
+            "name": "controller_and_connectors",
+            "offset": [
+              0.0,
+              0.0
+            ],
+            "size": [
+              0.07,
+              0.11,
+              0.012
+            ],
+            "side": "top"
+          }
+        ],
+        "mounting_holes": {
+          "diameter": 0.0032,
+          "inset": 0.005
+        },
+        "standoffs": {
+          "enabled": true,
+          "diameter": 0.006,
+          "material": "nylon_pa66"
+        },
+        "lead_holes": {
+          "enabled": false
+        }
+      }
+    ],
+    "connectors": [
+      {
+        "name": "dc_input",
+        "type": "dc_terminal_block",
+        "position": [
+          -0.195,
+          0.0,
+          "on_board:primary_power_board"
+        ],
+        "rotation_deg": 0,
+        "body_size": [
+          0.03,
+          0.025,
+          0.02
+        ],
+        "poles": 2,
+        "pole_pitch": 0.0125,
+        "pin_diameter": 0.006,
+        "pin_length": 0.008,
+        "net": "primary",
+        "housing_material": "nylon_pa66",
+        "pin_material": "brass"
+      },
+      {
+        "name": "dc_output",
+        "type": "dc_terminal_block",
+        "position": [
+          0.195,
+          0.0,
+          "on_board:secondary_power_board"
+        ],
+        "rotation_deg": 0,
+        "body_size": [
+          0.03,
+          0.025,
+          0.02
+        ],
+        "poles": 2,
+        "pole_pitch": 0.0125,
+        "pin_diameter": 0.006,
+        "pin_length": 0.008,
+        "net": "secondary",
+        "housing_material": "nylon_pa66",
+        "pin_material": "brass"
+      }
+    ],
+    "clearance_envelope_margin": 0.0,
+    "checks": {
+      "interference": {
+        "enabled": true,
+        "min_overlap_volume": 1e-12,
+        "allowed_overlaps": []
+      },
+      "keepouts": {
+        "enabled": true
+      },
+      "envelopes": {
+        "report_intrusions": true,
+        "ignore_pairs": [
+          [
+            "*.clearance_envelope",
+            "chassis.plate"
+          ]
+        ]
+      },
+      "clearance_pairs": [
+        {
+          "net_a": "primary",
+          "net_b": "secondary",
+          "required_clearance": 0.0055,
+          "required_creepage": 0.008,
+          "note": "illustrative caller-supplied reinforced-isolation values between the 800 V and 400 V circuits; not a standard assertion"
+        },
+        {
+          "net_a": "primary",
+          "net_b": "pe",
+          "required_clearance": 0.002,
+          "required_creepage": 0.004
+        },
+        {
+          "net_a": "secondary",
+          "net_b": "pe",
+          "required_clearance": 0.002,
+          "required_creepage": 0.004
+        },
+        {
+          "net_a": "primary",
+          "net_b": "control",
+          "required_clearance": 0.0055,
+          "required_creepage": 0.008
+        },
+        {
+          "net_a": "secondary",
+          "net_b": "control",
+          "required_clearance": 0.003,
+          "required_creepage": 0.004
+        }
+      ]
+    }
+  },
+  "timings_s": {
+    "resolve_s": 0.0009965896606445312,
+    "build_s": 0.5633535385131836,
+    "export_s": 1.2156591415405273,
+    "checks_s": 53.9285523891449,
+    "render_s": 11.258363008499146
+  },
+  "invalid_shapes": [],
+  "check_summary": {
+    "status": "review",
+    "interference_count": 0,
+    "allowed_overlap_count": 0,
+    "contact_count": 177,
+    "keepout_violation_count": 0,
+    "envelope_intrusion_count": 0,
+    "fit_failures": 0,
+    "clearance_pairs": {
+      "pass": 2,
+      "fail": 0,
+      "review": 3,
+      "no_bodies": 0
+    },
+    "unassigned_conductor_count": 0,
+    "bodies_checked": 119,
+    "note": "required clearance/creepage values are caller inputs; no standard compliance is asserted"
+  }
+}
